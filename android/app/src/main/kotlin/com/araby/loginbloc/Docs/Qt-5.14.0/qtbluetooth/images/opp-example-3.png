@@ -1,0 +1,3085 @@
+define MCF_GPIO_PTFPAR_MB_A12_MB_A12        (0x10)
+#define MCF_GPIO_PTFPAR_PTFPAR5              (0x20)
+#define MCF_GPIO_PTFPAR_MB_A13_GPIO          (0)
+#define MCF_GPIO_PTFPAR_MB_A13_MB_A13        (0x20)
+#define MCF_GPIO_PTFPAR_PTFPAR6              (0x40)
+#define MCF_GPIO_PTFPAR_MB_A14_GPIO          (0)
+#define MCF_GPIO_PTFPAR_MB_A14_MB_A14        (0x40)
+#define MCF_GPIO_PTFPAR_PTFPAR7              (0x80)
+#define MCF_GPIO_PTFPAR_MB_A15_GPIO          (0)
+#define MCF_GPIO_PTFPAR_MB_A15_MB_A15        (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTG */
+#define MCF_GPIO_PORTTG_PORTTG0              (0x1)
+#define MCF_GPIO_PORTTG_PORTTG1              (0x2)
+#define MCF_GPIO_PORTTG_PORTTG2              (0x4)
+#define MCF_GPIO_PORTTG_PORTTG3              (0x8)
+#define MCF_GPIO_PORTTG_PORTTG4              (0x10)
+#define MCF_GPIO_PORTTG_PORTTG5              (0x20)
+#define MCF_GPIO_PORTTG_PORTTG6              (0x40)
+#define MCF_GPIO_PORTTG_PORTTG7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTG */
+#define MCF_GPIO_DDRTG_DDRTG0                (0x1)
+#define MCF_GPIO_DDRTG_DDRTG1                (0x2)
+#define MCF_GPIO_DDRTG_DDRTG2                (0x4)
+#define MCF_GPIO_DDRTG_DDRTG3                (0x8)
+#define MCF_GPIO_DDRTG_DDRTG4                (0x10)
+#define MCF_GPIO_DDRTG_DDRTG5                (0x20)
+#define MCF_GPIO_DDRTG_DDRTG6                (0x40)
+#define MCF_GPIO_DDRTG_DDRTG7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETTG */
+#define MCF_GPIO_SETTG_SETTG0                (0x1)
+#define MCF_GPIO_SETTG_SETTG1                (0x2)
+#define MCF_GPIO_SETTG_SETTG2                (0x4)
+#define MCF_GPIO_SETTG_SETTG3                (0x8)
+#define MCF_GPIO_SETTG_SETTG4                (0x10)
+#define MCF_GPIO_SETTG_SETTG5                (0x20)
+#define MCF_GPIO_SETTG_SETTG6                (0x40)
+#define MCF_GPIO_SETTG_SETTG7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTG */
+#define MCF_GPIO_CLRTG_CLRTG0                (0x1)
+#define MCF_GPIO_CLRTG_CLRTG1                (0x2)
+#define MCF_GPIO_CLRTG_CLRTG2                (0x4)
+#define MCF_GPIO_CLRTG_CLRTG3                (0x8)
+#define MCF_GPIO_CLRTG_CLRTG4                (0x10)
+#define MCF_GPIO_CLRTG_CLRTG5                (0x20)
+#define MCF_GPIO_CLRTG_CLRTG6                (0x40)
+#define MCF_GPIO_CLRTG_CLRTG7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PTGPAR */
+#define MCF_GPIO_PTGPAR_PTGPAR0              (0x1)
+#define MCF_GPIO_PTGPAR_MB_A16_GPIO          (0)
+#define MCF_GPIO_PTGPAR_MB_A16_MB_A16        (0x1)
+#define MCF_GPIO_PTGPAR_PTGPAR1              (0x2)
+#define MCF_GPIO_PTGPAR_MB_A17_GPIO          (0)
+#define MCF_GPIO_PTGPAR_MB_A17_MB_A17        (0x2)
+#define MCF_GPIO_PTGPAR_PTGPAR2              (0x4)
+#define MCF_GPIO_PTGPAR_MB_A18_GPIO          (0)
+#define MCF_GPIO_PTGPAR_MB_A18_MB_A18        (0x4)
+#define MCF_GPIO_PTGPAR_PTGPAR3              (0x8)
+#define MCF_GPIO_PTGPAR_MB_A19_GPIO          (0)
+#define MCF_GPIO_PTGPAR_MB_A19_MB_A19        (0x8)
+#define MCF_GPIO_PTGPAR_PTGPAR4              (0x10)
+#define MCF_GPIO_PTGPAR_PTGPAR5              (0x20)
+#define MCF_GPIO_PTGPAR_MB_CS1_GPIO          (0)
+#define MCF_GPIO_PTGPAR_MB_CS0_MB_CS0        (0x20)
+#define MCF_GPIO_PTGPAR_PTGPAR6              (0x40)
+#define MCF_GPIO_PTGPAR_MB_OE_GPIO           (0)
+#define MCF_GPIO_PTGPAR_MB_OE_MB_OE          (0x40)
+#define MCF_GPIO_PTGPAR_PTGPAR7              (0x80)
+#define MCF_GPIO_PTGPAR_MB_RW_GPIO           (0)
+#define MCF_GPIO_PTGPAR_MB_RW_MB_RW          (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTH */
+#define MCF_GPIO_PORTTH_PORTTH0              (0x1)
+#define MCF_GPIO_PORTTH_PORTTH1              (0x2)
+#define MCF_GPIO_PORTTH_PORTTH2              (0x4)
+#define MCF_GPIO_PORTTH_PORTTH3              (0x8)
+#define MCF_GPIO_PORTTH_PORTTH4              (0x10)
+#define MCF_GPIO_PORTTH_PORTTH5              (0x20)
+#define MCF_GPIO_PORTTH_PORTTH6              (0x40)
+#define MCF_GPIO_PORTTH_PORTTH7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTH */
+#define MCF_GPIO_DDRTH_DDRTH0                (0x1)
+#define MCF_GPIO_DDRTH_DDRTH1                (0x2)
+#define MCF_GPIO_DDRTH_DDRTH2                (0x4)
+#define MCF_GPIO_DDRTH_DDRTH3                (0x8)
+#define MCF_GPIO_DDRTH_DDRTH4                (0x10)
+#define MCF_GPIO_DDRTH_DDRTH5                (0x20)
+#define MCF_GPIO_DDRTH_DDRTH6                (0x40)
+#define MCF_GPIO_DDRTH_DDRTH7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETTH */
+#define MCF_GPIO_SETTH_SETTH0                (0x1)
+#define MCF_GPIO_SETTH_SETTH1                (0x2)
+#define MCF_GPIO_SETTH_SETTH2                (0x4)
+#define MCF_GPIO_SETTH_SETTH3                (0x8)
+#define MCF_GPIO_SETTH_SETTH4                (0x10)
+#define MCF_GPIO_SETTH_SETTH5                (0x20)
+#define MCF_GPIO_SETTH_SETTH6                (0x40)
+#define MCF_GPIO_SETTH_SETTH7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTH */
+#define MCF_GPIO_CLRTH_CLRTH0                (0x1)
+#define MCF_GPIO_CLRTH_CLRTH1                (0x2)
+#define MCF_GPIO_CLRTH_CLRTH2                (0x4)
+#define MCF_GPIO_CLRTH_CLRTH3                (0x8)
+#define MCF_GPIO_CLRTH_CLRTH4                (0x10)
+#define MCF_GPIO_CLRTH_CLRTH5                (0x20)
+#define MCF_GPIO_CLRTH_CLRTH6                (0x40)
+#define MCF_GPIO_CLRTH_CLRTH7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PTHPAR */
+#define MCF_GPIO_PTHPAR_PTHPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PTHPAR_MB_D0_GPIO           (0)
+#define MCF_GPIO_PTHPAR_MB_D0_MB_D0          (0x1)
+#define MCF_GPIO_PTHPAR_MB_D0_SYNCB          (0x2)
+#define MCF_GPIO_PTHPAR_PTHPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PTHPAR_MB_D1_GPIO           (0)
+#define MCF_GPIO_PTHPAR_MB_D1_MB_D1          (0x4)
+#define MCF_GPIO_PTHPAR_MB_D1_SYNCA          (0x8)
+#define MCF_GPIO_PTHPAR_PTHPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PTHPAR_MB_D2_GPIO           (0)
+#define MCF_GPIO_PTHPAR_MB_D2_MB_D2          (0x10)
+#define MCF_GPIO_PTHPAR_MB_D2_USB_VBUSE      (0x20)
+#define MCF_GPIO_PTHPAR_PTHPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PTHPAR_MB_D3_GPIO           (0)
+#define MCF_GPIO_PTHPAR_MB_D3_MB_D3          (0x40)
+#define MCF_GPIO_PTHPAR_MB_D3_USB_VBUSD      (0x80)
+#define MCF_GPIO_PTHPAR_PTHPAR4(x)           (((x)&0x3)<<0x8)
+#define MCF_GPIO_PTHPAR_MB_D4_GPIO           (0)
+#define MCF_GPIO_PTHPAR_MB_D4_MB_D4          (0x100)
+#define MCF_GPIO_PTHPAR_MB_D4_SDA1           (0x200)
+#define MCF_GPIO_PTHPAR_PTHPAR5(x)           (((x)&0x3)<<0xA)
+#define MCF_GPIO_PTHPAR_MB_D5_GPIO           (0)
+#define MCF_GPIO_PTHPAR_MB_D5_MB_D5          (0x400)
+#define MCF_GPIO_PTHPAR_MB_D5_SCL1           (0x800)
+#define MCF_GPIO_PTHPAR_PTHPAR6(x)           (((x)&0x3)<<0xC)
+#define MCF_GPIO_PTHPAR_MB_D6_GPIO           (0)
+#define MCF_GPIO_PTHPAR_MB_D6_MB_D6          (0x1000)
+#define MCF_GPIO_PTHPAR_MB_D6_CANTX          (0x2000)
+#define MCF_GPIO_PTHPAR_PTHPAR7(x)           (((x)&0x3)<<0xE)
+#define MCF_GPIO_PTHPAR_MB_D7_GPIO           (0)
+#define MCF_GPIO_PTHPAR_MB_D7_MB_D7          (0x4000)
+#define MCF_GPIO_PTHPAR_MB_D7_CANRX          (0x8000)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTI */
+#define MCF_GPIO_PORTTI_PORTTI0              (0x1)
+#define MCF_GPIO_PORTTI_PORTTI1              (0x2)
+#define MCF_GPIO_PORTTI_PORTTI2              (0x4)
+#define MCF_GPIO_PORTTI_PORTTI3              (0x8)
+#define MCF_GPIO_PORTTI_PORTTI4              (0x10)
+#define MCF_GPIO_PORTTI_PORTTI5              (0x20)
+#define MCF_GPIO_PORTTI_PORTTI6              (0x40)
+#define MCF_GPIO_PORTTI_PORTTI7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTI */
+#define MCF_GPIO_DDRTI_DDRTI0                (0x1)
+#define MCF_GPIO_DDRTI_DDRTI1                (0x2)
+#define MCF_GPIO_DDRTI_DDRTI2                (0x4)
+#define MCF_GPIO_DDRTI_DDRTI3                (0x8)
+#define MCF_GPIO_DDRTI_DDRTI4                (0x10)
+#define MCF_GPIO_DDRTI_DDRTI5                (0x20)
+#define MCF_GPIO_DDRTI_DDRTI6                (0x40)
+#define MCF_GPIO_DDRTI_DDRTI7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETTI */
+#define MCF_GPIO_SETTI_SETTI0                (0x1)
+#define MCF_GPIO_SETTI_SETTI1                (0x2)
+#define MCF_GPIO_SETTI_SETTI2                (0x4)
+#define MCF_GPIO_SETTI_SETTI3                (0x8)
+#define MCF_GPIO_SETTI_SETTI4                (0x10)
+#define MCF_GPIO_SETTI_SETTI5                (0x20)
+#define MCF_GPIO_SETTI_SETTI6                (0x40)
+#define MCF_GPIO_SETTI_SETTI7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTI */
+#define MCF_GPIO_CLRTI_CLRTI0                (0x1)
+#define MCF_GPIO_CLRTI_CLRTI1                (0x2)
+#define MCF_GPIO_CLRTI_CLRTI2                (0x4)
+#define MCF_GPIO_CLRTI_CLRTI3                (0x8)
+#define MCF_GPIO_CLRTI_CLRTI4                (0x10)
+#define MCF_GPIO_CLRTI_CLRTI5                (0x20)
+#define MCF_GPIO_CLRTI_CLRTI6                (0x40)
+#define MCF_GPIO_CLRTI_CLRTI7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PTIPAR */
+#define MCF_GPIO_PTIPAR_PTIPAR0              (0x1)
+#define MCF_GPIO_PTIPAR_FEC_COL_GPIO         (0)
+#define MCF_GPIO_PTIPAR_FEC_COL_FEC_COL      (0x1)
+#define MCF_GPIO_PTIPAR_PTIPAR1              (0x2)
+#define MCF_GPIO_PTIPAR_FEC_CRS_GPIO         (0)
+#define MCF_GPIO_PTIPAR_FEC_CRS_FEC_CRS      (0x2)
+#define MCF_GPIO_PTIPAR_PTIPAR2              (0x4)
+#define MCF_GPIO_PTIPAR_FEC_RXCLK_GPIO       (0)
+#define MCF_GPIO_PTIPAR_FEC_RXCLK_FEC_RXCLK  (0x4)
+#define MCF_GPIO_PTIPAR_PTIPAR3              (0x8)
+#define MCF_GPIO_PTIPAR_FEC_RXD0_GPIO        (0)
+#define MCF_GPIO_PTIPAR_FEC_RXD0_FEC_RXD0    (0x8)
+#define MCF_GPIO_PTIPAR_PTIPAR4              (0x10)
+#define MCF_GPIO_PTIPAR_FEC_RXD1_GPIO        (0)
+#define MCF_GPIO_PTIPAR_FEC_RXD1_FEC_RXD1    (0x10)
+#define MCF_GPIO_PTIPAR_PTIPAR5              (0x20)
+#define MCF_GPIO_PTIPAR_FEC_RXD2_GPIO        (0)
+#define MCF_GPIO_PTIPAR_FEC_RXD2_FEC_RXD2    (0x20)
+#define MCF_GPIO_PTIPAR_PTIPAR6              (0x40)
+#define MCF_GPIO_PTIPAR_FEC_RXD3_GPIO        (0)
+#define MCF_GPIO_PTIPAR_FEC_RXD3_FEC_RXD3    (0x40)
+#define MCF_GPIO_PTIPAR_PTIPAR7              (0x80)
+#define MCF_GPIO_PTIPAR_FEC_RXDV_GPIO        (0)
+#define MCF_GPIO_PTIPAR_FEC_RXDV_FEC_RXDV    (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTJ */
+#define MCF_GPIO_PORTTJ_PORTTJ0              (0x1)
+#define MCF_GPIO_PORTTJ_PORTTJ1              (0x2)
+#define MCF_GPIO_PORTTJ_PORTTJ2              (0x4)
+#define MCF_GPIO_PORTTJ_PORTTJ3              (0x8)
+#define MCF_GPIO_PORTTJ_PORTTJ4              (0x10)
+#define MCF_GPIO_PORTTJ_PORTTJ5              (0x20)
+#define MCF_GPIO_PORTTJ_PORTTJ6              (0x40)
+#define MCF_GPIO_PORTTJ_PORTTJ7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTJ */
+#define MCF_GPIO_DDRTJ_DDRTJ0                (0x1)
+#define MCF_GPIO_DDRTJ_DDRTJ1                (0x2)
+#define MCF_GPIO_DDRTJ_DDRTJ2                (0x4)
+#define MCF_GPIO_DDRTJ_DDRTJ3                (0x8)
+#define MCF_GPIO_DDRTJ_DDRTJ4                (0x10)
+#define MCF_GPIO_DDRTJ_DDRTJ5                (0x20)
+#define MCF_GPIO_DDRTJ_DDRTJ6                (0x40)
+#define MCF_GPIO_DDRTJ_DDRTJ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETTJ */
+#define MCF_GPIO_SETTJ_SETTJ0                (0x1)
+#define MCF_GPIO_SETTJ_SETTJ1                (0x2)
+#define MCF_GPIO_SETTJ_SETTJ2                (0x4)
+#define MCF_GPIO_SETTJ_SETTJ3                (0x8)
+#define MCF_GPIO_SETTJ_SETTJ4                (0x10)
+#define MCF_GPIO_SETTJ_SETTJ5                (0x20)
+#define MCF_GPIO_SETTJ_SETTJ6                (0x40)
+#define MCF_GPIO_SETTJ_SETTJ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTJ */
+#define MCF_GPIO_CLRTJ_CLRTJ0                (0x1)
+#define MCF_GPIO_CLRTJ_CLRTJ1                (0x2)
+#define MCF_GPIO_CLRTJ_CLRTJ2                (0x4)
+#define MCF_GPIO_CLRTJ_CLRTJ3                (0x8)
+#define MCF_GPIO_CLRTJ_CLRTJ4                (0x10)
+#define MCF_GPIO_CLRTJ_CLRTJ5                (0x20)
+#define MCF_GPIO_CLRTJ_CLRTJ6                (0x40)
+#define MCF_GPIO_CLRTJ_CLRTJ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PTJPAR */
+#define MCF_GPIO_PTJPAR_PTJPAR0              (0x1)
+#define MCF_GPIO_PTJPAR_FEC_RXER_GPIO        (0)
+#define MCF_GPIO_PTJPAR_FEC_RXER_FEC_RXER    (0x1)
+#define MCF_GPIO_PTJPAR_PTJPAR1              (0x2)
+#define MCF_GPIO_PTJPAR_FEC_TXCLK_GPIO       (0)
+#define MCF_GPIO_PTJPAR_FEC_TXCLK_FEC_TXCLK  (0x2)
+#define MCF_GPIO_PTJPAR_PTJPAR2              (0x4)
+#define MCF_GPIO_PTJPAR_FEC_TXD0_GPIO        (0)
+#define MCF_GPIO_PTJPAR_FEC_TXD0_FEC_TXD0    (0x4)
+#define MCF_GPIO_PTJPAR_PTJPAR3              (0x8)
+#define MCF_GPIO_PTJPAR_FEC_TXD1_GPIO        (0)
+#define MCF_GPIO_PTJPAR_FEC_TXD1_FEC_TXD1    (0x8)
+#define MCF_GPIO_PTJPAR_PTJPAR4              (0x10)
+#define MCF_GPIO_PTJPAR_FEC_TXD2_GPIO        (0)
+#define MCF_GPIO_PTJPAR_FEC_TXD2_FEC_TXD2    (0x10)
+#define MCF_GPIO_PTJPAR_PTJPAR5              (0x20)
+#define MCF_GPIO_PTJPAR_FEC_TXD3_GPIO        (0)
+#define MCF_GPIO_PTJPAR_FEC_TXD3_FEC_TXD3    (0x20)
+#define MCF_GPIO_PTJPAR_PTJPAR6              (0x40)
+#define MCF_GPIO_PTJPAR_FEC_TXEN_GPIO        (0)
+#define MCF_GPIO_PTJPAR_FEC_TXEN_FEC_TXEN    (0x40)
+#define MCF_GPIO_PTJPAR_PTJPAR7              (0x80)
+#define MCF_GPIO_PTJPAR_FEC_TXER_GPIO        (0)
+#define MCF_GPIO_PTJPAR_FEC_TXER_FEC_TXER    (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PORTNQ */
+#define MCF_GPIO_PORTNQ_PORTNQ1              (0x2)
+#define MCF_GPIO_PORTNQ_PORTNQ2              (0x4)
+#define MCF_GPIO_PORTNQ_PORTNQ3              (0x8)
+#define MCF_GPIO_PORTNQ_PORTNQ4              (0x10)
+#define MCF_GPIO_PORTNQ_PORTNQ5              (0x20)
+#define MCF_GPIO_PORTNQ_PORTNQ6              (0x40)
+#define MCF_GPIO_PORTNQ_PORTNQ7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRNQ */
+#define MCF_GPIO_DDRNQ_DDRNQ1                (0x2)
+#define MCF_GPIO_DDRNQ_DDRNQ2                (0x4)
+#define MCF_GPIO_DDRNQ_DDRNQ3                (0x8)
+#define MCF_GPIO_DDRNQ_DDRNQ4                (0x10)
+#define MCF_GPIO_DDRNQ_DDRNQ5                (0x20)
+#define MCF_GPIO_DDRNQ_DDRNQ6                (0x40)
+#define MCF_GPIO_DDRNQ_DDRNQ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETNQ */
+#define MCF_GPIO_SETNQ_SETNQ1                (0x2)
+#define MCF_GPIO_SETNQ_SETNQ2                (0x4)
+#define MCF_GPIO_SETNQ_SETNQ3                (0x8)
+#define MCF_GPIO_SETNQ_SETNQ4                (0x10)
+#define MCF_GPIO_SETNQ_SETNQ5                (0x20)
+#define MCF_GPIO_SETNQ_SETNQ6                (0x40)
+#define MCF_GPIO_SETNQ_SETNQ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRNQ */
+#define MCF_GPIO_CLRNQ_CLRNQ1                (0x2)
+#define MCF_GPIO_CLRNQ_CLRNQ2                (0x4)
+#define MCF_GPIO_CLRNQ_CLRNQ3                (0x8)
+#define MCF_GPIO_CLRNQ_CLRNQ4                (0x10)
+#define MCF_GPIO_CLRNQ_CLRNQ5                (0x20)
+#define MCF_GPIO_CLRNQ_CLRNQ6                (0x40)
+#define MCF_GPIO_CLRNQ_CLRNQ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PNQPAR */
+#define MCF_GPIO_PNQPAR_PNQPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PNQPAR_IRQ1_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ1_IRQ1            (0x4)
+#define MCF_GPIO_PNQPAR_IRQ1_USB_ALT_CLK     (0xC)
+#define MCF_GPIO_PNQPAR_PNQPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PNQPAR_PNQPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PNQPAR_IRQ3_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ3_IRQ3            (0x40)
+#define MCF_GPIO_PNQPAR_IRQ3_FEC_MDIO        (0x80)
+#define MCF_GPIO_PNQPAR_PNQPAR4(x)           (((x)&0x3)<<0x8)
+#define MCF_GPIO_PNQPAR_PNQPAR5(x)           (((x)&0x3)<<0xA)
+#define MCF_GPIO_PNQPAR_IRQ5_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ5_IRQ5            (0x400)
+#define MCF_GPIO_PNQPAR_IRQ5_FEC_MDC         (0x800)
+#define MCF_GPIO_PNQPAR_PNQPAR6(x)           (((x)&0x3)<<0xC)
+#define MCF_GPIO_PNQPAR_PNQPAR7(x)           (((x)&0x3)<<0xE)
+#define MCF_GPIO_PNQPAR_IRQ7_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ7_IRQ7            (0x4000)
+
+/* Bit definitions and macros for MCF_GPIO_PORTAN */
+#define MCF_GPIO_PORTAN_PORTAN0              (0x1)
+#define MCF_GPIO_PORTAN_PORTAN1              (0x2)
+#define MCF_GPIO_PORTAN_PORTAN2              (0x4)
+#define MCF_GPIO_PORTAN_PORTAN3              (0x8)
+#define MCF_GPIO_PORTAN_PORTAN4              (0x10)
+#define MCF_GPIO_PORTAN_PORTAN5              (0x20)
+#define MCF_GPIO_PORTAN_PORTAN6              (0x40)
+#define MCF_GPIO_PORTAN_PORTAN7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRAN */
+#define MCF_GPIO_DDRAN_DDRAN0                (0x1)
+#define MCF_GPIO_DDRAN_DDRAN1                (0x2)
+#define MCF_GPIO_DDRAN_DDRAN2                (0x4)
+#define MCF_GPIO_DDRAN_DDRAN3                (0x8)
+#define MCF_GPIO_DDRAN_DDRAN4                (0x10)
+#define MCF_GPIO_DDRAN_DDRAN5                (0x20)
+#define MCF_GPIO_DDRAN_DDRAN6                (0x40)
+#define MCF_GPIO_DDRAN_DDRAN7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETAN */
+#define MCF_GPIO_SETAN_SETAN0                (0x1)
+#define MCF_GPIO_SETAN_SETAN1                (0x2)
+#define MCF_GPIO_SETAN_SETAN2                (0x4)
+#define MCF_GPIO_SETAN_SETAN3                (0x8)
+#define MCF_GPIO_SETAN_SETAN4                (0x10)
+#define MCF_GPIO_SETAN_SETAN5                (0x20)
+#define MCF_GPIO_SETAN_SETAN6                (0x40)
+#define MCF_GPIO_SETAN_SETAN7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRAN */
+#define MCF_GPIO_CLRAN_CLRAN0                (0x1)
+#define MCF_GPIO_CLRAN_CLRAN1                (0x2)
+#define MCF_GPIO_CLRAN_CLRAN2                (0x4)
+#define MCF_GPIO_CLRAN_CLRAN3                (0x8)
+#define MCF_GPIO_CLRAN_CLRAN4                (0x10)
+#define MCF_GPIO_CLRAN_CLRAN5                (0x20)
+#define MCF_GPIO_CLRAN_CLRAN6                (0x40)
+#define MCF_GPIO_CLRAN_CLRAN7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PANPAR */
+#define MCF_GPIO_PANPAR_PANPAR0              (0x1)
+#define MCF_GPIO_PANPAR_AN0_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN0_AN0              (0x1)
+#define MCF_GPIO_PANPAR_PANPAR1              (0x2)
+#define MCF_GPIO_PANPAR_AN1_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN1_AN1              (0x2)
+#define MCF_GPIO_PANPAR_PANPAR2              (0x4)
+#define MCF_GPIO_PANPAR_AN2_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN2_AN2              (0x4)
+#define MCF_GPIO_PANPAR_PANPAR3              (0x8)
+#define MCF_GPIO_PANPAR_AN3_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN3_AN3              (0x8)
+#define MCF_GPIO_PANPAR_PANPAR4              (0x10)
+#define MCF_GPIO_PANPAR_AN4_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN4_AN4              (0x10)
+#define MCF_GPIO_PANPAR_PANPAR5              (0x20)
+#define MCF_GPIO_PANPAR_AN5_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN5_AN5              (0x20)
+#define MCF_GPIO_PANPAR_PANPAR6              (0x40)
+#define MCF_GPIO_PANPAR_AN6_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN6_AN6              (0x40)
+#define MCF_GPIO_PANPAR_PANPAR7              (0x80)
+#define MCF_GPIO_PANPAR_AN7_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN7_AN7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PORTAS */
+#define MCF_GPIO_PORTAS_PORTAS0              (0x1)
+#define MCF_GPIO_PORTAS_PORTAS1              (0x2)
+#define MCF_GPIO_PORTAS_PORTAS2              (0x4)
+
+/* Bit definitions and macros for MCF_GPIO_DDRAS */
+#define MCF_GPIO_DDRAS_DDRAS0                (0x1)
+#define MCF_GPIO_DDRAS_DDRAS1                (0x2)
+#define MCF_GPIO_DDRAS_DDRAS2                (0x4)
+
+/* Bit definitions and macros for MCF_GPIO_SETAS */
+#define MCF_GPIO_SETAS_SETAS0                (0x1)
+#define MCF_GPIO_SETAS_SETAS1                (0x2)
+#define MCF_GPIO_SETAS_SETAS2                (0x4)
+
+/* Bit definitions and macros for MCF_GPIO_CLRAS */
+#define MCF_GPIO_CLRAS_CLRAS0                (0x1)
+#define MCF_GPIO_CLRAS_CLRAS1                (0x2)
+#define MCF_GPIO_CLRAS_CLRAS2                (0x4)
+
+/* Bit definitions and macros for MCF_GPIO_PASPAR */
+#define MCF_GPIO_PASPAR_PASPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PASPAR_SCL0_GPIO            (0)
+#define MCF_GPIO_PASPAR_SCL0_SCL0            (0x1)
+#define MCF_GPIO_PASPAR_SCL0_UTXD2           (0x3)
+#define MCF_GPIO_PASPAR_PASPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PASPAR_SDA0_GPIO            (0)
+#define MCF_GPIO_PASPAR_SDA0_SDA0            (0x4)
+#define MCF_GPIO_PASPAR_SDA0_URXD2           (0xC)
+#define MCF_GPIO_PASPAR_PASPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PASPAR_MB_ALE_GPIO          (0)
+#define MCF_GPIO_PASPAR_MB_ALE_MB_ALE        (0x10)
+#define MCF_GPIO_PASPAR_MB_ALE_MB_CS1        (0x20)
+
+/* Bit definitions and macros for MCF_GPIO_PORTQS */
+#define MCF_GPIO_PORTQS_PORTQS0              (0x1)
+#define MCF_GPIO_PORTQS_PORTQS1              (0x2)
+#define MCF_GPIO_PORTQS_PORTQS2              (0x4)
+#define MCF_GPIO_PORTQS_PORTQS3              (0x8)
+#define MCF_GPIO_PORTQS_PORTQS4              (0x10)
+#define MCF_GPIO_PORTQS_PORTQS5              (0x20)
+#define MCF_GPIO_PORTQS_PORTQS6              (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_DDRQS */
+#define MCF_GPIO_DDRQS_DDRQS0                (0x1)
+#define MCF_GPIO_DDRQS_DDRQS1                (0x2)
+#define MCF_GPIO_DDRQS_DDRQS2                (0x4)
+#define MCF_GPIO_DDRQS_DDRQS3                (0x8)
+#define MCF_GPIO_DDRQS_DDRQS4                (0x10)
+#define MCF_GPIO_DDRQS_DDRQS5                (0x20)
+#define MCF_GPIO_DDRQS_DDRQS6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_SETQS */
+#define MCF_GPIO_SETQS_SETQS0                (0x1)
+#define MCF_GPIO_SETQS_SETQS1                (0x2)
+#define MCF_GPIO_SETQS_SETQS2                (0x4)
+#define MCF_GPIO_SETQS_SETQS3                (0x8)
+#define MCF_GPIO_SETQS_SETQS4                (0x10)
+#define MCF_GPIO_SETQS_SETQS5                (0x20)
+#define MCF_GPIO_SETQS_SETQS6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_CLRQS */
+#define MCF_GPIO_CLRQS_CLRQS0                (0x1)
+#define MCF_GPIO_CLRQS_CLRQS1                (0x2)
+#define MCF_GPIO_CLRQS_CLRQS2                (0x4)
+#define MCF_GPIO_CLRQS_CLRQS3                (0x8)
+#define MCF_GPIO_CLRQS_CLRQS4                (0x10)
+#define MCF_GPIO_CLRQS_CLRQS5                (0x20)
+#define MCF_GPIO_CLRQS_CLRQS6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_PQSPAR */
+#define MCF_GPIO_PQSPAR_PQSPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PQSPAR_QSPI_DOUT_GPIO       (0)
+#define MCF_GPIO_PQSPAR_QSPI_DOUT_DOUT       (0x1)
+#define MCF_GPIO_PQSPAR_QSPI_DOUT_SCL1       (0x2)
+#define MCF_GPIO_PQSPAR_QSPI_DOUT_UTXD1      (0x3)
+#define MCF_GPIO_PQSPAR_PQSPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PQSPAR_QSPI_DIN_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_DIN_DIN         (0x4)
+#define MCF_GPIO_PQSPAR_QSPI_DIN_SDA1        (0x8)
+#define MCF_GPIO_PQSPAR_QSPI_DIN_URXD1       (0xC)
+#define MCF_GPIO_PQSPAR_PQSPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PQSPAR_QSPI_CLK_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CLK_CLK         (0x10)
+#define MCF_GPIO_PQSPAR_QSPI_CLK_SCL0        (0x20)
+#define MCF_GPIO_PQSPAR_QSPI_CLK_URTS1       (0x30)
+#define MCF_GPIO_PQSPAR_PQSPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PQSPAR_QSPI_CS0_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CS0_CS0         (0x40)
+#define MCF_GPIO_PQSPAR_QSPI_CS0_SDA0        (0x80)
+#define MCF_GPIO_PQSPAR_QSPI_CS0_UCTS1       (0xC0)
+#define MCF_GPIO_PQSPAR_PQSPAR4(x)           (((x)&0x3)<<0x8)
+#define MCF_GPIO_PQSPAR_PQSPAR5(x)           (((x)&0x3)<<0xA)
+#define MCF_GPIO_PQSPAR_QSPI_CS2_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CS2_CS2         (0x400)
+#define MCF_GPIO_PQSPAR_QSPI_CS2_SYNCB       (0x800)
+#define MCF_GPIO_PQSPAR_QSPI_CS2_USB_DM_PDOWN (0xC00)
+#define MCF_GPIO_PQSPAR_PQSPAR6(x)           (((x)&0x3)<<0xC)
+#define MCF_GPIO_PQSPAR_QSPI_CS3_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CS3_CS3         (0x1000)
+#define MCF_GPIO_PQSPAR_QSPI_CS3_SYNCA       (0x2000)
+#define MCF_GPIO_PQSPAR_QSPI_CS3_USB_DP_PDOWN (0x3000)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTA */
+#define MCF_GPIO_PORTTA_PORTTA0              (0x1)
+#define MCF_GPIO_PORTTA_PORTTA1              (0x2)
+#define MCF_GPIO_PORTTA_PORTTA2              (0x4)
+#define MCF_GPIO_PORTTA_PORTTA3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTA */
+#define MCF_GPIO_DDRTA_DDRTA0                (0x1)
+#define MCF_GPIO_DDRTA_DDRTA1                (0x2)
+#define MCF_GPIO_DDRTA_DDRTA2                (0x4)
+#define MCF_GPIO_DDRTA_DDRTA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETTA */
+#define MCF_GPIO_SETTA_SETTA0                (0x1)
+#define MCF_GPIO_SETTA_SETTA1                (0x2)
+#define MCF_GPIO_SETTA_SETTA2                (0x4)
+#define MCF_GPIO_SETTA_SETTA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTA */
+#define MCF_GPIO_CLRTA_CLRTA0                (0x1)
+#define MCF_GPIO_CLRTA_CLRTA1                (0x2)
+#define MCF_GPIO_CLRTA_CLRTA2                (0x4)
+#define MCF_GPIO_CLRTA_CLRTA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PTAPAR */
+#define MCF_GPIO_PTAPAR_PTAPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PTAPAR_ICOC0_GPIO           (0)
+#define MCF_GPIO_PTAPAR_ICOC0_ICOC0          (0x1)
+#define MCF_GPIO_PTAPAR_ICOC0_PWM1           (0x3)
+#define MCF_GPIO_PTAPAR_PTAPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PTAPAR_ICOC1_GPIO           (0)
+#define MCF_GPIO_PTAPAR_ICOC1_ICOC1          (0x4)
+#define MCF_GPIO_PTAPAR_ICOC1_PWM3           (0xC)
+#define MCF_GPIO_PTAPAR_PTAPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PTAPAR_ICOC2_GPIO           (0)
+#define MCF_GPIO_PTAPAR_ICOC2_ICOC2          (0x10)
+#define MCF_GPIO_PTAPAR_ICOC2_PWM5           (0x30)
+#define MCF_GPIO_PTAPAR_PTAPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PTAPAR_ICOC3_GPIO           (0)
+#define MCF_GPIO_PTAPAR_ICOC3_ICOC3          (0x40)
+#define MCF_GPIO_PTAPAR_ICOC3_PWM7           (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTC */
+#define MCF_GPIO_PORTTC_PORTTC0              (0x1)
+#define MCF_GPIO_PORTTC_PORTTC1              (0x2)
+#define MCF_GPIO_PORTTC_PORTTC2              (0x4)
+#define MCF_GPIO_PORTTC_PORTTC3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTC */
+#define MCF_GPIO_DDRTC_DDRTC0                (0x1)
+#define MCF_GPIO_DDRTC_DDRTC1                (0x2)
+#define MCF_GPIO_DDRTC_DDRTC2                (0x4)
+#define MCF_GPIO_DDRTC_DDRTC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETTC */
+#define MCF_GPIO_SETTC_SETTC0                (0x1)
+#define MCF_GPIO_SETTC_SETTC1                (0x2)
+#define MCF_GPIO_SETTC_SETTC2                (0x4)
+#define MCF_GPIO_SETTC_SETTC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTC */
+#define MCF_GPIO_CLRTC_CLRTC0                (0x1)
+#define MCF_GPIO_CLRTC_CLRTC1                (0x2)
+#define MCF_GPIO_CLRTC_CLRTC2                (0x4)
+#define MCF_GPIO_CLRTC_CLRTC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PTCPAR */
+#define MCF_GPIO_PTCPAR_PTCPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PTCPAR_DTIN0_GPIO           (0)
+#define MCF_GPIO_PTCPAR_DTIN0_DTIN0          (0x1)
+#define MCF_GPIO_PTCPAR_DTIN0_DTOUT0         (0x2)
+#define MCF_GPIO_PTCPAR_DTIN0_PWM0           (0x3)
+#define MCF_GPIO_PTCPAR_PTCPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PTCPAR_DTIN1_GPIO           (0)
+#define MCF_GPIO_PTCPAR_DTIN1_DTIN1          (0x4)
+#define MCF_GPIO_PTCPAR_DTIN1_DTOUT1         (0x8)
+#define MCF_GPIO_PTCPAR_DTIN1_PWM2           (0xC)
+#define MCF_GPIO_PTCPAR_PTCPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PTCPAR_DTIN2_GPIO           (0)
+#define MCF_GPIO_PTCPAR_DTIN2_DTIN2          (0x10)
+#define MCF_GPIO_PTCPAR_DTIN2_DTOUT2         (0x20)
+#define MCF_GPIO_PTCPAR_DTIN2_PWM4           (0x30)
+#define MCF_GPIO_PTCPAR_PTCPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PTCPAR_DTIN3_GPIO           (0)
+#define MCF_GPIO_PTCPAR_DTIN3_DTIN3          (0x40)
+#define MCF_GPIO_PTCPAR_DTIN3_DTOUT3         (0x80)
+#define MCF_GPIO_PTCPAR_DTIN3_PWM6           (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTUA */
+#define MCF_GPIO_PORTUA_PORTUA0              (0x1)
+#define MCF_GPIO_PORTUA_PORTUA1              (0x2)
+#define MCF_GPIO_PORTUA_PORTUA2              (0x4)
+#define MCF_GPIO_PORTUA_PORTUA3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRUA */
+#define MCF_GPIO_DDRUA_DDRUA0                (0x1)
+#define MCF_GPIO_DDRUA_DDRUA1                (0x2)
+#define MCF_GPIO_DDRUA_DDRUA2                (0x4)
+#define MCF_GPIO_DDRUA_DDRUA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETUA */
+#define MCF_GPIO_SETUA_SETUA0                (0x1)
+#define MCF_GPIO_SETUA_SETUA1                (0x2)
+#define MCF_GPIO_SETUA_SETUA2                (0x4)
+#define MCF_GPIO_SETUA_SETUA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRUA */
+#define MCF_GPIO_CLRUA_CLRUA0                (0x1)
+#define MCF_GPIO_CLRUA_CLRUA1                (0x2)
+#define MCF_GPIO_CLRUA_CLRUA2                (0x4)
+#define MCF_GPIO_CLRUA_CLRUA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PUAPAR */
+#define MCF_GPIO_PUAPAR_PUAPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PUAPAR_UTXD0_GPIO           (0)
+#define MCF_GPIO_PUAPAR_UTXD0_UTXD0          (0x1)
+#define MCF_GPIO_PUAPAR_PUAPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PUAPAR_URXD0_GPIO           (0)
+#define MCF_GPIO_PUAPAR_URXD0_URXD0          (0x4)
+#define MCF_GPIO_PUAPAR_PUAPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PUAPAR_URTS0_GPIO           (0)
+#define MCF_GPIO_PUAPAR_URTS0_URTS0          (0x10)
+#define MCF_GPIO_PUAPAR_URTS0_USB_VBUSD      (0x30)
+#define MCF_GPIO_PUAPAR_PUAPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PUAPAR_UCTS0_GPIO           (0)
+#define MCF_GPIO_PUAPAR_UCTS0_UCTS0          (0x40)
+#define MCF_GPIO_PUAPAR_UCTS0_USB_VBUSE      (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTUB */
+#define MCF_GPIO_PORTUB_PORTUB0              (0x1)
+#define MCF_GPIO_PORTUB_PORTUB1              (0x2)
+#define MCF_GPIO_PORTUB_PORTUB2              (0x4)
+#define MCF_GPIO_PORTUB_PORTUB3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRUB */
+#define MCF_GPIO_DDRUB_DDRUB0                (0x1)
+#define MCF_GPIO_DDRUB_DDRUB1                (0x2)
+#define MCF_GPIO_DDRUB_DDRUB2                (0x4)
+#define MCF_GPIO_DDRUB_DDRUB3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETUB */
+#define MCF_GPIO_SETUB_SETUB0                (0x1)
+#define MCF_GPIO_SETUB_SETUB1                (0x2)
+#define MCF_GPIO_SETUB_SETUB2                (0x4)
+#define MCF_GPIO_SETUB_SETUB3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRUB */
+#define MCF_GPIO_CLRUB_CLRUB0                (0x1)
+#define MCF_GPIO_CLRUB_CLRUB1                (0x2)
+#define MCF_GPIO_CLRUB_CLRUB2                (0x4)
+#define MCF_GPIO_CLRUB_CLRUB3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PUBPAR */
+#define MCF_GPIO_PUBPAR_PUBPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PUBPAR_UTXD1_GPIO           (0)
+#define MCF_GPIO_PUBPAR_UTXD1_UTXD1          (0x1)
+#define MCF_GPIO_PUBPAR_UTXD1_SCL1           (0x2)
+#define MCF_GPIO_PUBPAR_PUBPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PUBPAR_URXD1_GPIO           (0)
+#define MCF_GPIO_PUBPAR_URXD1_URXD1          (0x4)
+#define MCF_GPIO_PUBPAR_URXD1_SDA1           (0x8)
+#define MCF_GPIO_PUBPAR_PUBPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PUBPAR_URTS1_GPIO           (0)
+#define MCF_GPIO_PUBPAR_URTS1_URTS1          (0x10)
+#define MCF_GPIO_PUBPAR_URTS1_SYNCB          (0x20)
+#define MCF_GPIO_PUBPAR_URTS1_UTXD2          (0x30)
+#define MCF_GPIO_PUBPAR_PUBPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PUBPAR_UCTS1_GPIO           (0)
+#define MCF_GPIO_PUBPAR_UCTS1_UCTS1          (0x40)
+#define MCF_GPIO_PUBPAR_UCTS1_SYNCA          (0x80)
+#define MCF_GPIO_PUBPAR_UCTS1_URXD2          (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTUC */
+#define MCF_GPIO_PORTUC_PORTUC0              (0x1)
+#define MCF_GPIO_PORTUC_PORTUC1              (0x2)
+#define MCF_GPIO_PORTUC_PORTUC2              (0x4)
+#define MCF_GPIO_PORTUC_PORTUC3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRUC */
+#define MCF_GPIO_DDRUC_DDRUC0                (0x1)
+#define MCF_GPIO_DDRUC_DDRUC1                (0x2)
+#define MCF_GPIO_DDRUC_DDRUC2                (0x4)
+#define MCF_GPIO_DDRUC_DDRUC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETUC */
+#define MCF_GPIO_SETUC_SETUC0                (0x1)
+#define MCF_GPIO_SETUC_SETUC1                (0x2)
+#define MCF_GPIO_SETUC_SETUC2                (0x4)
+#define MCF_GPIO_SETUC_SETUC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRUC */
+#define MCF_GPIO_CLRUC_CLRUC0                (0x1)
+#define MCF_GPIO_CLRUC_CLRUC1                (0x2)
+#define MCF_GPIO_CLRUC_CLRUC2                (0x4)
+#define MCF_GPIO_CLRUC_CLRUC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PUCPAR */
+#define MCF_GPIO_PUCPAR_PUCPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PUCPAR_UTXD2_GPIO           (0)
+#define MCF_GPIO_PUCPAR_UTXD2_UTXD2          (0x1)
+#define MCF_GPIO_PUCPAR_UTXD2_CANTX          (0x2)
+#define MCF_GPIO_PUCPAR_PUCPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PUCPAR_URXD2_GPIO           (0)
+#define MCF_GPIO_PUCPAR_URXD2_URXD2          (0x4)
+#define MCF_GPIO_PUCPAR_URXD2_CANRX          (0x8)
+#define MCF_GPIO_PUCPAR_PUCPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PUCPAR_URTS2_GPIO           (0)
+#define MCF_GPIO_PUCPAR_URTS2_URTS2          (0x10)
+#define MCF_GPIO_PUCPAR_URTS2_SDA1           (0x20)
+#define MCF_GPIO_PUCPAR_URTS2_USB_VBUSDIS    (0x30)
+#define MCF_GPIO_PUCPAR_PUCPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PUCPAR_UCTS2_GPIO           (0)
+#define MCF_GPIO_PUCPAR_UCTS2_UCTS2          (0x40)
+#define MCF_GPIO_PUCPAR_UCTS2_SCL1           (0x80)
+#define MCF_GPIO_PUCPAR_UCTS2_USB_VBUSCHG    (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTDD */
+#define MCF_GPIO_PORTDD_PORTDD0              (0x1)
+#define MCF_GPIO_PORTDD_PORTDD1              (0x2)
+#define MCF_GPIO_PORTDD_PORTDD2              (0x4)
+#define MCF_GPIO_PORTDD_PORTDD3              (0x8)
+#define MCF_GPIO_PORTDD_PORTDD4              (0x10)
+#define MCF_GPIO_PORTDD_PORTDD5              (0x20)
+#define MCF_GPIO_PORTDD_PORTDD6              (0x40)
+#define MCF_GPIO_PORTDD_PORTDD7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRDD */
+#define MCF_GPIO_DDRDD_DDRDD0                (0x1)
+#define MCF_GPIO_DDRDD_DDRDD1                (0x2)
+#define MCF_GPIO_DDRDD_DDRDD2                (0x4)
+#define MCF_GPIO_DDRDD_DDRDD3                (0x8)
+#define MCF_GPIO_DDRDD_DDRDD4                (0x10)
+#define MCF_GPIO_DDRDD_DDRDD5                (0x20)
+#define MCF_GPIO_DDRDD_DDRDD6                (0x40)
+#define MCF_GPIO_DDRDD_DDRDD7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETDD */
+#define MCF_GPIO_SETDD_SETDD0                (0x1)
+#define MCF_GPIO_SETDD_SETDD1                (0x2)
+#define MCF_GPIO_SETDD_SETDD2                (0x4)
+#define MCF_GPIO_SETDD_SETDD3                (0x8)
+#define MCF_GPIO_SETDD_SETDD4                (0x10)
+#define MCF_GPIO_SETDD_SETDD5                (0x20)
+#define MCF_GPIO_SETDD_SETDD6                (0x40)
+#define MCF_GPIO_SETDD_SETDD7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRDD */
+#define MCF_GPIO_CLRDD_CLRDD0                (0x1)
+#define MCF_GPIO_CLRDD_CLRDD1                (0x2)
+#define MCF_GPIO_CLRDD_CLRDD2                (0x4)
+#define MCF_GPIO_CLRDD_CLRDD3                (0x8)
+#define MCF_GPIO_CLRDD_CLRDD4                (0x10)
+#define MCF_GPIO_CLRDD_CLRDD5                (0x20)
+#define MCF_GPIO_CLRDD_CLRDD6                (0x40)
+#define MCF_GPIO_CLRDD_CLRDD7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PDDPAR */
+#define MCF_GPIO_PDDPAR_PDDPAR0              (0x1)
+#define MCF_GPIO_PDDPAR_PST0_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PST0_PST0            (0x1)
+#define MCF_GPIO_PDDPAR_PDDPAR1              (0x2)
+#define MCF_GPIO_PDDPAR_PST1_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PST1_PST1            (0x2)
+#define MCF_GPIO_PDDPAR_PDDPAR2              (0x4)
+#define MCF_GPIO_PDDPAR_PST2_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PST2_PST2            (0x4)
+#define MCF_GPIO_PDDPAR_PDDPAR3              (0x8)
+#define MCF_GPIO_PDDPAR_PST3_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PST3_PST3            (0x8)
+#define MCF_GPIO_PDDPAR_PDDPAR4              (0x10)
+#define MCF_GPIO_PDDPAR_DDATA0_GPIO          (0)
+#define MCF_GPIO_PDDPAR_DDATA0_DDATA0        (0x10)
+#define MCF_GPIO_PDDPAR_PDDPAR5              (0x20)
+#define MCF_GPIO_PDDPAR_DDATA1_GPIO          (0)
+#define MCF_GPIO_PDDPAR_DDATA1_DDATA1        (0x20)
+#define MCF_GPIO_PDDPAR_PDDPAR6              (0x40)
+#define MCF_GPIO_PDDPAR_DDATA2_GPIO          (0)
+#define MCF_GPIO_PDDPAR_DDATA2_DDATA2        (0x40)
+#define MCF_GPIO_PDDPAR_PDDPAR7              (0x80)
+#define MCF_GPIO_PDDPAR_DDATA3_GPIO          (0)
+#define MCF_GPIO_PDDPAR_DDATA3_DDATA3        (0x80)
+
+
+#endif /* __MCF52259_GPIO_H__ */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  /* Coldfire C Header File
+ * Copyright Freescale Semiconductor Inc
+ * All rights reserved.
+ *
+ * 2007/03/19 Revision: 0.91
+ */
+
+#ifndef __MCF52235_INTC_H__
+#define __MCF52235_INTC_H__
+
+
+/*********************************************************************
+*
+* Interrupt Controller (INTC)
+*
+*********************************************************************/
+
+/* Register read/write macros */
+#define MCF_INTC0_IPRH                       (*(vuint32*)(&__IPSBAR[0xC00]))
+#define MCF_INTC0_IPRL                       (*(vuint32*)(&__IPSBAR[0xC04]))
+#define MCF_INTC0_IMRH                       (*(vuint32*)(&__IPSBAR[0xC08]))
+#define MCF_INTC0_IMRL                       (*(vuint32*)(&__IPSBAR[0xC0C]))
+#define MCF_INTC0_INTFRCH                    (*(vuint32*)(&__IPSBAR[0xC10]))
+#define MCF_INTC0_INTFRCL                    (*(vuint32*)(&__IPSBAR[0xC14]))
+#define MCF_INTC0_IRLR                       (*(vuint8 *)(&__IPSBAR[0xC18]))
+#define MCF_INTC0_IACKLPR                    (*(vuint8 *)(&__IPSBAR[0xC19]))
+#define MCF_INTC0_ICR01                      (*(vuint8 *)(&__IPSBAR[0xC41]))
+#define MCF_INTC0_ICR02                      (*(vuint8 *)(&__IPSBAR[0xC42]))
+#define MCF_INTC0_ICR03                      (*(vuint8 *)(&__IPSBAR[0xC43]))
+#define MCF_INTC0_ICR04                      (*(vuint8 *)(&__IPSBAR[0xC44]))
+#define MCF_INTC0_ICR05                      (*(vuint8 *)(&__IPSBAR[0xC45]))
+#define MCF_INTC0_ICR06                      (*(vuint8 *)(&__IPSBAR[0xC46]))
+#define MCF_INTC0_ICR07                      (*(vuint8 *)(&__IPSBAR[0xC47]))
+#define MCF_INTC0_ICR08                      (*(vuint8 *)(&__IPSBAR[0xC48]))
+#define MCF_INTC0_ICR09                      (*(vuint8 *)(&__IPSBAR[0xC49]))
+#define MCF_INTC0_ICR10                      (*(vuint8 *)(&__IPSBAR[0xC4A]))
+#define MCF_INTC0_ICR11                      (*(vuint8 *)(&__IPSBAR[0xC4B]))
+#define MCF_INTC0_ICR12                      (*(vuint8 *)(&__IPSBAR[0xC4C]))
+#define MCF_INTC0_ICR13                      (*(vuint8 *)(&__IPSBAR[0xC4D]))
+#define MCF_INTC0_ICR14                      (*(vuint8 *)(&__IPSBAR[0xC4E]))
+#define MCF_INTC0_ICR15                      (*(vuint8 *)(&__IPSBAR[0xC4F]))
+#define MCF_INTC0_ICR16                      (*(vuint8 *)(&__IPSBAR[0xC50]))
+#define MCF_INTC0_ICR17                      (*(vuint8 *)(&__IPSBAR[0xC51]))
+#define MCF_INTC0_ICR18                      (*(vuint8 *)(&__IPSBAR[0xC52]))
+#define MCF_INTC0_ICR19                      (*(vuint8 *)(&__IPSBAR[0xC53]))
+#define MCF_INTC0_ICR20                      (*(vuint8 *)(&__IPSBAR[0xC54]))
+#define MCF_INTC0_ICR21                      (*(vuint8 *)(&__IPSBAR[0xC55]))
+#define MCF_INTC0_ICR22                      (*(vuint8 *)(&__IPSBAR[0xC56]))
+#define MCF_INTC0_ICR23                      (*(vuint8 *)(&__IPSBAR[0xC57]))
+#define MCF_INTC0_ICR24                      (*(vuint8 *)(&__IPSBAR[0xC58]))
+#define MCF_INTC0_ICR25                      (*(vuint8 *)(&__IPSBAR[0xC59]))
+#define MCF_INTC0_ICR26                      (*(vuint8 *)(&__IPSBAR[0xC5A]))
+#define MCF_INTC0_ICR27                      (*(vuint8 *)(&__IPSBAR[0xC5B]))
+#define MCF_INTC0_ICR28                      (*(vuint8 *)(&__IPSBAR[0xC5C]))
+#define MCF_INTC0_ICR29                      (*(vuint8 *)(&__IPSBAR[0xC5D]))
+#define MCF_INTC0_ICR30                      (*(vuint8 *)(&__IPSBAR[0xC5E]))
+#define MCF_INTC0_ICR31                      (*(vuint8 *)(&__IPSBAR[0xC5F]))
+#define MCF_INTC0_ICR32                      (*(vuint8 *)(&__IPSBAR[0xC60]))
+#define MCF_INTC0_ICR33                      (*(vuint8 *)(&__IPSBAR[0xC61]))
+#define MCF_INTC0_ICR34                      (*(vuint8 *)(&__IPSBAR[0xC62]))
+#define MCF_INTC0_ICR35                      (*(vuint8 *)(&__IPSBAR[0xC63]))
+#define MCF_INTC0_ICR36                      (*(vuint8 *)(&__IPSBAR[0xC64]))
+#define MCF_INTC0_ICR37                      (*(vuint8 *)(&__IPSBAR[0xC65]))
+#define MCF_INTC0_ICR38                      (*(vuint8 *)(&__IPSBAR[0xC66]))
+#define MCF_INTC0_ICR39                      (*(vuint8 *)(&__IPSBAR[0xC67]))
+#define MCF_INTC0_ICR40                      (*(vuint8 *)(&__IPSBAR[0xC68]))
+#define MCF_INTC0_ICR41                      (*(vuint8 *)(&__IPSBAR[0xC69]))
+#define MCF_INTC0_ICR42                      (*(vuint8 *)(&__IPSBAR[0xC6A]))
+#define MCF_INTC0_ICR43                      (*(vuint8 *)(&__IPSBAR[0xC6B]))
+#define MCF_INTC0_ICR44                      (*(vuint8 *)(&__IPSBAR[0xC6C]))
+#define MCF_INTC0_ICR45                      (*(vuint8 *)(&__IPSBAR[0xC6D]))
+#define MCF_INTC0_ICR46                      (*(vuint8 *)(&__IPSBAR[0xC6E]))
+#define MCF_INTC0_ICR47                      (*(vuint8 *)(&__IPSBAR[0xC6F]))
+#define MCF_INTC0_ICR48                      (*(vuint8 *)(&__IPSBAR[0xC70]))
+#define MCF_INTC0_ICR49                      (*(vuint8 *)(&__IPSBAR[0xC71]))
+#define MCF_INTC0_ICR50                      (*(vuint8 *)(&__IPSBAR[0xC72]))
+#define MCF_INTC0_ICR51                      (*(vuint8 *)(&__IPSBAR[0xC73]))
+#define MCF_INTC0_ICR52                      (*(vuint8 *)(&__IPSBAR[0xC74]))
+#define MCF_INTC0_ICR53                      (*(vuint8 *)(&__IPSBAR[0xC75]))
+#define MCF_INTC0_ICR54                      (*(vuint8 *)(&__IPSBAR[0xC76]))
+#define MCF_INTC0_ICR55                      (*(vuint8 *)(&__IPSBAR[0xC77]))
+#define MCF_INTC0_ICR56                      (*(vuint8 *)(&__IPSBAR[0xC78]))
+#define MCF_INTC0_ICR57                      (*(vuint8 *)(&__IPSBAR[0xC79]))
+#define MCF_INTC0_ICR58                      (*(vuint8 *)(&__IPSBAR[0xC7A]))
+#define MCF_INTC0_ICR59                      (*(vuint8 *)(&__IPSBAR[0xC7B]))
+#define MCF_INTC0_ICR60                      (*(vuint8 *)(&__IPSBAR[0xC7C]))
+#define MCF_INTC0_ICR61                      (*(vuint8 *)(&__IPSBAR[0xC7D]))
+#define MCF_INTC0_ICR62                      (*(vuint8 *)(&__IPSBAR[0xC7E]))
+#define MCF_INTC0_ICR63                      (*(vuint8 *)(&__IPSBAR[0xC7F]))
+#define MCF_INTC0_SWIACK                     (*(vuint8 *)(&__IPSBAR[0xCE0]))
+#define MCF_INTC0_L1IACK                     (*(vuint8 *)(&__IPSBAR[0xCE4]))
+#define MCF_INTC0_L2IACK                     (*(vuint8 *)(&__IPSBAR[0xCE8]))
+#define MCF_INTC0_L3IACK                     (*(vuint8 *)(&__IPSBAR[0xCEC]))
+#define MCF_INTC0_L4IACK                     (*(vuint8 *)(&__IPSBAR[0xCF0]))
+#define MCF_INTC0_L5IACK                     (*(vuint8 *)(&__IPSBAR[0xCF4]))
+#define MCF_INTC0_L6IACK                     (*(vuint8 *)(&__IPSBAR[0xCF8]))
+#define MCF_INTC0_L7IACK                     (*(vuint8 *)(&__IPSBAR[0xCFC]))
+#define MCF_INTC0_ICR(x)                     (*(vuint8 *)(&__IPSBAR[0xC41 + ((x-1)*0x1)]))
+#define MCF_INTC0_LIACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCE4 + ((x-1)*0x4)]))
+
+#define MCF_INTC1_IPRH                       (*(vuint32*)(&__IPSBAR[0xD00]))
+#define MCF_INTC1_IPRL                       (*(vuint32*)(&__IPSBAR[0xD04]))
+#define MCF_INTC1_IMRH                       (*(vuint32*)(&__IPSBAR[0xD08]))
+#define MCF_INTC1_IMRL                       (*(vuint32*)(&__IPSBAR[0xD0C]))
+#define MCF_INTC1_INTFRCH                    (*(vuint32*)(&__IPSBAR[0xD10]))
+#define MCF_INTC1_INTFRCL                    (*(vuint32*)(&__IPSBAR[0xD14]))
+#define MCF_INTC1_IRLR                       (*(vuint8 *)(&__IPSBAR[0xD18]))
+#define MCF_INTC1_IACKLPR                    (*(vuint8 *)(&__IPSBAR[0xD19]))
+#define MCF_INTC1_ICR01                      (*(vuint8 *)(&__IPSBAR[0xD41]))
+#define MCF_INTC1_ICR02                      (*(vuint8 *)(&__IPSBAR[0xD42]))
+#define MCF_INTC1_ICR03                      (*(vuint8 *)(&__IPSBAR[0xD43]))
+#define MCF_INTC1_ICR04                      (*(vuint8 *)(&__IPSBAR[0xD44]))
+#define MCF_INTC1_ICR05                      (*(vuint8 *)(&__IPSBAR[0xD45]))
+#define MCF_INTC1_ICR06                      (*(vuint8 *)(&__IPSBAR[0xD46]))
+#define MCF_INTC1_ICR07                      (*(vuint8 *)(&__IPSBAR[0xD47]))
+#define MCF_INTC1_ICR08                      (*(vuint8 *)(&__IPSBAR[0xD48]))
+#define MCF_INTC1_ICR09                      (*(vuint8 *)(&__IPSBAR[0xD49]))
+#define MCF_INTC1_ICR10                      (*(vuint8 *)(&__IPSBAR[0xD4A]))
+#define MCF_INTC1_ICR11                      (*(vuint8 *)(&__IPSBAR[0xD4B]))
+#define MCF_INTC1_ICR12                      (*(vuint8 *)(&__IPSBAR[0xD4C]))
+#define MCF_INTC1_ICR13                      (*(vuint8 *)(&__IPSBAR[0xD4D]))
+#define MCF_INTC1_ICR14                      (*(vuint8 *)(&__IPSBAR[0xD4E]))
+#define MCF_INTC1_ICR15                      (*(vuint8 *)(&__IPSBAR[0xD4F]))
+#define MCF_INTC1_ICR16                      (*(vuint8 *)(&__IPSBAR[0xD50]))
+#define MCF_INTC1_ICR17                      (*(vuint8 *)(&__IPSBAR[0xD51]))
+#define MCF_INTC1_ICR18                      (*(vuint8 *)(&__IPSBAR[0xD52]))
+#define MCF_INTC1_ICR19                      (*(vuint8 *)(&__IPSBAR[0xD53]))
+#define MCF_INTC1_ICR20                      (*(vuint8 *)(&__IPSBAR[0xD54]))
+#define MCF_INTC1_ICR21                      (*(vuint8 *)(&__IPSBAR[0xD55]))
+#define MCF_INTC1_ICR22                      (*(vuint8 *)(&__IPSBAR[0xD56]))
+#define MCF_INTC1_ICR23                      (*(vuint8 *)(&__IPSBAR[0xD57]))
+#define MCF_INTC1_ICR24                      (*(vuint8 *)(&__IPSBAR[0xD58]))
+#define MCF_INTC1_ICR25                      (*(vuint8 *)(&__IPSBAR[0xD59]))
+#define MCF_INTC1_ICR26                      (*(vuint8 *)(&__IPSBAR[0xD5A]))
+#define MCF_INTC1_ICR27                      (*(vuint8 *)(&__IPSBAR[0xD5B]))
+#define MCF_INTC1_ICR28                      (*(vuint8 *)(&__IPSBAR[0xD5C]))
+#define MCF_INTC1_ICR29                      (*(vuint8 *)(&__IPSBAR[0xD5D]))
+#define MCF_INTC1_ICR30                      (*(vuint8 *)(&__IPSBAR[0xD5E]))
+#define MCF_INTC1_ICR31                      (*(vuint8 *)(&__IPSBAR[0xD5F]))
+#define MCF_INTC1_ICR32                      (*(vuint8 *)(&__IPSBAR[0xD60]))
+#define MCF_INTC1_ICR33                      (*(vuint8 *)(&__IPSBAR[0xD61]))
+#define MCF_INTC1_ICR34                      (*(vuint8 *)(&__IPSBAR[0xD62]))
+#define MCF_INTC1_ICR35                      (*(vuint8 *)(&__IPSBAR[0xD63]))
+#define MCF_INTC1_ICR36                      (*(vuint8 *)(&__IPSBAR[0xD64]))
+#define MCF_INTC1_ICR37                      (*(vuint8 *)(&__IPSBAR[0xD65]))
+#define MCF_INTC1_ICR38                      (*(vuint8 *)(&__IPSBAR[0xD66]))
+#define MCF_INTC1_ICR39                      (*(vuint8 *)(&__IPSBAR[0xD67]))
+#define MCF_INTC1_ICR40                      (*(vuint8 *)(&__IPSBAR[0xD68]))
+#define MCF_INTC1_ICR41                      (*(vuint8 *)(&__IPSBAR[0xD69]))
+#define MCF_INTC1_ICR42                      (*(vuint8 *)(&__IPSBAR[0xD6A]))
+#define MCF_INTC1_ICR43                      (*(vuint8 *)(&__IPSBAR[0xD6B]))
+#define MCF_INTC1_ICR44                      (*(vuint8 *)(&__IPSBAR[0xD6C]))
+#define MCF_INTC1_ICR45                      (*(vuint8 *)(&__IPSBAR[0xD6D]))
+#define MCF_INTC1_ICR46                      (*(vuint8 *)(&__IPSBAR[0xD6E]))
+#define MCF_INTC1_ICR47                      (*(vuint8 *)(&__IPSBAR[0xD6F]))
+#define MCF_INTC1_ICR48                      (*(vuint8 *)(&__IPSBAR[0xD70]))
+#define MCF_INTC1_ICR49                      (*(vuint8 *)(&__IPSBAR[0xD71]))
+#define MCF_INTC1_ICR50                      (*(vuint8 *)(&__IPSBAR[0xD72]))
+#define MCF_INTC1_ICR51                      (*(vuint8 *)(&__IPSBAR[0xD73]))
+#define MCF_INTC1_ICR52                      (*(vuint8 *)(&__IPSBAR[0xD74]))
+#define MCF_INTC1_ICR53                      (*(vuint8 *)(&__IPSBAR[0xD75]))
+#define MCF_INTC1_ICR54                      (*(vuint8 *)(&__IPSBAR[0xD76]))
+#define MCF_INTC1_ICR55                      (*(vuint8 *)(&__IPSBAR[0xD77]))
+#define MCF_INTC1_ICR56                      (*(vuint8 *)(&__IPSBAR[0xD78]))
+#define MCF_INTC1_ICR57                      (*(vuint8 *)(&__IPSBAR[0xD79]))
+#define MCF_INTC1_ICR58                      (*(vuint8 *)(&__IPSBAR[0xD7A]))
+#define MCF_INTC1_ICR59                      (*(vuint8 *)(&__IPSBAR[0xD7B]))
+#define MCF_INTC1_ICR60                      (*(vuint8 *)(&__IPSBAR[0xD7C]))
+#define MCF_INTC1_ICR61                      (*(vuint8 *)(&__IPSBAR[0xD7D]))
+#define MCF_INTC1_ICR62                      (*(vuint8 *)(&__IPSBAR[0xD7E]))
+#define MCF_INTC1_ICR63                      (*(vuint8 *)(&__IPSBAR[0xD7F]))
+#define MCF_INTC1_SWIACK                     (*(vuint8 *)(&__IPSBAR[0xDE0]))
+#define MCF_INTC1_L1IACK                     (*(vuint8 *)(&__IPSBAR[0xDE4]))
+#define MCF_INTC1_L2IACK                     (*(vuint8 *)(&__IPSBAR[0xDE8]))
+#define MCF_INTC1_L3IACK                     (*(vuint8 *)(&__IPSBAR[0xDEC]))
+#define MCF_INTC1_L4IACK                     (*(vuint8 *)(&__IPSBAR[0xDF0]))
+#define MCF_INTC1_L5IACK                     (*(vuint8 *)(&__IPSBAR[0xDF4]))
+#define MCF_INTC1_L6IACK                     (*(vuint8 *)(&__IPSBAR[0xDF8]))
+#define MCF_INTC1_L7IACK                     (*(vuint8 *)(&__IPSBAR[0xDFC]))
+#define MCF_INTC1_ICR(x)                     (*(vuint8 *)(&__IPSBAR[0xD41 + ((x-1)*0x1)]))
+#define MCF_INTC1_LIACK(x)                   (*(vuint8 *)(&__IPSBAR[0xDE4 + ((x-1)*0x4)]))
+
+#define MCF_INTC_IPRH(x)                     (*(vuint32*)(&__IPSBAR[0xC00 + ((x)*0x100)]))
+#define MCF_INTC_IPRL(x)                     (*(vuint32*)(&__IPSBAR[0xC04 + ((x)*0x100)]))
+#define MCF_INTC_IMRH(x)                     (*(vuint32*)(&__IPSBAR[0xC08 + ((x)*0x100)]))
+#define MCF_INTC_IMRL(x)                     (*(vuint32*)(&__IPSBAR[0xC0C + ((x)*0x100)]))
+#define MCF_INTC_INTFRCH(x)                  (*(vuint32*)(&__IPSBAR[0xC10 + ((x)*0x100)]))
+#define MCF_INTC_INTFRCL(x)                  (*(vuint32*)(&__IPSBAR[0xC14 + ((x)*0x100)]))
+#define MCF_INTC_IRLR(x)                     (*(vuint8 *)(&__IPSBAR[0xC18 + ((x)*0x100)]))
+#define MCF_INTC_IACKLPR(x)                  (*(vuint8 *)(&__IPSBAR[0xC19 + ((x)*0x100)]))
+#define MCF_INTC_ICR01(x)                    (*(vuint8 *)(&__IPSBAR[0xC41 + ((x)*0x100)]))
+#define MCF_INTC_ICR02(x)                    (*(vuint8 *)(&__IPSBAR[0xC42 + ((x)*0x100)]))
+#define MCF_INTC_ICR03(x)                    (*(vuint8 *)(&__IPSBAR[0xC43 + ((x)*0x100)]))
+#define MCF_INTC_ICR04(x)                    (*(vuint8 *)(&__IPSBAR[0xC44 + ((x)*0x100)]))
+#define MCF_INTC_ICR05(x)                    (*(vuint8 *)(&__IPSBAR[0xC45 + ((x)*0x100)]))
+#define MCF_INTC_ICR06(x)                    (*(vuint8 *)(&__IPSBAR[0xC46 + ((x)*0x100)]))
+#define MCF_INTC_ICR07(x)                    (*(vuint8 *)(&__IPSBAR[0xC47 + ((x)*0x100)]))
+#define MCF_INTC_ICR08(x)                    (*(vuint8 *)(&__IPSBAR[0xC48 + ((x)*0x100)]))
+#define MCF_INTC_ICR09(x)                    (*(vuint8 *)(&__IPSBAR[0xC49 + ((x)*0x100)]))
+#define MCF_INTC_ICR10(x)                    (*(vuint8 *)(&__IPSBAR[0xC4A + ((x)*0x100)]))
+#define MCF_INTC_ICR11(x)                    (*(vuint8 *)(&__IPSBAR[0xC4B + ((x)*0x100)]))
+#define MCF_INTC_ICR12(x)                    (*(vuint8 *)(&__IPSBAR[0xC4C + ((x)*0x100)]))
+#define MCF_INTC_ICR13(x)                    (*(vuint8 *)(&__IPSBAR[0xC4D + ((x)*0x100)]))
+#define MCF_INTC_ICR14(x)                    (*(vuint8 *)(&__IPSBAR[0xC4E + ((x)*0x100)]))
+#define MCF_INTC_ICR15(x)                    (*(vuint8 *)(&__IPSBAR[0xC4F + ((x)*0x100)]))
+#define MCF_INTC_ICR16(x)                    (*(vuint8 *)(&__IPSBAR[0xC50 + ((x)*0x100)]))
+#define MCF_INTC_ICR17(x)                    (*(vuint8 *)(&__IPSBAR[0xC51 + ((x)*0x100)]))
+#define MCF_INTC_ICR18(x)                    (*(vuint8 *)(&__IPSBAR[0xC52 + ((x)*0x100)]))
+#define MCF_INTC_ICR19(x)                    (*(vuint8 *)(&__IPSBAR[0xC53 + ((x)*0x100)]))
+#define MCF_INTC_ICR20(x)                    (*(vuint8 *)(&__IPSBAR[0xC54 + ((x)*0x100)]))
+#define MCF_INTC_ICR21(x)                    (*(vuint8 *)(&__IPSBAR[0xC55 + ((x)*0x100)]))
+#define MCF_INTC_ICR22(x)                    (*(vuint8 *)(&__IPSBAR[0xC56 + ((x)*0x100)]))
+#define MCF_INTC_ICR23(x)                    (*(vuint8 *)(&__IPSBAR[0xC57 + ((x)*0x100)]))
+#define MCF_INTC_ICR24(x)                    (*(vuint8 *)(&__IPSBAR[0xC58 + ((x)*0x100)]))
+#define MCF_INTC_ICR25(x)                    (*(vuint8 *)(&__IPSBAR[0xC59 + ((x)*0x100)]))
+#define MCF_INTC_ICR26(x)                    (*(vuint8 *)(&__IPSBAR[0xC5A + ((x)*0x100)]))
+#define MCF_INTC_ICR27(x)                    (*(vuint8 *)(&__IPSBAR[0xC5B + ((x)*0x100)]))
+#define MCF_INTC_ICR28(x)                    (*(vuint8 *)(&__IPSBAR[0xC5C + ((x)*0x100)]))
+#define MCF_INTC_ICR29(x)                    (*(vuint8 *)(&__IPSBAR[0xC5D + ((x)*0x100)]))
+#define MCF_INTC_ICR30(x)                    (*(vuint8 *)(&__IPSBAR[0xC5E + ((x)*0x100)]))
+#define MCF_INTC_ICR31(x)                    (*(vuint8 *)(&__IPSBAR[0xC5F + ((x)*0x100)]))
+#define MCF_INTC_ICR32(x)                    (*(vuint8 *)(&__IPSBAR[0xC60 + ((x)*0x100)]))
+#define MCF_INTC_ICR33(x)                    (*(vuint8 *)(&__IPSBAR[0xC61 + ((x)*0x100)]))
+#define MCF_INTC_ICR34(x)                    (*(vuint8 *)(&__IPSBAR[0xC62 + ((x)*0x100)]))
+#define MCF_INTC_ICR35(x)                    (*(vuint8 *)(&__IPSBAR[0xC63 + ((x)*0x100)]))
+#define MCF_INTC_ICR36(x)                    (*(vuint8 *)(&__IPSBAR[0xC64 + ((x)*0x100)]))
+#define MCF_INTC_ICR37(x)                    (*(vuint8 *)(&__IPSBAR[0xC65 + ((x)*0x100)]))
+#define MCF_INTC_ICR38(x)                    (*(vuint8 *)(&__IPSBAR[0xC66 + ((x)*0x100)]))
+#define MCF_INTC_ICR39(x)                    (*(vuint8 *)(&__IPSBAR[0xC67 + ((x)*0x100)]))
+#define MCF_INTC_ICR40(x)                    (*(vuint8 *)(&__IPSBAR[0xC68 + ((x)*0x100)]))
+#define MCF_INTC_ICR41(x)                    (*(vuint8 *)(&__IPSBAR[0xC69 + ((x)*0x100)]))
+#define MCF_INTC_ICR42(x)                    (*(vuint8 *)(&__IPSBAR[0xC6A + ((x)*0x100)]))
+#define MCF_INTC_ICR43(x)                    (*(vuint8 *)(&__IPSBAR[0xC6B + ((x)*0x100)]))
+#define MCF_INTC_ICR44(x)                    (*(vuint8 *)(&__IPSBAR[0xC6C + ((x)*0x100)]))
+#define MCF_INTC_ICR45(x)                    (*(vuint8 *)(&__IPSBAR[0xC6D + ((x)*0x100)]))
+#define MCF_INTC_ICR46(x)                    (*(vuint8 *)(&__IPSBAR[0xC6E + ((x)*0x100)]))
+#define MCF_INTC_ICR47(x)                    (*(vuint8 *)(&__IPSBAR[0xC6F + ((x)*0x100)]))
+#define MCF_INTC_ICR48(x)                    (*(vuint8 *)(&__IPSBAR[0xC70 + ((x)*0x100)]))
+#define MCF_INTC_ICR49(x)                    (*(vuint8 *)(&__IPSBAR[0xC71 + ((x)*0x100)]))
+#define MCF_INTC_ICR50(x)                    (*(vuint8 *)(&__IPSBAR[0xC72 + ((x)*0x100)]))
+#define MCF_INTC_ICR51(x)                    (*(vuint8 *)(&__IPSBAR[0xC73 + ((x)*0x100)]))
+#define MCF_INTC_ICR52(x)                    (*(vuint8 *)(&__IPSBAR[0xC74 + ((x)*0x100)]))
+#define MCF_INTC_ICR53(x)                    (*(vuint8 *)(&__IPSBAR[0xC75 + ((x)*0x100)]))
+#define MCF_INTC_ICR54(x)                    (*(vuint8 *)(&__IPSBAR[0xC76 + ((x)*0x100)]))
+#define MCF_INTC_ICR55(x)                    (*(vuint8 *)(&__IPSBAR[0xC77 + ((x)*0x100)]))
+#define MCF_INTC_ICR56(x)                    (*(vuint8 *)(&__IPSBAR[0xC78 + ((x)*0x100)]))
+#define MCF_INTC_ICR57(x)                    (*(vuint8 *)(&__IPSBAR[0xC79 + ((x)*0x100)]))
+#define MCF_INTC_ICR58(x)                    (*(vuint8 *)(&__IPSBAR[0xC7A + ((x)*0x100)]))
+#define MCF_INTC_ICR59(x)                    (*(vuint8 *)(&__IPSBAR[0xC7B + ((x)*0x100)]))
+#define MCF_INTC_ICR60(x)                    (*(vuint8 *)(&__IPSBAR[0xC7C + ((x)*0x100)]))
+#define MCF_INTC_ICR61(x)                    (*(vuint8 *)(&__IPSBAR[0xC7D + ((x)*0x100)]))
+#define MCF_INTC_ICR62(x)                    (*(vuint8 *)(&__IPSBAR[0xC7E + ((x)*0x100)]))
+#define MCF_INTC_ICR63(x)                    (*(vuint8 *)(&__IPSBAR[0xC7F + ((x)*0x100)]))
+#define MCF_INTC_SWIACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCE0 + ((x)*0x100)]))
+#define MCF_INTC_L1IACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCE4 + ((x)*0x100)]))
+#define MCF_INTC_L2IACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCE8 + ((x)*0x100)]))
+#define MCF_INTC_L3IACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCEC + ((x)*0x100)]))
+#define MCF_INTC_L4IACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCF0 + ((x)*0x100)]))
+#define MCF_INTC_L5IACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCF4 + ((x)*0x100)]))
+#define MCF_INTC_L6IACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCF8 + ((x)*0x100)]))
+#define MCF_INTC_L7IACK(x)                   (*(vuint8 *)(&__IPSBAR[0xCFC + ((x)*0x100)]))
+
+
+/* Bit definitions and macros for MCF_INTC_IPRH */
+#define MCF_INTC_IPRH_INT32                  (0x1)
+#define MCF_INTC_IPRH_INT33                  (0x2)
+#define MCF_INTC_IPRH_INT34                  (0x4)
+#define MCF_INTC_IPRH_INT35                  (0x8)
+#define MCF_INTC_IPRH_INT36                  (0x10)
+#define MCF_INTC_IPRH_INT37                  (0x20)
+#define MCF_INTC_IPRH_INT38                  (0x40)
+#define MCF_INTC_IPRH_INT39                  (0x80)
+#define MCF_INTC_IPRH_INT40                  (0x100)
+#define MCF_INTC_IPRH_INT41                  (0x200)
+#define MCF_INTC_IPRH_INT42                  (0x400)
+#define MCF_INTC_IPRH_INT43                  (0x800)
+#define MCF_INTC_IPRH_INT44                  (0x1000)
+#define MCF_INTC_IPRH_INT45                  (0x2000)
+#define MCF_INTC_IPRH_INT46                  (0x4000)
+#define MCF_INTC_IPRH_INT47                  (0x8000)
+#define MCF_INTC_IPRH_INT48                  (0x10000)
+#define MCF_INTC_IPRH_INT49                  (0x20000)
+#define MCF_INTC_IPRH_INT50                  (0x40000)
+#define MCF_INTC_IPRH_INT51                  (0x80000)
+#define MCF_INTC_IPRH_INT52                  (0x100000)
+#define MCF_INTC_IPRH_INT53                  (0x200000)
+#define MCF_INTC_IPRH_INT54                  (0x400000)
+#define MCF_INTC_IPRH_INT55                  (0x800000)
+#define MCF_INTC_IPRH_INT56                  (0x1000000)
+#define MCF_INTC_IPRH_INT57                  (0x2000000)
+#define MCF_INTC_IPRH_INT58                  (0x4000000)
+#define MCF_INTC_IPRH_INT59                  (0x8000000)
+#define MCF_INTC_IPRH_INT60                  (0x10000000)
+#define MCF_INTC_IPRH_INT61                  (0x20000000)
+#define MCF_INTC_IPRH_INT62                  (0x40000000)
+#define MCF_INTC_IPRH_INT63                  (0x80000000)
+
+/* Bit definitions and macros for MCF_INTC_IPRL */
+#define MCF_INTC_IPRL_INT1                   (0x2)
+#define MCF_INTC_IPRL_INT2                   (0x4)
+#define MCF_INTC_IPRL_INT3                   (0x8)
+#define MCF_INTC_IPRL_INT4                   (0x10)
+#define MCF_INTC_IPRL_INT5                   (0x20)
+#define MCF_INTC_IPRL_INT6                   (0x40)
+#define MCF_INTC_IPRL_INT7                   (0x80)
+#define MCF_INTC_IPRL_INT8                   (0x100)
+#define MCF_INTC_IPRL_INT9                   (0x200)
+#define MCF_INTC_IPRL_INT10                  (0x400)
+#define MCF_INTC_IPRL_INT11                  (0x800)
+#define MCF_INTC_IPRL_INT12                  (0x1000)
+#define MCF_INTC_IPRL_INT13                  (0x2000)
+#define MCF_INTC_IPRL_INT14                  (0x4000)
+#define MCF_INTC_IPRL_INT15                  (0x8000)
+#define MCF_INTC_IPRL_INT16                  (0x10000)
+#define MCF_INTC_IPRL_INT17                  (0x20000)
+#define MCF_INTC_IPRL_INT18                  (0x40000)
+#define MCF_INTC_IPRL_INT19                  (0x80000)
+#define MCF_INTC_IPRL_INT20                  (0x100000)
+#define MCF_INTC_IPRL_INT21                  (0x200000)
+#define MCF_INTC_IPRL_INT22                  (0x400000)
+#define MCF_INTC_IPRL_INT23                  (0x800000)
+#define MCF_INTC_IPRL_INT24                  (0x1000000)
+#define MCF_INTC_IPRL_INT25                  (0x2000000)
+#define MCF_INTC_IPRL_INT26                  (0x4000000)
+#define MCF_INTC_IPRL_INT27                  (0x8000000)
+#define MCF_INTC_IPRL_INT28                  (0x10000000)
+#define MCF_INTC_IPRL_INT29                  (0x20000000)
+#define MCF_INTC_IPRL_INT30                  (0x40000000)
+#define MCF_INTC_IPRL_INT31                  (0x80000000)
+
+/* Bit definitions and macros for MCF_INTC_IMRH */
+#define MCF_INTC_IMRH_INT_MASK32             (0x1)
+#define MCF_INTC_IMRH_INT_MASK33             (0x2)
+#define MCF_INTC_IMRH_INT_MASK34             (0x4)
+#define MCF_INTC_IMRH_INT_MASK35             (0x8)
+#define MCF_INTC_IMRH_INT_MASK36             (0x10)
+#define MCF_INTC_IMRH_INT_MASK37             (0x20)
+#define MCF_INTC_IMRH_INT_MASK38             (0x40)
+#define MCF_INTC_IMRH_INT_MASK39             (0x80)
+#define MCF_INTC_IMRH_INT_MASK40             (0x100)
+#define MCF_INTC_IMRH_INT_MASK41             (0x200)
+#define MCF_INTC_IMRH_INT_MASK42             (0x400)
+#define MCF_INTC_IMRH_INT_MASK43             (0x800)
+#define MCF_INTC_IMRH_INT_MASK44             (0x1000)
+#define MCF_INTC_IMRH_INT_MASK45             (0x2000)
+#define MCF_INTC_IMRH_INT_MASK46             (0x4000)
+#define MCF_INTC_IMRH_INT_MASK47             (0x8000)
+#define MCF_INTC_IMRH_INT_MASK48             (0x10000)
+#define MCF_INTC_IMRH_INT_MASK49             (0x20000)
+#define MCF_INTC_IMRH_INT_MASK50             (0x40000)
+#define MCF_INTC_IMRH_INT_MASK51             (0x80000)
+#define MCF_INTC_IMRH_INT_MASK52             (0x100000)
+#define MCF_INTC_IMRH_INT_MASK53             (0x200000)
+#define MCF_INTC_IMRH_INT_MASK54             (0x400000)
+#define MCF_INTC_IMRH_INT_MASK55             (0x800000)
+#define MCF_INTC_IMRH_INT_MASK56             (0x1000000)
+#define MCF_INTC_IMRH_INT_MASK57             (0x2000000)
+#define MCF_INTC_IMRH_INT_MASK58             (0x4000000)
+#define MCF_INTC_IMRH_INT_MASK59             (0x8000000)
+#define MCF_INTC_IMRH_INT_MASK60             (0x10000000)
+#define MCF_INTC_IMRH_INT_MASK61             (0x20000000)
+#define MCF_INTC_IMRH_INT_MASK62             (0x40000000)
+#define MCF_INTC_IMRH_INT_MASK63             (0x80000000)
+
+/* Bit definitions and macros for MCF_INTC_IMRL */
+#define MCF_INTC_IMRL_MASKALL                (0x1)
+#define MCF_INTC_IMRL_INT_MASK1              (0x2)
+#define MCF_INTC_IMRL_INT_MASK2              (0x4)
+#define MCF_INTC_IMRL_INT_MASK3              (0x8)
+#define MCF_INTC_IMRL_INT_MASK4              (0x10)
+#define MCF_INTC_IMRL_INT_MASK5              (0x20)
+#define MCF_INTC_IMRL_INT_MASK6              (0x40)
+#define MCF_INTC_IMRL_INT_MASK7              (0x80)
+#define MCF_INTC_IMRL_INT_MASK8              (0x100)
+#define MCF_INTC_IMRL_INT_MASK9              (0x200)
+#define MCF_INTC_IMRL_INT_MASK10             (0x400)
+#define MCF_INTC_IMRL_INT_MASK11             (0x800)
+#define MCF_INTC_IMRL_INT_MASK12             (0x1000)
+#define MCF_INTC_IMRL_INT_MASK13             (0x2000)
+#define MCF_INTC_IMRL_INT_MASK14             (0x4000)
+#define MCF_INTC_IMRL_INT_MASK15             (0x8000)
+#define MCF_INTC_IMRL_INT_MASK16             (0x10000)
+#define MCF_INTC_IMRL_INT_MASK17             (0x20000)
+#define MCF_INTC_IMRL_INT_MASK18             (0x40000)
+#define MCF_INTC_IMRL_INT_MASK19             (0x80000)
+#define MCF_INTC_IMRL_INT_MASK20             (0x100000)
+#define MCF_INTC_IMRL_INT_MASK21             (0x200000)
+#define MCF_INTC_IMRL_INT_MASK22             (0x400000)
+#define MCF_INTC_IMRL_INT_MASK23             (0x800000)
+#define MCF_INTC_IMRL_INT_MASK24             (0x1000000)
+#define MCF_INTC_IMRL_INT_MASK25             (0x2000000)
+#define MCF_INTC_IMRL_INT_MASK26             (0x4000000)
+#define MCF_INTC_IMRL_INT_MASK27             (0x8000000)
+#define MCF_INTC_IMRL_INT_MASK28             (0x10000000)
+#define MCF_INTC_IMRL_INT_MASK29             (0x20000000)
+#define MCF_INTC_IMRL_INT_MASK30             (0x40000000)
+#define MCF_INTC_IMRL_INT_MASK31             (0x80000000)
+
+/* Bit definitions and macros for MCF_INTC_INTFRCH */
+#define MCF_INTC_INTFRCH_INTFRC32            (0x1)
+#define MCF_INTC_INTFRCH_INTFRC33            (0x2)
+#define MCF_INTC_INTFRCH_INTFRC34            (0x4)
+#define MCF_INTC_INTFRCH_INTFRC35            (0x8)
+#define MCF_INTC_INTFRCH_INTFRC36            (0x10)
+#define MCF_INTC_INTFRCH_INTFRC37            (0x20)
+#define MCF_INTC_INTFRCH_INTFRC38            (0x40)
+#define MCF_INTC_INTFRCH_INTFRC39            (0x80)
+#define MCF_INTC_INTFRCH_INTFRC40            (0x100)
+#define MCF_INTC_INTFRCH_INTFRC41            (0x200)
+#define MCF_INTC_INTFRCH_INTFRC42            (0x400)
+#define MCF_INTC_INTFRCH_INTFRC43            (0x800)
+#define MCF_INTC_INTFRCH_INTFRC44            (0x1000)
+#define MCF_INTC_INTFRCH_INTFRC45            (0x2000)
+#define MCF_INTC_INTFRCH_INTFRC46            (0x4000)
+#define MCF_INTC_INTFRCH_INTFRC47            (0x8000)
+#define MCF_INTC_INTFRCH_INTFRC48            (0x10000)
+#define MCF_INTC_INTFRCH_INTFRC49            (0x20000)
+#define MCF_INTC_INTFRCH_INTFRC50            (0x40000)
+#define MCF_INTC_INTFRCH_INTFRC51            (0x80000)
+#define MCF_INTC_INTFRCH_INTFRC52            (0x100000)
+#define MCF_INTC_INTFRCH_INTFRC53            (0x200000)
+#define MCF_INTC_INTFRCH_INTFRC54            (0x400000)
+#define MCF_INTC_INTFRCH_INTFRC55            (0x800000)
+#define MCF_INTC_INTFRCH_INTFRC56            (0x1000000)
+#define MCF_INTC_INTFRCH_INTFRC57            (0x2000000)
+#define MCF_INTC_INTFRCH_INTFRC58            (0x4000000)
+#define MCF_INTC_INTFRCH_INTFRC59            (0x8000000)
+#define MCF_INTC_INTFRCH_INTFRC60            (0x10000000)
+#define MCF_INTC_INTFRCH_INTFRC61            (0x20000000)
+#define MCF_INTC_INTFRCH_INTFRC62            (0x40000000)
+#define MCF_INTC_INTFRCH_INTFRC63            (0x80000000)
+
+/* Bit definitions and macros for MCF_INTC_INTFRCL */
+#define MCF_INTC_INTFRCL_INTFRC1             (0x2)
+#define MCF_INTC_INTFRCL_INTFRC2             (0x4)
+#define MCF_INTC_INTFRCL_INTFRC3             (0x8)
+#define MCF_INTC_INTFRCL_INTFRC4             (0x10)
+#define MCF_INTC_INTFRCL_INTFRC5             (0x20)
+#define MCF_INTC_INTFRCL_INTFRC6             (0x40)
+#define MCF_INTC_INTFRCL_INTFRC7             (0x80)
+#define MCF_INTC_INTFRCL_INTFRC8             (0x100)
+#define MCF_INTC_INTFRCL_INTFRC9             (0x200)
+#define MCF_INTC_INTFRCL_INTFRC10            (0x400)
+#define MCF_INTC_INTFRCL_INTFRC11            (0x800)
+#define MCF_INTC_INTFRCL_INTFRC12            (0x1000)
+#define MCF_INTC_INTFRCL_INTFRC13            (0x2000)
+#define MCF_INTC_INTFRCL_INTFRC14            (0x4000)
+#define MCF_INTC_INTFRCL_INTFRC15            (0x8000)
+#define MCF_INTC_INTFRCL_INTFRC16            (0x10000)
+#define MCF_INTC_INTFRCL_INTFRC17            (0x20000)
+#define MCF_INTC_INTFRCL_INTFRC18            (0x40000)
+#define MCF_INTC_INTFRCL_INTFRC19            (0x80000)
+#define MCF_INTC_INTFRCL_INTFRC20            (0x100000)
+#define MCF_INTC_INTFRCL_INTFRC21            (0x200000)
+#define MCF_INTC_INTFRCL_INTFRC22            (0x400000)
+#define MCF_INTC_INTFRCL_INTFRC23            (0x800000)
+#define MCF_INTC_INTFRCL_INTFRC24            (0x1000000)
+#define MCF_INTC_INTFRCL_INTFRC25            (0x2000000)
+#define MCF_INTC_INTFRCL_INTFRC26            (0x4000000)
+#define MCF_INTC_INTFRCL_INTFRC27            (0x8000000)
+#define MCF_INTC_INTFRCL_INTFRC28            (0x10000000)
+#define MCF_INTC_INTFRCL_INTFRC29            (0x20000000)
+#define MCF_INTC_INTFRCL_INTFRC30            (0x40000000)
+#define MCF_INTC_INTFRCL_INTFRC31            (0x80000000)
+
+/* Bit definitions and macros for MCF_INTC_IRLR */
+#define MCF_INTC_IRLR_IRQ(x)                 (((x)&0x7F)<<0x1)
+
+/* Bit definitions and macros for MCF_INTC_IACKLPR */
+#define MCF_INTC_IACKLPR_PRI(x)              (((x)&0xF)<<0)
+#define MCF_INTC_IACKLPR_LEVEL(x)            (((x)&0x7)<<0x4)
+
+/* Bit definitions and macros for MCF_INTC_ICR */
+#define MCF_INTC_ICR_IP(x)                   (((x)&0x7)<<0)
+#define MCF_INTC_ICR_IL(x)                   (((x)&0x7)<<0x3)
+
+/* Bit definitions and macros for MCF_INTC_SWIACK */
+#define MCF_INTC_SWIACK_VECTOR(x)            (((x)&0xFF)<<0)
+
+/* Bit definitions and macros for MCF_INTC_LIACK */
+#define MCF_INTC_LIACK_VECTOR(x)             (((x)&0xFF)<<0)
+
+
+#endif /* __MCF52235_INTC_H__ */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     /* Coldfire C Header File
+ * Copyright Freescale Semiconductor Inc
+ * All rights reserved.
+ *
+ * 2007/03/19 Revision: 0.91
+ */
+
+#ifndef __MCF52235_GPIO_H__
+#define __MCF52235_GPIO_H__
+
+
+/*********************************************************************
+*
+* General Purpose I/O (GPIO)
+*
+*********************************************************************/
+
+/* Register read/write macros */
+#define MCF_GPIO_PORTNQ                      (*(vuint8 *)(&__IPSBAR[0x100008]))
+#define MCF_GPIO_DDRNQ                       (*(vuint8 *)(&__IPSBAR[0x100020]))
+#define MCF_GPIO_SETNQ                       (*(vuint8 *)(&__IPSBAR[0x100038]))
+#define MCF_GPIO_CLRNQ                       (*(vuint8 *)(&__IPSBAR[0x100050]))
+#define MCF_GPIO_PNQPAR                      (*(vuint16*)(&__IPSBAR[0x100068]))
+
+#define MCF_GPIO_PORTAN                      (*(vuint8 *)(&__IPSBAR[0x10000A]))
+#define MCF_GPIO_DDRAN                       (*(vuint8 *)(&__IPSBAR[0x100022]))
+#define MCF_GPIO_SETAN                       (*(vuint8 *)(&__IPSBAR[0x10003A]))
+#define MCF_GPIO_CLRAN                       (*(vuint8 *)(&__IPSBAR[0x100052]))
+#define MCF_GPIO_PANPAR                      (*(vuint8 *)(&__IPSBAR[0x10006A]))
+
+#define MCF_GPIO_PORTAS                      (*(vuint8 *)(&__IPSBAR[0x10000B]))
+#define MCF_GPIO_DDRAS                       (*(vuint8 *)(&__IPSBAR[0x100023]))
+#define MCF_GPIO_SETAS                       (*(vuint8 *)(&__IPSBAR[0x10003B]))
+#define MCF_GPIO_CLRAS                       (*(vuint8 *)(&__IPSBAR[0x100053]))
+#define MCF_GPIO_PASPAR                      (*(vuint8 *)(&__IPSBAR[0x10006B]))
+
+#define MCF_GPIO_PORTQS                      (*(vuint8 *)(&__IPSBAR[0x10000C]))
+#define MCF_GPIO_DDRQS                       (*(vuint8 *)(&__IPSBAR[0x100024]))
+#define MCF_GPIO_SETQS                       (*(vuint8 *)(&__IPSBAR[0x10003C]))
+#define MCF_GPIO_CLRQS                       (*(vuint8 *)(&__IPSBAR[0x100054]))
+#define MCF_GPIO_PQSPAR                      (*(vuint16*)(&__IPSBAR[0x10006C]))
+
+#define MCF_GPIO_PORTTA                      (*(vuint8 *)(&__IPSBAR[0x10000E]))
+#define MCF_GPIO_DDRTA                       (*(vuint8 *)(&__IPSBAR[0x100026]))
+#define MCF_GPIO_SETTA                       (*(vuint8 *)(&__IPSBAR[0x10003E]))
+#define MCF_GPIO_CLRTA                       (*(vuint8 *)(&__IPSBAR[0x100056]))
+#define MCF_GPIO_PTAPAR                      (*(vuint8 *)(&__IPSBAR[0x10006E]))
+
+#define MCF_GPIO_PORTTC                      (*(vuint8 *)(&__IPSBAR[0x10000F]))
+#define MCF_GPIO_DDRTC                       (*(vuint8 *)(&__IPSBAR[0x100027]))
+#define MCF_GPIO_SETTC                       (*(vuint8 *)(&__IPSBAR[0x10003F]))
+#define MCF_GPIO_CLRTC                       (*(vuint8 *)(&__IPSBAR[0x100057]))
+#define MCF_GPIO_PTCPAR                      (*(vuint8 *)(&__IPSBAR[0x10006F]))
+
+#define MCF_GPIO_PORTTD                      (*(vuint8 *)(&__IPSBAR[0x100010]))
+#define MCF_GPIO_DDRTD                       (*(vuint8 *)(&__IPSBAR[0x100028]))
+#define MCF_GPIO_SETTD                       (*(vuint8 *)(&__IPSBAR[0x100040]))
+#define MCF_GPIO_CLRTD                       (*(vuint8 *)(&__IPSBAR[0x100058]))
+#define MCF_GPIO_PTDPAR                      (*(vuint8 *)(&__IPSBAR[0x100070]))
+
+#define MCF_GPIO_PORTUA                      (*(vuint8 *)(&__IPSBAR[0x100011]))
+#define MCF_GPIO_DDRUA                       (*(vuint8 *)(&__IPSBAR[0x100029]))
+#define MCF_GPIO_SETUA                       (*(vuint8 *)(&__IPSBAR[0x100041]))
+#define MCF_GPIO_CLRUA                       (*(vuint8 *)(&__IPSBAR[0x100059]))
+#define MCF_GPIO_PUAPAR                      (*(vuint8 *)(&__IPSBAR[0x100071]))
+
+#define MCF_GPIO_PORTUB                      (*(vuint8 *)(&__IPSBAR[0x100012]))
+#define MCF_GPIO_DDRUB                       (*(vuint8 *)(&__IPSBAR[0x10002A]))
+#define MCF_GPIO_SETUB                       (*(vuint8 *)(&__IPSBAR[0x100042]))
+#define MCF_GPIO_CLRUB                       (*(vuint8 *)(&__IPSBAR[0x10005A]))
+#define MCF_GPIO_PUBPAR                      (*(vuint8 *)(&__IPSBAR[0x100072]))
+
+#define MCF_GPIO_PORTUC                      (*(vuint8 *)(&__IPSBAR[0x100013]))
+#define MCF_GPIO_DDRUC                       (*(vuint8 *)(&__IPSBAR[0x10002B]))
+#define MCF_GPIO_SETUC                       (*(vuint8 *)(&__IPSBAR[0x100043]))
+#define MCF_GPIO_CLRUC                       (*(vuint8 *)(&__IPSBAR[0x10005B]))
+#define MCF_GPIO_PUCPAR                      (*(vuint8 *)(&__IPSBAR[0x100073]))
+
+#define MCF_GPIO_PORTDD                      (*(vuint8 *)(&__IPSBAR[0x100014]))
+#define MCF_GPIO_DDRDD                       (*(vuint8 *)(&__IPSBAR[0x10002C]))
+#define MCF_GPIO_SETDD                       (*(vuint8 *)(&__IPSBAR[0x100044]))
+#define MCF_GPIO_CLRDD                       (*(vuint8 *)(&__IPSBAR[0x10005C]))
+#define MCF_GPIO_PDDPAR                      (*(vuint8 *)(&__IPSBAR[0x100074]))
+
+#define MCF_GPIO_PORTLD                      (*(vuint8 *)(&__IPSBAR[0x100015]))
+#define MCF_GPIO_DDRLD                       (*(vuint8 *)(&__IPSBAR[0x10002D]))
+#define MCF_GPIO_SETLD                       (*(vuint8 *)(&__IPSBAR[0x100045]))
+#define MCF_GPIO_CLRLD                       (*(vuint8 *)(&__IPSBAR[0x10005D]))
+#define MCF_GPIO_PLDPAR                      (*(vuint8 *)(&__IPSBAR[0x100075]))
+
+#define MCF_GPIO_PORTGP                      (*(vuint8 *)(&__IPSBAR[0x100016]))
+#define MCF_GPIO_DDRGP                       (*(vuint8 *)(&__IPSBAR[0x10002E]))
+#define MCF_GPIO_SETGP                       (*(vuint8 *)(&__IPSBAR[0x100046]))
+#define MCF_GPIO_CLRGP                       (*(vuint8 *)(&__IPSBAR[0x10005E]))
+#define MCF_GPIO_PGPPAR                      (*(vuint8 *)(&__IPSBAR[0x100076]))
+
+
+
+/* Bit definitions and macros for MCF_GPIO_PORTNQ */
+#define MCF_GPIO_PORTNQ_PORTNQ1              (0x2)
+#define MCF_GPIO_PORTNQ_PORTNQ2              (0x4)
+#define MCF_GPIO_PORTNQ_PORTNQ3              (0x8)
+#define MCF_GPIO_PORTNQ_PORTNQ4              (0x10)
+#define MCF_GPIO_PORTNQ_PORTNQ5              (0x20)
+#define MCF_GPIO_PORTNQ_PORTNQ6              (0x40)
+#define MCF_GPIO_PORTNQ_PORTNQ7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRNQ */
+#define MCF_GPIO_DDRNQ_DDRNQ1                (0x2)
+#define MCF_GPIO_DDRNQ_DDRNQ2                (0x4)
+#define MCF_GPIO_DDRNQ_DDRNQ3                (0x8)
+#define MCF_GPIO_DDRNQ_DDRNQ4                (0x10)
+#define MCF_GPIO_DDRNQ_DDRNQ5                (0x20)
+#define MCF_GPIO_DDRNQ_DDRNQ6                (0x40)
+#define MCF_GPIO_DDRNQ_DDRNQ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETNQ */
+#define MCF_GPIO_SETNQ_SETNQ1                (0x2)
+#define MCF_GPIO_SETNQ_SETNQ2                (0x4)
+#define MCF_GPIO_SETNQ_SETNQ3                (0x8)
+#define MCF_GPIO_SETNQ_SETNQ4                (0x10)
+#define MCF_GPIO_SETNQ_SETNQ5                (0x20)
+#define MCF_GPIO_SETNQ_SETNQ6                (0x40)
+#define MCF_GPIO_SETNQ_SETNQ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRNQ */
+#define MCF_GPIO_CLRNQ_CLRNQ1                (0x2)
+#define MCF_GPIO_CLRNQ_CLRNQ2                (0x4)
+#define MCF_GPIO_CLRNQ_CLRNQ3                (0x8)
+#define MCF_GPIO_CLRNQ_CLRNQ4                (0x10)
+#define MCF_GPIO_CLRNQ_CLRNQ5                (0x20)
+#define MCF_GPIO_CLRNQ_CLRNQ6                (0x40)
+#define MCF_GPIO_CLRNQ_CLRNQ7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PNQPAR */
+#define MCF_GPIO_PNQPAR_PNQPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PNQPAR_IRQ1_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ1_IRQ1            (0x4)
+#define MCF_GPIO_PNQPAR_IRQ1_SYNCA           (0x8)
+#define MCF_GPIO_PNQPAR_IRQ1_PWM1            (0xC)
+#define MCF_GPIO_PNQPAR_PNQPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PNQPAR_IRQ2_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ2_IRQ2            (0x10)
+#define MCF_GPIO_PNQPAR_IRQ2_FEC_RXD3        (0x30)
+#define MCF_GPIO_PNQPAR_PNQPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PNQPAR_IRQ3_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ3_IRQ3            (0x40)
+#define MCF_GPIO_PNQPAR_IRQ3_FEC_RXD2        (0xC0)
+#define MCF_GPIO_PNQPAR_PNQPAR4(x)           (((x)&0x3)<<0x8)
+#define MCF_GPIO_PNQPAR_IRQ4_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ4_IRQ4            (0x100)
+#define MCF_GPIO_PNQPAR_PNQPAR5(x)           (((x)&0x3)<<0xA)
+#define MCF_GPIO_PNQPAR_IRQ5_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ5_IRQ5            (0x400)
+#define MCF_GPIO_PNQPAR_IRQ5_FEC_RXD1        (0xC00)
+#define MCF_GPIO_PNQPAR_PNQPAR6(x)           (((x)&0x3)<<0xC)
+#define MCF_GPIO_PNQPAR_IRQ6_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ6_IRQ6            (0x1000)
+#define MCF_GPIO_PNQPAR_IRQ6_FEC_RXER        (0x3000)
+#define MCF_GPIO_PNQPAR_PNQPAR7(x)           (((x)&0x3)<<0xE)
+#define MCF_GPIO_PNQPAR_IRQ7_GPIO            (0)
+#define MCF_GPIO_PNQPAR_IRQ7_IRQ7            (0x4000)
+
+/* Bit definitions and macros for MCF_GPIO_PORTAN */
+#define MCF_GPIO_PORTAN_PORTAN0              (0x1)
+#define MCF_GPIO_PORTAN_PORTAN1              (0x2)
+#define MCF_GPIO_PORTAN_PORTAN2              (0x4)
+#define MCF_GPIO_PORTAN_PORTAN3              (0x8)
+#define MCF_GPIO_PORTAN_PORTAN4              (0x10)
+#define MCF_GPIO_PORTAN_PORTAN5              (0x20)
+#define MCF_GPIO_PORTAN_PORTAN6              (0x40)
+#define MCF_GPIO_PORTAN_PORTAN7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRAN */
+#define MCF_GPIO_DDRAN_DDRAN0                (0x1)
+#define MCF_GPIO_DDRAN_DDRAN1                (0x2)
+#define MCF_GPIO_DDRAN_DDRAN2                (0x4)
+#define MCF_GPIO_DDRAN_DDRAN3                (0x8)
+#define MCF_GPIO_DDRAN_DDRAN4                (0x10)
+#define MCF_GPIO_DDRAN_DDRAN5                (0x20)
+#define MCF_GPIO_DDRAN_DDRAN6                (0x40)
+#define MCF_GPIO_DDRAN_DDRAN7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETAN */
+#define MCF_GPIO_SETAN_SETAN0                (0x1)
+#define MCF_GPIO_SETAN_SETAN1                (0x2)
+#define MCF_GPIO_SETAN_SETAN2                (0x4)
+#define MCF_GPIO_SETAN_SETAN3                (0x8)
+#define MCF_GPIO_SETAN_SETAN4                (0x10)
+#define MCF_GPIO_SETAN_SETAN5                (0x20)
+#define MCF_GPIO_SETAN_SETAN6                (0x40)
+#define MCF_GPIO_SETAN_SETAN7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRAN */
+#define MCF_GPIO_CLRAN_CLRAN0                (0x1)
+#define MCF_GPIO_CLRAN_CLRAN1                (0x2)
+#define MCF_GPIO_CLRAN_CLRAN2                (0x4)
+#define MCF_GPIO_CLRAN_CLRAN3                (0x8)
+#define MCF_GPIO_CLRAN_CLRAN4                (0x10)
+#define MCF_GPIO_CLRAN_CLRAN5                (0x20)
+#define MCF_GPIO_CLRAN_CLRAN6                (0x40)
+#define MCF_GPIO_CLRAN_CLRAN7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PANPAR */
+#define MCF_GPIO_PANPAR_PANPAR0              (0x1)
+#define MCF_GPIO_PANPAR_AN0_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN0_AN0              (0x1)
+#define MCF_GPIO_PANPAR_PANPAR1              (0x2)
+#define MCF_GPIO_PANPAR_AN1_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN1_AN1              (0x2)
+#define MCF_GPIO_PANPAR_PANPAR2              (0x4)
+#define MCF_GPIO_PANPAR_AN2_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN2_AN2              (0x4)
+#define MCF_GPIO_PANPAR_PANPAR3              (0x8)
+#define MCF_GPIO_PANPAR_AN3_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN3_AN3              (0x8)
+#define MCF_GPIO_PANPAR_PANPAR4              (0x10)
+#define MCF_GPIO_PANPAR_AN4_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN4_AN4              (0x10)
+#define MCF_GPIO_PANPAR_PANPAR5              (0x20)
+#define MCF_GPIO_PANPAR_AN5_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN5_AN5              (0x20)
+#define MCF_GPIO_PANPAR_PANPAR6              (0x40)
+#define MCF_GPIO_PANPAR_AN6_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN6_AN6              (0x40)
+#define MCF_GPIO_PANPAR_PANPAR7              (0x80)
+#define MCF_GPIO_PANPAR_AN7_GPIO             (0)
+#define MCF_GPIO_PANPAR_AN7_AN7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PORTAS */
+#define MCF_GPIO_PORTAS_PORTAS0              (0x1)
+#define MCF_GPIO_PORTAS_PORTAS1              (0x2)
+#define MCF_GPIO_PORTAS_PORTAS2              (0x4)
+#define MCF_GPIO_PORTAS_PORTAS3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRAS */
+#define MCF_GPIO_DDRAS_DDRAS0                (0x1)
+#define MCF_GPIO_DDRAS_DDRAS1                (0x2)
+#define MCF_GPIO_DDRAS_DDRAS2                (0x4)
+#define MCF_GPIO_DDRAS_DDRAS3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETAS */
+#define MCF_GPIO_SETAS_SETAS0                (0x1)
+#define MCF_GPIO_SETAS_SETAS1                (0x2)
+#define MCF_GPIO_SETAS_SETAS2                (0x4)
+#define MCF_GPIO_SETAS_SETAS3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRAS */
+#define MCF_GPIO_CLRAS_CLRAS0                (0x1)
+#define MCF_GPIO_CLRAS_CLRAS1                (0x2)
+#define MCF_GPIO_CLRAS_CLRAS2                (0x4)
+#define MCF_GPIO_CLRAS_CLRAS3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PASPAR */
+#define MCF_GPIO_PASPAR_PASPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PASPAR_SCL_GPIO             (0)
+#define MCF_GPIO_PASPAR_SCL_SCL              (0x1)
+#define MCF_GPIO_PASPAR_SCL_CANTX            (0x2)
+#define MCF_GPIO_PASPAR_SCL_UTXD2            (0x3)
+#define MCF_GPIO_PASPAR_PASPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PASPAR_SDA_GPIO             (0)
+#define MCF_GPIO_PASPAR_SDA_SDA              (0x4)
+#define MCF_GPIO_PASPAR_SDA_CANRX            (0x8)
+#define MCF_GPIO_PASPAR_SDA_URXD2            (0xC)
+#define MCF_GPIO_PASPAR_PASPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PASPAR_SYNCB_GPIO           (0)
+#define MCF_GPIO_PASPAR_SYNCB_SYNCB          (0x10)
+#define MCF_GPIO_PASPAR_SYNCB_CANTX          (0x20)
+#define MCF_GPIO_PASPAR_SYNCB_FEC_MDC        (0x30)
+#define MCF_GPIO_PASPAR_PASPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PASPAR_SYNCA_GPIO           (0)
+#define MCF_GPIO_PASPAR_SYNCA_SYNCA          (0x40)
+#define MCF_GPIO_PASPAR_SYNCA_CANRX          (0x80)
+#define MCF_GPIO_PASPAR_SYNC_FEC_MDIO        (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTQS */
+#define MCF_GPIO_PORTQS_PORTQS0              (0x1)
+#define MCF_GPIO_PORTQS_PORTQS1              (0x2)
+#define MCF_GPIO_PORTQS_PORTQS2              (0x4)
+#define MCF_GPIO_PORTQS_PORTQS3              (0x8)
+#define MCF_GPIO_PORTQS_PORTQS4              (0x10)
+#define MCF_GPIO_PORTQS_PORTQS5              (0x20)
+#define MCF_GPIO_PORTQS_PORTQS6              (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_DDRQS */
+#define MCF_GPIO_DDRQS_DDRQS0                (0x1)
+#define MCF_GPIO_DDRQS_DDRQS1                (0x2)
+#define MCF_GPIO_DDRQS_DDRQS2                (0x4)
+#define MCF_GPIO_DDRQS_DDRQS3                (0x8)
+#define MCF_GPIO_DDRQS_DDRQS4                (0x10)
+#define MCF_GPIO_DDRQS_DDRQS5                (0x20)
+#define MCF_GPIO_DDRQS_DDRQS6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_SETQS */
+#define MCF_GPIO_SETQS_SETQS0                (0x1)
+#define MCF_GPIO_SETQS_SETQS1                (0x2)
+#define MCF_GPIO_SETQS_SETQS2                (0x4)
+#define MCF_GPIO_SETQS_SETQS3                (0x8)
+#define MCF_GPIO_SETQS_SETQS4                (0x10)
+#define MCF_GPIO_SETQS_SETQS5                (0x20)
+#define MCF_GPIO_SETQS_SETQS6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_CLRQS */
+#define MCF_GPIO_CLRQS_CLRQS0                (0x1)
+#define MCF_GPIO_CLRQS_CLRQS1                (0x2)
+#define MCF_GPIO_CLRQS_CLRQS2                (0x4)
+#define MCF_GPIO_CLRQS_CLRQS3                (0x8)
+#define MCF_GPIO_CLRQS_CLRQS4                (0x10)
+#define MCF_GPIO_CLRQS_CLRQS5                (0x20)
+#define MCF_GPIO_CLRQS_CLRQS6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_PQSPAR */
+#define MCF_GPIO_PQSPAR_PQSPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PQSPAR_QSPI_DOUT_GPIO       (0)
+#define MCF_GPIO_PQSPAR_QSPI_DOUT_DOUT       (0x1)
+#define MCF_GPIO_PQSPAR_QSPI_DOUT_CANTX      (0x2)
+#define MCF_GPIO_PQSPAR_QSPI_DOUT_UTXD1      (0x3)
+#define MCF_GPIO_PQSPAR_PQSPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PQSPAR_QSPI_DIN_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_DIN_DIN         (0x4)
+#define MCF_GPIO_PQSPAR_QSPI_DIN_CANRX       (0x8)
+#define MCF_GPIO_PQSPAR_QSPI_DIN_URXD1       (0xC)
+#define MCF_GPIO_PQSPAR_PQSPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PQSPAR_QSPI_CLK_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CLK_CLK         (0x10)
+#define MCF_GPIO_PQSPAR_QSPI_CLK_SCL         (0x20)
+#define MCF_GPIO_PQSPAR_QSPI_CLK_URTS1       (0x30)
+#define MCF_GPIO_PQSPAR_PQSPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PQSPAR_QSPI_CS0_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CS0_CS0         (0x40)
+#define MCF_GPIO_PQSPAR_QSPI_CS0_SDA         (0x80)
+#define MCF_GPIO_PQSPAR_QSPI_CS0_UCTS1       (0xC0)
+#define MCF_GPIO_PQSPAR_PQSPAR4(x)           (((x)&0x3)<<0x8)
+#define MCF_GPIO_PQSPAR_QSPI_CS1_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CS1_CS1         (0x100)
+#define MCF_GPIO_PQSPAR_QSPI_CS1_FEC_TXEN    (0x300)
+#define MCF_GPIO_PQSPAR_PQSPAR5(x)           (((x)&0x3)<<0xA)
+#define MCF_GPIO_PQSPAR_QSPI_CS2_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CS2_CS2         (0x400)
+#define MCF_GPIO_PQSPAR_QSPI_CS2_FEC_TXCLK   (0xC00)
+#define MCF_GPIO_PQSPAR_PQSPAR6(x)           (((x)&0x3)<<0xC)
+#define MCF_GPIO_PQSPAR_QSPI_CS3_GPIO        (0)
+#define MCF_GPIO_PQSPAR_QSPI_CS3_CS3         (0x1000)
+#define MCF_GPIO_PQSPAR_QSPI_CS3_SYNCA       (0x2000)
+#define MCF_GPIO_PQSPAR_QSPI_CS3_SYNCB       (0x3000)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTA */
+#define MCF_GPIO_PORTTA_PORTTA0              (0x1)
+#define MCF_GPIO_PORTTA_PORTTA1              (0x2)
+#define MCF_GPIO_PORTTA_PORTTA2              (0x4)
+#define MCF_GPIO_PORTTA_PORTTA3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTA */
+#define MCF_GPIO_DDRTA_DDRTA0                (0x1)
+#define MCF_GPIO_DDRTA_DDRTA1                (0x2)
+#define MCF_GPIO_DDRTA_DDRTA2                (0x4)
+#define MCF_GPIO_DDRTA_DDRTA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETTA */
+#define MCF_GPIO_SETTA_SETTA0                (0x1)
+#define MCF_GPIO_SETTA_SETTA1                (0x2)
+#define MCF_GPIO_SETTA_SETTA2                (0x4)
+#define MCF_GPIO_SETTA_SETTA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTA */
+#define MCF_GPIO_CLRTA_CLRTA0                (0x1)
+#define MCF_GPIO_CLRTA_CLRTA1                (0x2)
+#define MCF_GPIO_CLRTA_CLRTA2                (0x4)
+#define MCF_GPIO_CLRTA_CLRTA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PTAPAR */
+#define MCF_GPIO_PTAPAR_PTAPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PTAPAR_GPT0_GPIO            (0)
+#define MCF_GPIO_PTAPAR_GPT0_GPT0            (0x1)
+#define MCF_GPIO_PTAPAR_GPT0_FEC_TXER        (0x2)
+#define MCF_GPIO_PTAPAR_GPT0_PWM1            (0x3)
+#define MCF_GPIO_PTAPAR_PTAPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PTAPAR_GPT1_GPIO            (0)
+#define MCF_GPIO_PTAPAR_GPT1_GPT1            (0x4)
+#define MCF_GPIO_PTAPAR_GPT1_FEC_TXD1        (0x8)
+#define MCF_GPIO_PTAPAR_GPT1_PWM3            (0xC)
+#define MCF_GPIO_PTAPAR_PTAPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PTAPAR_GPT2_GPIO            (0)
+#define MCF_GPIO_PTAPAR_GPT2_GPT2            (0x10)
+#define MCF_GPIO_PTAPAR_GPT2_FEC_TXD2        (0x20)
+#define MCF_GPIO_PTAPAR_GPT2_PWM5            (0x30)
+#define MCF_GPIO_PTAPAR_PTAPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PTAPAR_GPT3_GPIO            (0)
+#define MCF_GPIO_PTAPAR_GPT3_GPT3            (0x40)
+#define MCF_GPIO_PTAPAR_GPT3_FEC_TXD3        (0x80)
+#define MCF_GPIO_PTAPAR_GPT3_PWM7            (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTC */
+#define MCF_GPIO_PORTTC_PORTTC0              (0x1)
+#define MCF_GPIO_PORTTC_PORTTC1              (0x2)
+#define MCF_GPIO_PORTTC_PORTTC2              (0x4)
+#define MCF_GPIO_PORTTC_PORTTC3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTC */
+#define MCF_GPIO_DDRTC_DDRTC0                (0x1)
+#define MCF_GPIO_DDRTC_DDRTC1                (0x2)
+#define MCF_GPIO_DDRTC_DDRTC2                (0x4)
+#define MCF_GPIO_DDRTC_DDRTC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETTC */
+#define MCF_GPIO_SETTC_SETTC0                (0x1)
+#define MCF_GPIO_SETTC_SETTC1                (0x2)
+#define MCF_GPIO_SETTC_SETTC2                (0x4)
+#define MCF_GPIO_SETTC_SETTC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTC */
+#define MCF_GPIO_CLRTC_CLRTC0                (0x1)
+#define MCF_GPIO_CLRTC_CLRTC1                (0x2)
+#define MCF_GPIO_CLRTC_CLRTC2                (0x4)
+#define MCF_GPIO_CLRTC_CLRTC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PTCPAR */
+#define MCF_GPIO_PTCPAR_PTCPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PTCPAR_DTIN0_GPIO           (0)
+#define MCF_GPIO_PTCPAR_DTIN0_DTIN0          (0x1)
+#define MCF_GPIO_PTCPAR_DTIN0_DTOUT0         (0x2)
+#define MCF_GPIO_PTCPAR_DTIN0_PWM0           (0x3)
+#define MCF_GPIO_PTCPAR_PTCPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PTCPAR_DTIN1_GPIO           (0)
+#define MCF_GPIO_PTCPAR_DTIN1_DTIN1          (0x4)
+#define MCF_GPIO_PTCPAR_DTIN1_DTOUT1         (0x8)
+#define MCF_GPIO_PTCPAR_DTIN1_PWM2           (0xC)
+#define MCF_GPIO_PTCPAR_PTCPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PTCPAR_DTIN2_GPIO           (0)
+#define MCF_GPIO_PTCPAR_DTIN2_DTIN2          (0x10)
+#define MCF_GPIO_PTCPAR_DTIN2_DTOUT2         (0x20)
+#define MCF_GPIO_PTCPAR_DTIN2_PWM4           (0x30)
+#define MCF_GPIO_PTCPAR_PTCPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PTCPAR_DTIN3_GPIO           (0)
+#define MCF_GPIO_PTCPAR_DTIN3_DTIN3          (0x40)
+#define MCF_GPIO_PTCPAR_DTIN3_DTOUT3         (0x80)
+#define MCF_GPIO_PTCPAR_DTIN3_PWM6           (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTTD */
+#define MCF_GPIO_PORTTD_PORTTD0              (0x1)
+#define MCF_GPIO_PORTTD_PORTTD1              (0x2)
+#define MCF_GPIO_PORTTD_PORTTD2              (0x4)
+#define MCF_GPIO_PORTTD_PORTTD3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRTD */
+#define MCF_GPIO_DDRTD_DDRTD0                (0x1)
+#define MCF_GPIO_DDRTD_DDRTD1                (0x2)
+#define MCF_GPIO_DDRTD_DDRTD2                (0x4)
+#define MCF_GPIO_DDRTD_DDRTD3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETTD */
+#define MCF_GPIO_SETTD_SETTD0                (0x1)
+#define MCF_GPIO_SETTD_SETTD1                (0x2)
+#define MCF_GPIO_SETTD_SETTD2                (0x4)
+#define MCF_GPIO_SETTD_SETTD3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRTD */
+#define MCF_GPIO_CLRTD_CLRTD0                (0x1)
+#define MCF_GPIO_CLRTD_CLRTD1                (0x2)
+#define MCF_GPIO_CLRTD_CLRTD2                (0x4)
+#define MCF_GPIO_CLRTD_CLRTD3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PTDPAR */
+#define MCF_GPIO_PTDPAR_PTDPAR0              (0x1)
+#define MCF_GPIO_PTDPAR_PWM1_GPIO            (0)
+#define MCF_GPIO_PTDPAR_PWM1_PWM1            (0x1)
+#define MCF_GPIO_PTDPAR_PTDPAR1              (0x2)
+#define MCF_GPIO_PTDPAR_PWM3_GPIO            (0)
+#define MCF_GPIO_PTDPAR_PWM3_PWM3            (0x2)
+#define MCF_GPIO_PTDPAR_PTDPAR2              (0x4)
+#define MCF_GPIO_PTDPAR_PWM5_GPIO            (0)
+#define MCF_GPIO_PTDPAR_PWM5_PWM5            (0x4)
+#define MCF_GPIO_PTDPAR_PTDPAR3              (0x8)
+#define MCF_GPIO_PTDPAR_PWM7_GPIO            (0)
+#define MCF_GPIO_PTDPAR_PWM7_PWM7            (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PORTUA */
+#define MCF_GPIO_PORTUA_PORTUA0              (0x1)
+#define MCF_GPIO_PORTUA_PORTUA1              (0x2)
+#define MCF_GPIO_PORTUA_PORTUA2              (0x4)
+#define MCF_GPIO_PORTUA_PORTUA3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRUA */
+#define MCF_GPIO_DDRUA_DDRUA0                (0x1)
+#define MCF_GPIO_DDRUA_DDRUA1                (0x2)
+#define MCF_GPIO_DDRUA_DDRUA2                (0x4)
+#define MCF_GPIO_DDRUA_DDRUA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETUA */
+#define MCF_GPIO_SETUA_SETUA0                (0x1)
+#define MCF_GPIO_SETUA_SETUA1                (0x2)
+#define MCF_GPIO_SETUA_SETUA2                (0x4)
+#define MCF_GPIO_SETUA_SETUA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRUA */
+#define MCF_GPIO_CLRUA_CLRUA0                (0x1)
+#define MCF_GPIO_CLRUA_CLRUA1                (0x2)
+#define MCF_GPIO_CLRUA_CLRUA2                (0x4)
+#define MCF_GPIO_CLRUA_CLRUA3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PUAPAR */
+#define MCF_GPIO_PUAPAR_PUAPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PUAPAR_UTXD0_GPIO           (0)
+#define MCF_GPIO_PUAPAR_UTXD0_UTXD0          (0x1)
+#define MCF_GPIO_PUAPAR_UTXD0_FEC_CRS        (0x3)
+#define MCF_GPIO_PUAPAR_PUAPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PUAPAR_URXD0_GPIO           (0)
+#define MCF_GPIO_PUAPAR_URXD0_URXD0          (0x4)
+#define MCF_GPIO_PUAPAR_URXD0_FEC_RXD0       (0xC)
+#define MCF_GPIO_PUAPAR_PUAPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PUAPAR_URTS0_GPIO           (0)
+#define MCF_GPIO_PUAPAR_URTS0_URTS0          (0x10)
+#define MCF_GPIO_PUAPAR_URTS0_CANTX          (0x20)
+#define MCF_GPIO_PUAPAR_URTS0_FEC_RXDV       (0x30)
+#define MCF_GPIO_PUAPAR_PUAPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PUAPAR_UCTS0_GPIO           (0)
+#define MCF_GPIO_PUAPAR_UCTS0_UCTS0          (0x40)
+#define MCF_GPIO_PUAPAR_UCTS0_CANRX          (0x80)
+#define MCF_GPIO_PUAPAR_UCTS0_FEC_RXCLK      (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTUB */
+#define MCF_GPIO_PORTUB_PORTUB0              (0x1)
+#define MCF_GPIO_PORTUB_PORTUB1              (0x2)
+#define MCF_GPIO_PORTUB_PORTUB2              (0x4)
+#define MCF_GPIO_PORTUB_PORTUB3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRUB */
+#define MCF_GPIO_DDRUB_DDRUB0                (0x1)
+#define MCF_GPIO_DDRUB_DDRUB1                (0x2)
+#define MCF_GPIO_DDRUB_DDRUB2                (0x4)
+#define MCF_GPIO_DDRUB_DDRUB3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETUB */
+#define MCF_GPIO_SETUB_SETUB0                (0x1)
+#define MCF_GPIO_SETUB_SETUB1                (0x2)
+#define MCF_GPIO_SETUB_SETUB2                (0x4)
+#define MCF_GPIO_SETUB_SETUB3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRUB */
+#define MCF_GPIO_CLRUB_CLRUB0                (0x1)
+#define MCF_GPIO_CLRUB_CLRUB1                (0x2)
+#define MCF_GPIO_CLRUB_CLRUB2                (0x4)
+#define MCF_GPIO_CLRUB_CLRUB3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PUBPAR */
+#define MCF_GPIO_PUBPAR_PUBPAR0(x)           (((x)&0x3)<<0)
+#define MCF_GPIO_PUBPAR_UTXD1_GPIO           (0)
+#define MCF_GPIO_PUBPAR_UTXD1_UTXD1          (0x1)
+#define MCF_GPIO_PUBPAR_UTXD1_FEC_COL        (0x3)
+#define MCF_GPIO_PUBPAR_PUBPAR1(x)           (((x)&0x3)<<0x2)
+#define MCF_GPIO_PUBPAR_URXD1_GPIO           (0)
+#define MCF_GPIO_PUBPAR_URXD1_URXD1          (0x4)
+#define MCF_GPIO_PUBPAR_URXD1_FEC_TXD0       (0xC)
+#define MCF_GPIO_PUBPAR_PUBPAR2(x)           (((x)&0x3)<<0x4)
+#define MCF_GPIO_PUBPAR_URTS1_GPIO           (0)
+#define MCF_GPIO_PUBPAR_URTS1_URTS1          (0x10)
+#define MCF_GPIO_PUBPAR_URTS1_SYNCB          (0x20)
+#define MCF_GPIO_PUBPAR_URTS1_UTXD2          (0x30)
+#define MCF_GPIO_PUBPAR_PUBPAR3(x)           (((x)&0x3)<<0x6)
+#define MCF_GPIO_PUBPAR_UCTS1_GPIO           (0)
+#define MCF_GPIO_PUBPAR_UCTS1_UCTS1          (0x40)
+#define MCF_GPIO_PUBPAR_UCTS1_SYNCA          (0x80)
+#define MCF_GPIO_PUBPAR_UCTS1_URXD2          (0xC0)
+
+/* Bit definitions and macros for MCF_GPIO_PORTUC */
+#define MCF_GPIO_PORTUC_PORTUC0              (0x1)
+#define MCF_GPIO_PORTUC_PORTUC1              (0x2)
+#define MCF_GPIO_PORTUC_PORTUC2              (0x4)
+#define MCF_GPIO_PORTUC_PORTUC3              (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_DDRUC */
+#define MCF_GPIO_DDRUC_DDRUC0                (0x1)
+#define MCF_GPIO_DDRUC_DDRUC1                (0x2)
+#define MCF_GPIO_DDRUC_DDRUC2                (0x4)
+#define MCF_GPIO_DDRUC_DDRUC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_SETUC */
+#define MCF_GPIO_SETUC_SETUC0                (0x1)
+#define MCF_GPIO_SETUC_SETUC1                (0x2)
+#define MCF_GPIO_SETUC_SETUC2                (0x4)
+#define MCF_GPIO_SETUC_SETUC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_CLRUC */
+#define MCF_GPIO_CLRUC_CLRUC0                (0x1)
+#define MCF_GPIO_CLRUC_CLRUC1                (0x2)
+#define MCF_GPIO_CLRUC_CLRUC2                (0x4)
+#define MCF_GPIO_CLRUC_CLRUC3                (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PUCPAR */
+#define MCF_GPIO_PUCPAR_PUCPAR0              (0x1)
+#define MCF_GPIO_PUCPAR_UTXD2_GPIO           (0)
+#define MCF_GPIO_PUCPAR_UTXD2_UTXD2          (0x1)
+#define MCF_GPIO_PUCPAR_PUCPAR1              (0x2)
+#define MCF_GPIO_PUCPAR_URXD2_GPIO           (0)
+#define MCF_GPIO_PUCPAR_URXD2_URXD2          (0x2)
+#define MCF_GPIO_PUCPAR_PUCPAR2              (0x4)
+#define MCF_GPIO_PUCPAR_URTS2_GPIO           (0)
+#define MCF_GPIO_PUCPAR_URTS2_URTS2          (0x4)
+#define MCF_GPIO_PUCPAR_PUCPAR3              (0x8)
+#define MCF_GPIO_PUCPAR_UCTS2_GPIO           (0)
+#define MCF_GPIO_PUCPAR_UCTS2_UCTS2          (0x8)
+
+/* Bit definitions and macros for MCF_GPIO_PORTDD */
+#define MCF_GPIO_PORTDD_PORTDD0              (0x1)
+#define MCF_GPIO_PORTDD_PORTDD1              (0x2)
+#define MCF_GPIO_PORTDD_PORTDD2              (0x4)
+#define MCF_GPIO_PORTDD_PORTDD3              (0x8)
+#define MCF_GPIO_PORTDD_PORTDD4              (0x10)
+#define MCF_GPIO_PORTDD_PORTDD5              (0x20)
+#define MCF_GPIO_PORTDD_PORTDD6              (0x40)
+#define MCF_GPIO_PORTDD_PORTDD7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRDD */
+#define MCF_GPIO_DDRDD_DDRDD0                (0x1)
+#define MCF_GPIO_DDRDD_DDRDD1                (0x2)
+#define MCF_GPIO_DDRDD_DDRDD2                (0x4)
+#define MCF_GPIO_DDRDD_DDRDD3                (0x8)
+#define MCF_GPIO_DDRDD_DDRDD4                (0x10)
+#define MCF_GPIO_DDRDD_DDRDD5                (0x20)
+#define MCF_GPIO_DDRDD_DDRDD6                (0x40)
+#define MCF_GPIO_DDRDD_DDRDD7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETDD */
+#define MCF_GPIO_SETDD_SETDD0                (0x1)
+#define MCF_GPIO_SETDD_SETDD1                (0x2)
+#define MCF_GPIO_SETDD_SETDD2                (0x4)
+#define MCF_GPIO_SETDD_SETDD3                (0x8)
+#define MCF_GPIO_SETDD_SETDD4                (0x10)
+#define MCF_GPIO_SETDD_SETDD5                (0x20)
+#define MCF_GPIO_SETDD_SETDD6                (0x40)
+#define MCF_GPIO_SETDD_SETDD7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRDD */
+#define MCF_GPIO_CLRDD_CLRDD0                (0x1)
+#define MCF_GPIO_CLRDD_CLRDD1                (0x2)
+#define MCF_GPIO_CLRDD_CLRDD2                (0x4)
+#define MCF_GPIO_CLRDD_CLRDD3                (0x8)
+#define MCF_GPIO_CLRDD_CLRDD4                (0x10)
+#define MCF_GPIO_CLRDD_CLRDD5                (0x20)
+#define MCF_GPIO_CLRDD_CLRDD6                (0x40)
+#define MCF_GPIO_CLRDD_CLRDD7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PDDPAR */
+#define MCF_GPIO_PDDPAR_PDDPAR0              (0x1)
+#define MCF_GPIO_PDDPAR_PDD0_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PDD0_PST0            (0x1)
+#define MCF_GPIO_PDDPAR_PDDPAR1              (0x2)
+#define MCF_GPIO_PDDPAR_PDD1_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PDD1_PST1            (0x2)
+#define MCF_GPIO_PDDPAR_PDDPAR2              (0x4)
+#define MCF_GPIO_PDDPAR_PDD2_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PDD2_PST2            (0x4)
+#define MCF_GPIO_PDDPAR_PDDPAR3              (0x8)
+#define MCF_GPIO_PDDPAR_PDD3_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PDD3_PST3            (0x8)
+#define MCF_GPIO_PDDPAR_PDDPAR4              (0x10)
+#define MCF_GPIO_PDDPAR_PDD4_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PDD4_DDATA0          (0x10)
+#define MCF_GPIO_PDDPAR_PDDPAR5              (0x20)
+#define MCF_GPIO_PDDPAR_PDD5_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PDD5_DDATA1          (0x20)
+#define MCF_GPIO_PDDPAR_PDDPAR6              (0x40)
+#define MCF_GPIO_PDDPAR_PDD6_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PDD6_DDATA2          (0x40)
+#define MCF_GPIO_PDDPAR_PDDPAR7              (0x80)
+#define MCF_GPIO_PDDPAR_PDD7_GPIO            (0)
+#define MCF_GPIO_PDDPAR_PDD7_DDATA3          (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PORTLD */
+#define MCF_GPIO_PORTLD_PORTLD0              (0x1)
+#define MCF_GPIO_PORTLD_PORTLD1              (0x2)
+#define MCF_GPIO_PORTLD_PORTLD2              (0x4)
+#define MCF_GPIO_PORTLD_PORTLD3              (0x8)
+#define MCF_GPIO_PORTLD_PORTLD4              (0x10)
+#define MCF_GPIO_PORTLD_PORTLD5              (0x20)
+#define MCF_GPIO_PORTLD_PORTLD6              (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_DDRLD */
+#define MCF_GPIO_DDRLD_DDRLD0                (0x1)
+#define MCF_GPIO_DDRLD_DDRLD1                (0x2)
+#define MCF_GPIO_DDRLD_DDRLD2                (0x4)
+#define MCF_GPIO_DDRLD_DDRLD3                (0x8)
+#define MCF_GPIO_DDRLD_DDRLD4                (0x10)
+#define MCF_GPIO_DDRLD_DDRLD5                (0x20)
+#define MCF_GPIO_DDRLD_DDRLD6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_SETLD */
+#define MCF_GPIO_SETLD_SETLD0                (0x1)
+#define MCF_GPIO_SETLD_SETLD1                (0x2)
+#define MCF_GPIO_SETLD_SETLD2                (0x4)
+#define MCF_GPIO_SETLD_SETLD3                (0x8)
+#define MCF_GPIO_SETLD_SETLD4                (0x10)
+#define MCF_GPIO_SETLD_SETLD5                (0x20)
+#define MCF_GPIO_SETLD_SETLD6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_CLRLD */
+#define MCF_GPIO_CLRLD_CLRLD0                (0x1)
+#define MCF_GPIO_CLRLD_CLRLD1                (0x2)
+#define MCF_GPIO_CLRLD_CLRLD2                (0x4)
+#define MCF_GPIO_CLRLD_CLRLD3                (0x8)
+#define MCF_GPIO_CLRLD_CLRLD4                (0x10)
+#define MCF_GPIO_CLRLD_CLRLD5                (0x20)
+#define MCF_GPIO_CLRLD_CLRLD6                (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_PLDPAR */
+#define MCF_GPIO_PLDPAR_PLDPAR0              (0x1)
+#define MCF_GPIO_PLDPAR_ACTLED_GPIO          (0)
+#define MCF_GPIO_PLDPAR_ACTLED_ACTLED        (0x1)
+#define MCF_GPIO_PLDPAR_PLDPAR1              (0x2)
+#define MCF_GPIO_PLDPAR_LINKLED_GPIO         (0)
+#define MCF_GPIO_PLDPAR_LINKLED_LINKLED      (0x2)
+#define MCF_GPIO_PLDPAR_PLDPAR2              (0x4)
+#define MCF_GPIO_PLDPAR_SPDLED_GPIO          (0)
+#define MCF_GPIO_PLDPAR_SPDLED_SPDLED        (0x4)
+#define MCF_GPIO_PLDPAR_PLDPAR3              (0x8)
+#define MCF_GPIO_PLDPAR_DUPLED_GPIO          (0)
+#define MCF_GPIO_PLDPAR_DUPLED_DUPLED        (0x8)
+#define MCF_GPIO_PLDPAR_PLDPAR4              (0x10)
+#define MCF_GPIO_PLDPAR_COLLED_GPIO          (0)
+#define MCF_GPIO_PLDPAR_COLLED_COLLED        (0x10)
+#define MCF_GPIO_PLDPAR_PLDPAR5              (0x20)
+#define MCF_GPIO_PLDPAR_RXLED_GPIO           (0)
+#define MCF_GPIO_PLDPAR_RXLED_RXLED          (0x20)
+#define MCF_GPIO_PLDPAR_PLDPAR6              (0x40)
+#define MCF_GPIO_PLDPAR_TXLED_GPIO           (0)
+#define MCF_GPIO_PLDPAR_TXLED_TXLED          (0x40)
+
+/* Bit definitions and macros for MCF_GPIO_PORTGP */
+#define MCF_GPIO_PORTGP_PORTGP0              (0x1)
+#define MCF_GPIO_PORTGP_PORTGP1              (0x2)
+#define MCF_GPIO_PORTGP_PORTGP2              (0x4)
+#define MCF_GPIO_PORTGP_PORTGP3              (0x8)
+#define MCF_GPIO_PORTGP_PORTGP4              (0x10)
+#define MCF_GPIO_PORTGP_PORTGP5              (0x20)
+#define MCF_GPIO_PORTGP_PORTGP6              (0x40)
+#define MCF_GPIO_PORTGP_PORTGP7              (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_DDRGP */
+#define MCF_GPIO_DDRGP_DDRGP0                (0x1)
+#define MCF_GPIO_DDRGP_DDRGP1                (0x2)
+#define MCF_GPIO_DDRGP_DDRGP2                (0x4)
+#define MCF_GPIO_DDRGP_DDRGP3                (0x8)
+#define MCF_GPIO_DDRGP_DDRGP4                (0x10)
+#define MCF_GPIO_DDRGP_DDRGP5                (0x20)
+#define MCF_GPIO_DDRGP_DDRGP6                (0x40)
+#define MCF_GPIO_DDRGP_DDRGP7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_SETGP */
+#define MCF_GPIO_SETGP_SETGP0                (0x1)
+#define MCF_GPIO_SETGP_SETGP1                (0x2)
+#define MCF_GPIO_SETGP_SETGP2                (0x4)
+#define MCF_GPIO_SETGP_SETGP3                (0x8)
+#define MCF_GPIO_SETGP_SETGP4                (0x10)
+#define MCF_GPIO_SETGP_SETGP5                (0x20)
+#define MCF_GPIO_SETGP_SETGP6                (0x40)
+#define MCF_GPIO_SETGP_SETGP7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_CLRGP */
+#define MCF_GPIO_CLRGP_CLRGP0                (0x1)
+#define MCF_GPIO_CLRGP_CLRGP1                (0x2)
+#define MCF_GPIO_CLRGP_CLRGP2                (0x4)
+#define MCF_GPIO_CLRGP_CLRGP3                (0x8)
+#define MCF_GPIO_CLRGP_CLRGP4                (0x10)
+#define MCF_GPIO_CLRGP_CLRGP5                (0x20)
+#define MCF_GPIO_CLRGP_CLRGP6                (0x40)
+#define MCF_GPIO_CLRGP_CLRGP7                (0x80)
+
+/* Bit definitions and macros for MCF_GPIO_PGPPAR */
+#define MCF_GPIO_PGPPAR_PGPPAR0              (0x1)
+#define MCF_GPIO_PGPPAR_IRQ8_GPIO            (0)
+#define MCF_GPIO_PGPPAR_IRQ8_IRQ8            (0x1)
+#define MCF_GPIO_PGPPAR_PGPPAR1              (0x2)
+#define MCF_GPIO_PGPPAR_IRQ9_GPIO            (0)
+#define MCF_GPIO_PGPPAR_IRQ9_IRQ9            (0x2)
+#define MCF_GPIO_PGPPAR_PGPPAR2              (0x4)
+#define MCF_GPIO_PGPPAR_IRQ10_GPIO           (0)
+#define MCF_GPIO_PGPPAR_IRQ10_IRQ10          (0x4)
+#define MCF_GPIO_PGPPAR_PGPPAR3              (0x8)
+#define MCF_GPIO_PGPPAR_IRQ11_GPIO           (0)
+#define MCF_GPIO_PGPPAR_IRQ11_IRQ11          (0x8)
+#define MCF_GPIO_PGPPAR_PGPPAR4              (0x10)
+#define MCF_GPIO_PGPPAR_IRQ12_GPIO           (0)
+#define MCF_GPIO_PGPPAR_IRQ12_IRQ12          (0x10)
+#define MCF_GPIO_PGPPAR_PGPPAR5              (0x20)
+#define MCF_GPIO_PGPPAR_IRQ13_GPIO           (0)
+#define MCF_GPIO_PGPPAR_IRQ13_IRQ13          (0x20)
+#define MCF_GPIO_PGPPAR_PGPPAR6              (0x40)
+#define MCF_GPIO_PGPPAR_IRQ14_GPIO           (0)
+#define MCF_GPIO_PGPPAR_IRQ14_IRQ14          (0x40)
+#define MCF_GPIO_PGPPAR_PGPPAR7              (0x80)
+#define MCF_GPIO_PGPPAR_IRQ15_GPIO           (0)
+#define MCF_GPIO_PGPPAR_IRQ15_IRQ15          (0x80)
+
+
+#endif /* __MCF52235_GPIO_H__ */
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     /*
+ * File:    exceptions.c
+ * Purpose: Generic exception handling for ColdFire processors
+ *
+ */
+#include "exceptions.h"
+#include "startcf.h"
+#include "support_common.h"
+#include <ansi_parms.h>
+
+#define REGISTER_ABI __REGABI__
+
+
+extern void vPIT0InterruptHandler( void );
+extern void vUART0InterruptHandler( void );
+extern void vPortYieldISR( void );
+extern void vFECISRHandler( void );
+
+/***********************************************************************/
+/*
+ *  Set NO_PRINTF to 0 in order the exceptions.c interrupt handler
+ *  to output messages to the standard io. 
+ * 
+ */
+#define NO_PRINTF    1
+
+#if NO_PRINTF
+#define VECTORDISPLAY(MESSAGE)                    asm { nop; };
+#define VECTORDISPLAY2(MESSAGE,MESSAGE2)          asm { nop; };
+#define VECTORDISPLAY3(MESSAGE,MESSAGE2,MESSAGE3) asm { nop; };
+#else
+#include <stdio.h>
+#define VECTORDISPLAY(MESSAGE1)                    printf(MESSAGE1);
+#define VECTORDISPLAY2(MESSAGE1,MESSAGE2)          printf(MESSAGE1,MESSAGE2);
+#define VECTORDISPLAY3(MESSAGE1,MESSAGE2,MESSAGE3) printf(MESSAGE1,MESSAGE2,MESSAGE3);
+#endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern unsigned long far _SP_INIT[];
+
+/***********************************************************************/
+/*
+ * Handling of the TRK ColdFire libs (printf support in Debugger Terminal) 
+ * 
+ * To enable this support (setup by default in CONSOLE_RAM build target
+ * if available):  
+ * - Set CONSOLE_IO_SUPPORT to 1 in this file; this will enable 
+ *   TrapHandler_printf for the trap #14 exception.
+ *   (this is set by default to 1 in the ColdFire Pre-Processor panel for
+ *   the CONSOLE_RAM build target)
+ *
+ * - Make sure the file:
+ *   {Compiler}ColdFire_Support\msl\MSL_C\MSL_ColdFire\Src\console_io_cf.c
+ *   is referenced from your project. 
+ *
+ * - Make sure that in the CF Exceptions panel the check box
+ *   "46 TRAP #14 for Console I/O", in the "User Application Exceptions"
+ *   area is set.
+ *
+ */
+#ifndef CONSOLE_IO_SUPPORT
+#define CONSOLE_IO_SUPPORT  0 
+#endif
+
+#if CONSOLE_IO_SUPPORT
+asm void TrapHandler_printf(void) {
+   HALT
+   RTE
+}
+#endif                                                   
+
+/***********************************************************************/
+/*
+ * This is the handler for all exceptions which are not common to all 
+ * ColdFire Chips.  
+ *
+ * Called by mcf_exception_handler
+ * 
+ */
+void derivative_interrupt(unsigned long vector)
+{
+   if (vector < 64 || vector > 192) {
+      VECTORDISPLAY2("User Defined Vector #%d\n",vector);
+   }
+}
+
+/***********************************************************************
+ *
+ * This is the exception handler for all  exceptions common to all 
+ * chips ColdFire.  Most exceptions do nothing, but some of the more 
+ * important ones are handled to some extent.
+ *
+ * Called by asm_exception_handler 
+ *
+ * The ColdFire family of processors has a simplified exception stack
+ * frame that looks like the following:
+ *
+ *              3322222222221111 111111
+ *              1098765432109876 5432109876543210
+ *           8 +----------------+----------------+
+ *             |         Program Counter         |
+ *           4 +----------------+----------------+
+ *             |FS/Fmt/Vector/FS|      SR        |
+ *   SP -->  0 +----------------+----------------+
+ *
+ * The stack self-aligns to a 4-byte boundary at an exception, with
+ * the FS/Fmt/Vector/FS field indicating the size of the adjustment
+ * (SP += 0,1,2,3 bytes).
+ *             31     28 27      26 25    18 17      16 15                                  0
+ *           4 +---------------------------------------+------------------------------------+
+ *             | Format | FS[3..2] | Vector | FS[1..0] |                 SR                 |
+ *   SP -->  0 +---------------------------------------+------------------------------------+
+ */ 
+#define MCF5XXX_RD_SF_FORMAT(PTR)   \
+   ((*((unsigned short *)(PTR)) >> 12) & 0x00FF)
+
+#define MCF5XXX_RD_SF_VECTOR(PTR)   \
+   ((*((unsigned short *)(PTR)) >>  2) & 0x00FF)
+
+#define MCF5XXX_RD_SF_FS(PTR)    \
+   ( ((*((unsigned short *)(PTR)) & 0x0C00) >> 8) | (*((unsigned short *)(PTR)) & 0x0003) )
+
+#define MCF5XXX_SF_SR(PTR)    *(((unsigned short *)(PTR))+1)
+
+#define MCF5XXX_SF_PC(PTR)    *((unsigned long *)(PTR)+1)
+
+#define MCF5XXX_EXCEPTFMT     "%s -- PC = %#08X\n"
+
+
+void mcf_exception_handler(void *framepointer) 
+{
+   volatile unsigned long exceptionStackFrame = (*(unsigned long *)(framepointer)); 
+   volatile unsigned short stackFrameSR       = MCF5XXX_SF_SR(framepointer);  
+   volatile unsigned short stackFrameWord     = (*(unsigned short *)(framepointer));  
+   volatile unsigned long  stackFrameFormat   = (unsigned long)MCF5XXX_RD_SF_FORMAT(&stackFrameWord);
+   volatile unsigned long  stackFrameFS       = (unsigned long)MCF5XXX_RD_SF_FS(&stackFrameWord);
+   volatile unsigned long  stackFrameVector   = (unsigned long)MCF5XXX_RD_SF_VECTOR(&stackFrameWord);
+   volatile unsigned long  stackFramePC       = MCF5XXX_SF_PC(framepointer);
+
+   switch (stackFrameFormat)
+   {
+      case 4:
+      case 5:
+      case 6:
+      case 7:
+         break;
+      default:
+         VECTORDISPLAY3(MCF5XXX_EXCEPTFMT,"Illegal stack type", stackFramePC);
+         break;
+   }
+
+   switch (stackFrameVector)
+   {
+   case 2:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Access Error", stackFramePC);
+      switch (stackFrameFS)
+      {
+         case 4:
+            VECTORDISPLAY("Error on instruction fetch\n");
+            break;
+         case 8:
+            VECTORDISPLAY("Error on operand write\n");
+            break;
+         case 9:
+            VECTORDISPLAY("Attempted write to write-protected space\n");
+            break;
+         case 12:
+            VECTORDISPLAY("Error on operand read\n");
+            break;
+         default:
+            VECTORDISPLAY("Reserved Fault Status Encoding\n");
+            break;
+      }
+      break;
+   case 3:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Address Error", stackFramePC);
+      switch (stackFrameFS)
+      {
+         case 4:
+            VECTORDISPLAY("Error on instruction fetch\n");
+            break;
+         case 8:
+            VECTORDISPLAY("Error on operand write\n");
+            break;
+         case 9:
+            VECTORDISPLAY("Attempted write to write-protected space\n");
+            break;
+         case 12:
+            VECTORDISPLAY("Error on operand read\n");
+            break;
+         default:
+            VECTORDISPLAY("Reserved Fault Status Encoding\n");
+            break;
+      }
+      break;
+   case 4:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Illegal instruction", stackFramePC);
+      break;
+   case 8:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Privilege violation", stackFramePC);
+      break;
+   case 9:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Trace Exception", stackFramePC);
+      break;
+   case 10:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Unimplemented A-Line Instruction", 	stackFramePC);
+      break;
+   case 11:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Unimplemented F-Line Instruction", 	stackFramePC);
+      break;
+   case 12:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Debug Interrupt", stackFramePC);
+      break;
+   case 14:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Format Error", stackFramePC);
+      break;
+   case 15:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Unitialized Interrupt", stackFramePC);
+      break;
+   case 24:
+      VECTORDISPLAY3(MCF5XXX_EXCEPTFMT, "Spurious Interrupt", stackFramePC);
+      break;
+   case 25:
+   case 26:
+   case 27:
+   case 28:
+   case 29:
+   case 30:
+   case 31:
+      VECTORDISPLAY2("Autovector interrupt level %d\n", stackFrameVector - 24);
+      break;
+   case 32:
+   case 33:
+   case 34:
+   case 35:
+   case 36:
+   case 37:
+   case 38:
+   case 39:
+   case 40:
+   case 41:
+   case 42:
+   case 43:
+   case 44:
+   case 45:
+   case 46:
+   case 47:
+      VECTORDISPLAY2("TRAP #%d\n", stackFrameVector - 32);
+      break;
+   case 5:
+   case 6:
+   case 7:
+   case 13:
+   case 16:
+   case 17:
+   case 18:
+   case 19:
+   case 20:
+   case 21:
+   case 22:
+   case 23:
+   case 48:
+   case 49:
+   case 50:
+   case 51:
+   case 52:
+   case 53:
+   case 54:
+   case 55:
+   case 56:
+   case 57:
+   case 58:
+   case 59:
+   case 60:
+   case 61:
+   case 62:
+   case 63:
+      VECTORDISPLAY2("Reserved: #%d\n", stackFrameVector);
+      break;
+   default:
+      derivative_interrupt(stackFrameVector);
+   break;
+   }
+}
+
+#if REGISTER_ABI
+asm void asm_exception_handler(void)
+{
+   link     a6,#0 
+   lea     -20(sp), sp
+   movem.l d0-d2/a0-a1, (sp)
+   lea     24(sp),a0   /* A0 point to exception stack frame on the stack */
+   jsr     mcf_exception_handler
+   movem.l (sp), d0-d2/a0-a1
+   lea     20(sp), sp
+   unlk a6
+   rte
+}
+#else
+asm void asm_exception_handler(void)
+{
+   link     a6,#0 
+   lea     -20(sp), sp
+   movem.l d0-d2/a0-a1, (sp)
+   pea     24(sp)   /* push exception frame address */
+   jsr     mcf_exception_handler
+   movem.l 4(sp), d0-d2/a0-a1
+   lea     24(sp), sp
+   unlk a6
+   rte
+}
+#endif
+
+typedef void (* vectorTableEntryType)(void);
+
+#pragma define_section vectortable ".vectortable" far_absolute R
+
+/* CF have 255 vector + SP_INIT in the vector table (256 entries)
+*/  
+__declspec(vectortable) vectorTableEntryType _vect[256] = {   /* Interrupt vector table */
+   (vectorTableEntryType)__SP_AFTER_RESET,  /*   0 (0x000) Initial supervisor SP      */
+   _startup,                        /*   1 (0x004) Initial PC                 */
+   asm_exception_handler,           /*   2 (0x008) Access Error               */
+   asm_exception_handler,           /*   3 (0x00C) Address Error              */
+   asm_exception_handler,           /*   4 (0x010) Illegal Instruction        */
+   asm_exception_handler,           /*   5 (0x014) Reserved                   */
+   asm_exception_handler,           /*   6 (0x018) Reserved                   */
+   asm_exception_handler,           /*   7 (0x01C) Reserved                   */
+   asm_exception_handler,           /*   8 (0x020) Privilege Violation        */
+   asm_exception_handler,           /*   9 (0x024) Trace                      */
+   asm_exception_handler,           /*  10 (0x028) Unimplemented A-Line       */
+   asm_exception_handler,           /*  11 (0x02C) Unimplemented F-Line       */
+   asm_exception_handler,           /*  12 (0x030) Debug Interrupt            */
+   asm_exception_handler,           /*  13 (0x034) Reserved                   */
+   asm_exception_handler,           /*  14 (0x038) Format Error               */
+   asm_exception_handler,           /*  15 (0x03C) Unitialized Int            */
+   asm_exception_handler,           /*  16 (0x040) Reserved                   */
+   asm_exception_handler,           /*  17 (0x044) Reserved                   */
+   asm_exception_handler,           /*  18 (0x048) Reserved                   */
+   asm_exception_handler,           /*  19 (0x04C) Reserved                   */
+   asm_exception_handler,           /*  20 (0x050) Reserved                   */
+   asm_exception_handler,           /*  21 (0x054) Reserved                   */
+   asm_exception_handler,           /*  22 (0x058) Reserved                   */
+   asm_exception_handler,           /*  23 (0x05C) Reserved                   */
+   asm_exception_handler,           /*  24 (0x060) Spurious Interrupt         */
+   asm_exception_handler,           /*  25 (0x064) Autovector Level 1         */
+   asm_exception_handler,           /*  26 (0x068) Autovector Level 2         */
+   asm_exception_handler,           /*  27 (0x06C) Autovector Level 3         */
+   asm_exception_handler,           /*  28 (0x070) Autovector Level 4         */
+   asm_exception_handler,           /*  29 (0x074) Autovector Level 5         */
+   asm_exception_handler,           /*  30 (0x078) Autovector Level 6         */
+   asm_exception_handler,           /*  31 (0x07C) Autovector Level 7         */
+   asm_exception_handler,           /*  32 (0x080) TRAP #0                    */
+   asm_exception_handler,           /*  33 (0x084) TRAP #1                    */
+   asm_exception_handler,           /*  34 (0x088) TRAP #2                    */
+   asm_exception_handler,           /*  35 (0x08C) TRAP #3                    */
+   asm_exception_handler,           /*  36 (0x090) TRAP #4                    */
+   asm_exception_handler,           /*  37 (0x094) TRAP #5                    */
+   asm_exception_handler,           /*  38 (0x098) TRAP #6                    */
+   asm_exception_handler,           /*  39 (0x09C) TRAP #7                    */
+   asm_exception_handler,           /*  40 (0x0A0) TRAP #8                    */
+   asm_exception_handler,           /*  41 (0x0A4) TRAP #9                    */
+   asm_exception_handler,           /*  42 (0x0A8) TRAP #10                   */
+   asm_exception_handler,           /*  43 (0x0AC) TRAP #11                   */
+   asm_exception_handler,           /*  44 (0x0B0) TRAP #12                   */
+   asm_exception_handler,           /*  45 (0x0B4) TRAP #13                   */
+#if CONSOLE_IO_SUPPORT   
+   TrapHandler_printf,              /*  46 (0x0B8) TRAP #14                   */
+#else
+   asm_exception_handler,           /*  46 (0x0B8) TRAP #14                   */
+#endif   
+   asm_exception_handler,           /*  47 (0x0BC) TRAP #15                   */
+   asm_exception_handler,           /*  48 (0x0C0) Reserved                   */
+   asm_exception_handler,           /*  49 (0x0C4) Reserved                   */
+   asm_exception_handler,           /*  50 (0x0C8) Reserved                   */
+   asm_exception_handler,           /*  51 (0x0CC) Reserved                   */
+   asm_exception_handler,           /*  52 (0x0D0) Reserved                   */
+   asm_exception_handler,           /*  53 (0x0D4) Reserved                   */
+   asm_exception_handler,           /*  54 (0x0D8) Reserved                   */
+   asm_exception_handler,           /*  55 (0x0DC) Reserved                   */
+   asm_exception_handler,           /*  56 (0x0E0) Reserved                   */
+   asm_exception_handler,           /*  57 (0x0E4) Reserved                   */
+   asm_exception_handler,           /*  58 (0x0E8) Reserved                   */
+   asm_exception_handler,           /*  59 (0x0EC) Reserved                   */
+   asm_exception_handler,           /*  60 (0x0F0) Reserved                   */
+   asm_exception_handler,           /*  61 (0x0F4) Reserved                   */
+   asm_exception_handler,           /*  62 (0x0F8) Reserved                   */
+   asm_exception_handler,           /*  63 (0x0FC) Reserved                   */
+   asm_exception_handler,           /*  64 (0x100) Device-specific interrupts */
+   asm_exception_handler,           /*  65 (0x104) Device-specific interrupts */
+   asm_exception_handler,           /*  66 (0x108) Device-specific interrupts */
+   asm_exception_handler,           /*  67 (0x10C) Device-specific interrupts */
+   asm_exception_handler,           /*  68 (0x110) Device-specific interrupts */
+   asm_exception_handler,           /*  69 (0x114) Device-specific interrupts */
+   asm_exception_handler,           /*  70 (0x118) Device-specific interrupts */
+   asm_exception_handler,           /*  71 (0x11C) Device-specific interrupts */
+   asm_exception_handler,           /*  72 (0x120) Device-specific interrupts */
+   asm_exception_handler,           /*  73 (0x124) Device-specific interrupts */
+   asm_exception_handler,           /*  74 (0x128) Device-specific interrupts */
+   asm_exception_handler,           /*  75 (0x12C) Device-specific interrupts */
+   asm_exception_handler,           /*  76 (0x130) Device-specific interrupts */
+   vUART0InterruptHandler,          /*  77 (0x134) Device-specific interrupts */
+   asm_exception_handler,           /*  78 (0x138) Device-specific interrupts */
+   asm_exception_handler,           /*  79 (0x13C) Device-specific interrupts */
+   vPortYieldISR,           		/*  80 (0x140) Device-specific interrupts */
+   asm_exception_handler,           /*  81 (0x144) Device-specific interrupts */
+   asm_exception_handler,           /*  82 (0x148) Device-specific interrupts */
+   asm_exception_handler,           /*  83 (0x14C) Device-specific interrupts */
+   asm_exception_handler,           /*  84 (0x150) Device-specific interrupts */
+   asm_exception_handler,           /*  85 (0x154) Device-specific interrupts */
+   asm_exception_handler,           /*  86 (0x158) Device-specific interrupts */
+   asm_exception_handler,           /*  87 (0x15C) Device-specific interrupts */
+   asm_exception_handler,           /*  88 (0x160) Device-specific interrupts */
+   asm_exception_handler,           /*  89 (0x164) Device-specific interrupts */
+   asm_exception_handler,           /*  90 (0x168) Device-specific interrupts */
+   asm_exception_handler,           /*  91 (0x16C) Device-specific interrupts */
+   asm_exception_handler,           /*  92 (0x170) Device-specific interrupts */
+   asm_exception_handler,           /*  93 (0x174) Device-specific interrupts */
+   asm_exception_handler,           /*  94 (0x178) Device-specific interrupts */
+   asm_exception_handler,           /*  95 (0x17C) Device-specific interrupts */
+   asm_exception_handler,           /*  96 (0x180) Level 1 software interrupt */
+   asm_exception_handler,           /*  97 (0x184) Level 2 software interrupt */
+   asm_exception_handler,           /*  98 (0x188) Level 3 software interrupt */
+   asm_exception_handler,           /*  99 (0x18C) Level 4 software interrupt */
+   asm_exception_handler,           /* 100 (0x190) Level 5 software interrupt */
+   asm_exception_handler,           /* 101 (0x194) Level 6 software interrupt */
+   asm_exception_handler,           /* 102 (0x198) Level 7 software interrupt */
+   asm_exception_handler,           /* 103 (0x19C) Reserved                   */
+   asm_exception_handler,           /* 104 (0x1A0) Reserved                   */
+   asm_exception_handler,           /* 105 (0x1A4) Reserved                   */
+   asm_exception_handler,           /* 106 (0x1A8) Reserved                   */
+   asm_exception_handler,           /* 107 (0x___) Reserved                   */
+   asm_exception_handler,           /* 108 (0x___) Reserved                   */
+   asm_exception_handler,           /* 109 (0x___) Reserved                   */
+   asm_exception_handler,           /* 110 (0x___) Reserved                   */
+   asm_exception_handler,           /* 111 (0x___) Reserved                   */
+   asm_exception_handler,           /* 112 (0x___) Reserved                   */
+   asm_exception_handler,           /* 113 (0x___) Reserved                   */
+   asm_exception_handler,           /* 114 (0x___) Reserved                   */
+   asm_exception_handler,           /* 115 (0x___) Reserved                   */
+   asm_exception_handler,           /* 116 (0x___) Reserved                   */
+   asm_exception_handler,           /* 117 (0x___) Reserved                   */
+   asm_exception_handler,           /* 118 (0x___) Reserved                   */
+   vPIT0InterruptHandler,           /* 119 (0x___) Reserved                   */
+   asm_exception_handler,           /* 120 (0x___) Reserved                   */
+   asm_exception_handler,           /* 121 (0x___) Reserved                   */
+   asm_exception_handler,           /* 122 (0x___) Reserved                   */
+   asm_exception_handler,           /* 123 (0x___) Reserved                   */
+   asm_exception_handler,           /* 124 (0x___) Reserved                   */
+   asm_exception_handler,           /* 125 (0x___) Reserved                   */
+   asm_exception_handler,           /* 126 (0x___) Reserved                   */
+   asm_exception_handler,           /* 127 (0x___) Reserved                   */
+   asm_exception_handler,           /* 128 (0x___) Reserved                   */
+   asm_exception_handler,           /* 129 (0x___) Reserved                   */
+   asm_exception_handler,           /* 130 (0x___) Reserved                   */
+   asm_exception_handler,           /* 131 (0x___) Reserved                   */
+   asm_exception_handler,           /* 132 (0x___) Reserved                   */
+   asm_exception_handler,           /* 133 (0x___) Reserved                   */
+   asm_exception_handler,           /* 134 (0x___) Reserved                   */
+   asm_exception_handler,           /* 135 (0x___) Reserved                   */
+   asm_exception_handler,           /* 136 (0x___) Reserved                   */
+   asm_exception_handler,           /* 137 (0x___) Reserved                   */
+   asm_exception_handler,           /* 138 (0x___) Reserved                   */
+   asm_exception_handler,           /* 139 (0x___) Reserved                   */
+   asm_exception_handler,           /* 140 (0x___) Reserved                   */
+   asm_exception_handler,           /* 141 (0x___) Reserved                   */
+   asm_exception_handler,           /* 142 (0x___) Reserved                   */
+   asm_exception_handler,           /* 143 (0x___) Reserved                   */
+   asm_exception_handler,           /* 144 (0x___) Reserved                   */
+   asm_exception_handler,           /* 145 (0x___) Reserved                   */
+   asm_exception_handler,           /* 146 (0x___) Reserved                   */
+   asm_exception_handler,           /* 147 (0x___) Reserved                   */
+   asm_exception_handler,           /* 148 (0x___) Reserved                   */
+   asm_exception_handler,           /* 149 (0x___) Reserved                   */
+   asm_exception_handler,           /* 150 (0x___) Reserved                   */
+   asm_exception_handler,           /* 151 (0x___) Reserved                   */
+   asm_exception_handler,           /* 152 (0x___) Reserved                   */
+   asm_exception_handler,           /* 153 (0x___) Reserved                   */
+   asm_exception_handler,           /* 154 (0x___) Reserved                   */
+   asm_exception_handler,           /* 155 (0x___) Reserved                   */
+   asm_exception_handler,           /* 156 (0x___) Reserved                   */
+   asm_exception_handler,           /* 157 (0x___) Reserved                   */
+   asm_exception_handler,           /* 158 (0x___) Reserved                   */
+   asm_exception_handler,           /* 159 (0x___) Reserved                   */
+   asm_exception_handler,           /* 160 (0x___) Reserved                   */
+   asm_exception_handler,           /* 161 (0x___) Reserved                   */
+   asm_exception_handler,           /* 162 (0x___) Reserved                   */
+   asm_exception_handler,           /* 163 (0x___) Reserved                   */
+   asm_exception_handler,           /* 164 (0x___) Reserved                   */
+   asm_exception_handler,           /* 165 (0x___) Reserved                   */
+   asm_exception_handler,           /* 166 (0x___) Reserved                   */
+   asm_exception_handler,           /* 167 (0x___) Reserved                   */
+   asm_exception_handler,           /* 168 (0x___) Reserved                   */
+   asm_exception_handler,           /* 169 (0x___) Reserved                   */
+   asm_exception_handler,           /* 170 (0x___) Reserved                   */
+   asm_exception_handler,           /* 171 (0x___) Reserved                   */
+   asm_exception_handler,           /* 172 (0x___) Reserved                   */
+   asm_exception_handler,           /* 173 (0x___) Reserved                   */
+   asm_exception_handler,           /* 174 (0x___) Reserved                   */
+   asm_exception_handler,           /* 175 (0x___) Reserved                   */
+   asm_exception_handler,           /* 176 (0x___) Reserved                   */
+   asm_exception_handler,           /* 177 (0x___) Reserved                   */
+   asm_exception_handler,           /* 178 (0x___) Reserved                   */
+   asm_exception_handler,           /* 179 (0x___) Reserved                   */
+   asm_exception_handler,           /* 180 (0x___) Reserved                   */
+   asm_exception_handler,           /* 181 (0x___) Reserved                   */
+   asm_exception_handler,           /* 182 (0x___) Reserved                   */
+   asm_exception_handler,           /* 183 (0x___) Reserved                   */
+   asm_exception_handler,           /* 184 (0x___) Reserved                   */
+   asm_exception_handler,           /* 185 (0x___) Reserved                   */
+   asm_exception_handler,           /* 186 (0x___) Reserved                   */
+   asm_exception_handler,           /* 187 (0x___) Reserved                   */
+   asm_exception_handler,           /* 188 (0x___) Reserved                   */
+   asm_exception_handler,           /* 189 (0x___) Reserved                   */
+   asm_exception_handler,           /* 190 (0x___) Reserved                   */
+   asm_exception_handler,           /* 191 (0x___) Reserved                   */
+   asm_exception_handler,           /* 192 (0x___) Reserved                   */
+   asm_exception_handler,           /* 193 (0x___) Reserved                   */
+   asm_exception_handler,           /* 194 (0x___) Reserved                   */
+   asm_exception_handler,           /* 195 (0x___) Reserved                   */
+   asm_exception_handler,           /* 196 (0x___) Reserved                   */
+   asm_exception_handler,           /* 197 (0x___) Reserved                   */
+   asm_exception_handler,           /* 198 (0x___) Reserved                   */
+   asm_exception_handler,           /* 199 (0x___) Reserved                   */
+   asm_exception_handler,           /* 200 (0x___) Reserved                   */
+   asm_exception_handler,           /* 201 (0x___) Reserved                   */
+   asm_exception_handler,           /* 202 (0x___) Reserved                   */
+   asm_exception_handler,           /* 203 (0x___) Reserved                   */
+   asm_exception_handler,           /* 204 (0x___) Reserved                   */
+   asm_exception_handler,           /* 205 (0x___) Reserved                   */
+   asm_exception_handler,           /* 206 (0x___) Reserved                   */
+   asm_exception_handler,           /* 207 (0x___) Reserved                   */
+   asm_exception_handler,           /* 208 (0x___) Reserved                   */
+   asm_exception_handler,           /* 209 (0x___) Reserved                   */
+   asm_exception_handler,           /* 210 (0x___) Reserved                   */
+   asm_exception_handler,           /* 211 (0x___) Reserved                   */
+   asm_exception_handler,           /* 212 (0x___) Reserved                   */
+   asm_exception_handler,           /* 213 (0x___) Reserved                   */
+   asm_exception_handler,           /* 214 (0x___) Reserved                   */
+   asm_exception_handler,           /* 215 (0x___) Reserved                   */
+   asm_exception_handler,           /* 216 (0x___) Reserved                   */
+   asm_exception_handler,           /* 217 (0x___) Reserved                   */
+   asm_exception_handler,           /* 218 (0x___) Reserved                   */
+   asm_exception_handler,           /* 219 (0x___) Reserved                   */
+   asm_exception_handler,           /* 220 (0x___) Reserved                   */
+   asm_exception_handler,           /* 221 (0x___) Reserved                   */
+   asm_exception_handler,           /* 222 (0x___) Reserved                   */
+   asm_exception_handler,           /* 223 (0x___) Reserved                   */
+   asm_exception_handler,           /* 224 (0x___) Reserved                   */
+   asm_exception_handler,           /* 225 (0x___) Reserved                   */
+   asm_exception_handler,           /* 226 (0x___) Reserved                   */
+   asm_exception_handler,           /* 227 (0x___) Reserved                   */
+   asm_exception_handler,           /* 228 (0x___) Reserved                   */
+   asm_exception_handler,           /* 229 (0x___) Reserved                   */
+   asm_exception_handler,           /* 230 (0x___) Reserved                   */
+   asm_exception_handler,           /* 231 (0x___) Reserved                   */
+   asm_exception_handler,           /* 232 (0x___) Reserved                   */
+   asm_exception_handler,           /* 233 (0x___) Reserved                   */
+   asm_exception_handler,           /* 234 (0x___) Reserved                   */
+   asm_exception_handler,           /* 235 (0x___) Reserved                   */
+   asm_exception_handler,           /* 236 (0x___) Reserved                   */
+   asm_exception_handler,           /* 237 (0x___) Reserved                   */
+   asm_exception_handler,           /* 238 (0x___) Reserved                   */
+   asm_exception_handler,           /* 239 (0x___) Reserved                   */
+   asm_exception_handler,           /* 240 (0x___) Reserved                   */
+   asm_exception_handler,           /* 241 (0x___) Reserved                   */
+   asm_exception_handler,           /* 242 (0x___) Reserved                   */
+   asm_exception_handler,           /* 243 (0x___) Reserved                   */
+   asm_exception_handler,           /* 244 (0x___) Reserved                   */
+   asm_exception_handler,           /* 245 (0x___) Reserved                   */
+   asm_exception_handler,           /* 246 (0x___) Reserved                   */
+   asm_exception_handler,           /* 247 (0x___) Reserved                   */
+   asm_exception_handler,           /* 248 (0x___) Reserved                   */
+   asm_exception_handler,           /* 249 (0x___) Reserved                   */
+   asm_exception_handler,           /* 250 (0x___) Reserved                   */
+   asm_exception_handler,           /* 251 (0x___) Reserved                   */
+   asm_exception_handler,           /* 252 (0x___) Reserved                   */
+   asm_exception_handler,           /* 253 (0x___) Reserved                   */
+   asm_exception_handler,           /* 254 (0x___) Reserved                   */
+   asm_exception_handler,           /* 255 (0x___) Reserved                   */ 
+};
+
+/********************************************************************
+ * MCF5xxx ASM utility functions
+ */
+asm void mcf5xxx_wr_vbr(unsigned long) { /* Set VBR */
+	move.l	4(SP),D0
+    movec d0,VBR 
+	nop
+	rts	
+}	
+
+/********************************************************************
+ * MCF5xxx startup copy functions:
+ *
+ * Set VBR and performs RAM vector table initializatiom.
+ * The following symbol should be defined in the lcf:
+ * __VECTOR_RAM
+ *
+ * _vect is the start of the exception table in the code
+ * In case _vect address is different from __VECTOR_RAM,
+ * the vector table is copied from _vect to __VECTOR_RAM.
+ * In any case VBR is set to __VECTOR_RAM.
+ */ 
+void initialize_exceptions(void)
+{
+#if 0
+	/*
+	 * Memory map definitions from linker command files used by mcf5xxx_startup
+	 */
+
+	register uint32 n;
+    
+	/* 
+     * Copy the vector table to RAM 
+     */
+	if (__VECTOR_RAM != (unsigned long*)_vect)
+	{
+		for (n = 0; n < 256; n++)
+			__VECTOR_RAM[n] = (unsigned long)_vect[n];
+	}
+	mcf5xxx_wr_vbr((unsigned long)__VECTOR_RAM);
+#endif
+
+	mcf5xxx_wr_vbr((unsigned long)_vect);
+}
+
+#ifdef __cplusplus
+}
+#endif
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              WEBVTT
+
+00:01.320 --> 00:05.240
+In the last section we get a quick overview on how we're going to use text fields.
+
+00:05.330 --> 00:09.560
+So now that we understand how these widgets behave we're going to take a look at another diagram that's
+
+00:09.560 --> 00:14.470
+going to lay out how we're going to construct our block right.
+
+00:14.490 --> 00:19.420
+So kind of a complicated diagram here I suppose but we'll walk through it step by step.
+
+00:19.420 --> 00:20.770
+This is the entire process.
+
+00:20.770 --> 00:23.940
+This is how we're going to get this form working.
+
+00:23.950 --> 00:28.490
+Now one thing I want to point out here is that it's only showing how the text fields are going to work.
+
+00:28.510 --> 00:31.300
+We're not going to talk about the actual submit button just yet.
+
+00:31.300 --> 00:36.490
+So this is just about hey how do we validate some input that the user has entered into one of those
+
+00:36.490 --> 00:37.460
+fields.
+
+00:37.900 --> 00:44.110
+So we've got our column widget inside of our input screen or the log in screen which it's in and the
+
+00:44.110 --> 00:47.650
+column is our e-mail textfield and the password.
+
+00:47.650 --> 00:54.040
+Textfield and as we just discussed they have those on changed in your text name properties of can out
+
+00:54.040 --> 00:58.450
+on to read data out and show a validation message.
+
+00:58.450 --> 01:04.920
+So we're going to create a separate d'arte class that is going to serve as our block.
+
+01:04.930 --> 01:08.630
+This block is going to have two properties associated with it.
+
+01:08.920 --> 01:15.280
+It's going to have a stream controller to be responsible for that e-mail field and a stream controller
+
+01:15.340 --> 01:17.720
+responsible for the password field.
+
+01:18.190 --> 01:26.360
+Now any time a user changes say the email textfield that on change callback will be called when that
+
+01:26.350 --> 01:27.520
+thing gets called.
+
+01:27.650 --> 01:34.730
+We're going to take that new value that was entered into the input and dumped that into our e-mail stream
+
+01:34.730 --> 01:42.710
+controllers sync remember the sync is how we manually add new events into a stream we just pass it into
+
+01:42.710 --> 01:44.250
+the sink by calling sync.
+
+01:44.270 --> 01:50.870
+And so the Sync is going to take that new text value and it's going to pass it off to the stream that
+
+01:50.870 --> 01:54.090
+is created when we make our stream controller.
+
+01:54.230 --> 02:01.460
+We're then going to create a validation transformer just like the one we had before when we were working
+
+02:01.460 --> 02:05.070
+inside of d'arte pad working on that kind of form validation example.
+
+02:05.090 --> 02:07.340
+Just a couple of minutes ago.
+
+02:07.490 --> 02:12.050
+So we're going to take that new text that the user entered into the textfield will pass it into the
+
+02:12.050 --> 02:13.160
+stream.
+
+02:13.190 --> 02:16.080
+The text will then run through our validate transformer.
+
+02:16.400 --> 02:17.500
+If the text is valid.
+
+02:17.540 --> 02:18.830
+Great that's fine.
+
+02:19.010 --> 02:22.690
+But if it's invalid then we're going to add in air.
+
+02:23.180 --> 02:32.790
+Well then wire up that air property to that air text argument on our e-mail text field and then the
+
+02:32.790 --> 02:36.940
+entire process is going to be identical for the password textfield as well.
+
+02:36.960 --> 02:41.370
+The only difference is that we'll have a slightly different validation transformer over there to make
+
+02:41.370 --> 02:45.470
+sure that in this case we have a validation for a password.
+
+02:45.480 --> 02:48.500
+So maybe some minimum length again.
+
+02:48.510 --> 02:49.880
+All right so that's the idea.
+
+02:50.070 --> 02:51.840
+That's how we're going to approach this.
+
+02:52.110 --> 02:56.190
+So we're not going to change back over to or code editor and we're going to get started working on this
+
+02:56.190 --> 02:56.960
+blog.
+
+02:57.330 --> 03:03.210
+So I'm going to flip back over to my code editor inside of my SIRC directory.
+
+03:03.230 --> 03:09.140
+I want to make a new folder that's going to house all the code related to this block system.
+
+03:09.200 --> 03:17.240
+So inside my SLAC folder I'll make another new directory and I'm going to call it blocks like the then
+
+03:17.370 --> 03:25.480
+inside there I'm going to make a new file called simply block darte.
+
+03:25.710 --> 03:32.790
+And then finally inside this new file that we just created I'm going to create a new class called block
+
+03:34.250 --> 03:35.140
+at the top.
+
+03:35.240 --> 03:41.060
+I'm going to import the d'arte a sink module because as we just discussed we definitely know that we
+
+03:41.060 --> 03:47.140
+need to create these stream controllers and those stream controllers are part of the darte async package.
+
+03:47.360 --> 03:52.820
+So I'll do darte async at the top like so OK.
+
+03:52.870 --> 03:54.380
+So let's take a quick pause right here.
+
+03:54.400 --> 03:58.680
+When we come back the next section we're going to start to set up our two controllers and wire up the
+
+03:58.690 --> 04:00.790
+sinks and streams on both them.
+
+04:00.790 --> 04:02.760
+So quick break and I'll see you in just a minute.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  HAL_Driver/Src/stm32f4xx_hal_i2c.o: ../HAL_Driver/Src/stm32f4xx_hal_i2c.c \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_conf.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rcc.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_def.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/device/stm32f4xx.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/device/stm32f407xx.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/core_cm4.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/cmsis_version.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/cmsis_compiler.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/cmsis_gcc.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/mpu_armv7.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/device/system_stm32f4xx.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/Legacy/stm32_hal_legacy.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_exti.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_gpio.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dma.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_cortex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_adc.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_can.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_crc.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_cryp.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dac.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dcmi.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_flash.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_sram.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_ll_fsmc.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_nor.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_nand.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pccard.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_hash.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_i2c.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_i2s.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_iwdg.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rng.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rtc.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_sd.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_spi.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_tim.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_usart.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_irda.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_smartcard.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_wwdg.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pcd.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_ll_usb.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h \
+ E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_hcd.h
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_conf.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rcc.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_def.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/device/stm32f4xx.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/device/stm32f407xx.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/core_cm4.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/cmsis_version.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/cmsis_compiler.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/cmsis_gcc.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/core/mpu_armv7.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/CMSIS/device/system_stm32f4xx.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/Legacy/stm32_hal_legacy.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_exti.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_gpio.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dma.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_cortex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_adc.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_adc_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_can.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_crc.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_cryp.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dac.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dac_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dcmi.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_flash.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_sram.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_ll_fsmc.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_nor.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_nand.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pccard.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_hash.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_i2c.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_i2s.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_i2s_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_iwdg.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rng.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rtc.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_rtc_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_sd.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_ll_sdmmc.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_spi.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_tim.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_uart.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_usart.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_irda.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_smartcard.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_wwdg.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pcd.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_ll_usb.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_pcd_ex.h:
+
+E:/projects/test_bench/OPen_stm32_Workspce/test_2/HAL_Driver/Inc/stm32f4xx_hal_hcd.h:
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       Manifest-Version: 1.0
+Archiver-Version: Plexus Archiver
+Built-By: genie.tm
+Build-Jdk: 1.7.0_80
+Created-By: Apache Maven
+
+Name: epl-v10.html
+SHA-256-Digest: mpbQ2vmKpvtKpTDTmcdCxmEhsL2uSh9/+iLSE14d9/0=
+
+Name: feature.xml
+SHA-256-Digest: dWRgTU6h2OVWXjDYDw5ZlSW6q0Jz4FoBConwn38JF98=
+
+Name: feature.properties
+SHA-256-Digest: MpMb1dczgnpwrPkpn+E777/Atn2iL60kWF2LiNlpr9Q=
+
+Name: license.html
+SHA-256-Digest: X315zLynvdLZ4DaYSopgxruQUUEadA3FOPNviC+YO24=
+
+Name: META-INF/maven/org.eclipse.tm.features/org.eclipse.rse.ftp/pom.x
+ ml
+SHA-256-Digest: Lgf7syGe0MC3WR0lPnB7p8W/w+KuhhUEhTpQ3YXXrdU=
+
+Name: META-INF/maven/org.eclipse.tm.features/org.eclipse.rse.ftp/pom.p
+ roperties
+SHA-256-Digest: NLzUrzhYP2Jpj9owyLXd/hfTBEESoTolO8h1/0xTs98=
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

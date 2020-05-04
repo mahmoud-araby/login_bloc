@@ -1,0 +1,1278 @@
+           /*!< USB suspend */
+#define USB_OTG_GINTSTS_USBRST                  0x00001000U            /*!< USB reset */
+#define USB_OTG_GINTSTS_ENUMDNE                 0x00002000U            /*!< Enumeration done */
+#define USB_OTG_GINTSTS_ISOODRP                 0x00004000U            /*!< Isochronous OUT packet dropped interrupt */
+#define USB_OTG_GINTSTS_EOPF                    0x00008000U            /*!< End of periodic frame interrupt */
+#define USB_OTG_GINTSTS_IEPINT                  0x00040000U            /*!< IN endpoint interrupt */
+#define USB_OTG_GINTSTS_OEPINT                  0x00080000U            /*!< OUT endpoint interrupt */
+#define USB_OTG_GINTSTS_IISOIXFR                0x00100000U            /*!< Incomplete isochronous IN transfer */
+#define USB_OTG_GINTSTS_PXFR_INCOMPISOOUT       0x00200000U            /*!< Incomplete periodic transfer */
+#define USB_OTG_GINTSTS_DATAFSUSP               0x00400000U            /*!< Data fetch suspended */
+#define USB_OTG_GINTSTS_HPRTINT                 0x01000000U            /*!< Host port interrupt */
+#define USB_OTG_GINTSTS_HCINT                   0x02000000U            /*!< Host channels interrupt */
+#define USB_OTG_GINTSTS_PTXFE                   0x04000000U            /*!< Periodic TxFIFO empty */
+#define USB_OTG_GINTSTS_CIDSCHG                 0x10000000U            /*!< Connector ID status change */
+#define USB_OTG_GINTSTS_DISCINT                 0x20000000U            /*!< Disconnect detected interrupt */
+#define USB_OTG_GINTSTS_SRQINT                  0x40000000U            /*!< Session request/new session detected interrupt */
+#define USB_OTG_GINTSTS_WKUINT                  0x80000000U            /*!< Resume/remote wakeup detected interrupt */
+
+/********************  Bit definition forUSB_OTG_GINTMSK register  ********************/
+#define USB_OTG_GINTMSK_MMISM                   0x00000002U            /*!< Mode mismatch interrupt mask */
+#define USB_OTG_GINTMSK_OTGINT                  0x00000004U            /*!< OTG interrupt mask */
+#define USB_OTG_GINTMSK_SOFM                    0x00000008U            /*!< Start of frame mask */
+#define USB_OTG_GINTMSK_RXFLVLM                 0x00000010U            /*!< Receive FIFO nonempty mask */
+#define USB_OTG_GINTMSK_NPTXFEM                 0x00000020U            /*!< Nonperiodic TxFIFO empty mask */
+#define USB_OTG_GINTMSK_GINAKEFFM               0x00000040U            /*!< Global nonperiodic IN NAK effective mask */
+#define USB_OTG_GINTMSK_GONAKEFFM               0x00000080U            /*!< Global OUT NAK effective mask */
+#define USB_OTG_GINTMSK_ESUSPM                  0x00000400U            /*!< Early suspend mask */
+#define USB_OTG_GINTMSK_USBSUSPM                0x00000800U            /*!< USB suspend mask */
+#define USB_OTG_GINTMSK_USBRST                  0x00001000U            /*!< USB reset mask */
+#define USB_OTG_GINTMSK_ENUMDNEM                0x00002000U            /*!< Enumeration done mask */
+#define USB_OTG_GINTMSK_ISOODRPM                0x00004000U            /*!< Isochronous OUT packet dropped interrupt mask */
+#define USB_OTG_GINTMSK_EOPFM                   0x00008000U            /*!< End of periodic frame interrupt mask */
+#define USB_OTG_GINTMSK_EPMISM                  0x00020000U            /*!< Endpoint mismatch interrupt mask */
+#define USB_OTG_GINTMSK_IEPINT                  0x00040000U            /*!< IN endpoints interrupt mask */
+#define USB_OTG_GINTMSK_OEPINT                  0x00080000U            /*!< OUT endpoints interrupt mask */
+#define USB_OTG_GINTMSK_IISOIXFRM               0x00100000U            /*!< Incomplete isochronous IN transfer mask */
+#define USB_OTG_GINTMSK_PXFRM_IISOOXFRM         0x00200000U            /*!< Incomplete periodic transfer mask */
+#define USB_OTG_GINTMSK_FSUSPM                  0x00400000U            /*!< Data fetch suspended mask */
+#define USB_OTG_GINTMSK_PRTIM                   0x01000000U            /*!< Host port interrupt mask */
+#define USB_OTG_GINTMSK_HCIM                    0x02000000U            /*!< Host channels interrupt mask */
+#define USB_OTG_GINTMSK_PTXFEM                  0x04000000U            /*!< Periodic TxFIFO empty mask */
+#define USB_OTG_GINTMSK_CIDSCHGM                0x10000000U            /*!< Connector ID status change mask */
+#define USB_OTG_GINTMSK_DISCINT                 0x20000000U            /*!< Disconnect detected interrupt mask */
+#define USB_OTG_GINTMSK_SRQIM                   0x40000000U            /*!< Session request/new session detected interrupt mask */
+#define USB_OTG_GINTMSK_WUIM                    0x80000000U            /*!< Resume/remote wakeup detected interrupt mask */
+
+/********************  Bit definition forUSB_OTG_DAINT register  ********************/
+#define USB_OTG_DAINT_IEPINT                  0x0000FFFFU            /*!< IN endpoint interrupt bits */
+#define USB_OTG_DAINT_OEPINT                  0xFFFF0000U            /*!< OUT endpoint interrupt bits */
+
+/********************  Bit definition forUSB_OTG_HAINTMSK register  ********************/
+#define USB_OTG_HAINTMSK_HAINTM                  0x0000FFFFU            /*!< Channel interrupt mask */
+
+/********************  Bit definition for USB_OTG_GRXSTSP register  ********************/
+#define USB_OTG_GRXSTSP_EPNUM                    0x0000000FU            /*!< IN EP interrupt mask bits */
+#define USB_OTG_GRXSTSP_BCNT                     0x00007FF0U            /*!< OUT EP interrupt mask bits */
+#define USB_OTG_GRXSTSP_DPID                     0x00018000U            /*!< OUT EP interrupt mask bits */
+#define USB_OTG_GRXSTSP_PKTSTS                   0x001E0000U            /*!< OUT EP interrupt mask bits */
+
+/********************  Bit definition forUSB_OTG_DAINTMSK register  ********************/
+#define USB_OTG_DAINTMSK_IEPM                    0x0000FFFFU            /*!< IN EP interrupt mask bits */
+#define USB_OTG_DAINTMSK_OEPM                    0xFFFF0000U            /*!< OUT EP interrupt mask bits */
+
+/********************  Bit definition for OTG register  ********************/
+
+#define USB_OTG_CHNUM                   0x0000000FU            /*!< Channel number */
+#define USB_OTG_CHNUM_0                 0x00000001U            /*!<Bit 0 */
+#define USB_OTG_CHNUM_1                 0x00000002U            /*!<Bit 1 */
+#define USB_OTG_CHNUM_2                 0x00000004U            /*!<Bit 2 */
+#define USB_OTG_CHNUM_3                 0x00000008U            /*!<Bit 3 */
+#define USB_OTG_BCNT                    0x00007FF0U            /*!< Byte count */
+
+#define USB_OTG_DPID                    0x00018000U            /*!< Data PID */
+#define USB_OTG_DPID_0                  0x00008000U            /*!<Bit 0 */
+#define USB_OTG_DPID_1                  0x00010000U            /*!<Bit 1 */
+
+#define USB_OTG_PKTSTS                  0x001E0000U            /*!< Packet status */
+#define USB_OTG_PKTSTS_0                0x00020000U            /*!<Bit 0 */
+#define USB_OTG_PKTSTS_1                0x00040000U            /*!<Bit 1 */
+#define USB_OTG_PKTSTS_2                0x00080000U            /*!<Bit 2 */
+#define USB_OTG_PKTSTS_3                0x00100000U            /*!<Bit 3 */
+
+#define USB_OTG_EPNUM                   0x0000000FU            /*!< Endpoint number */
+#define USB_OTG_EPNUM_0                 0x00000001U            /*!<Bit 0 */
+#define USB_OTG_EPNUM_1                 0x00000002U            /*!<Bit 1 */
+#define USB_OTG_EPNUM_2                 0x00000004U            /*!<Bit 2 */
+#define USB_OTG_EPNUM_3                 0x00000008U            /*!<Bit 3 */
+
+#define USB_OTG_FRMNUM                  0x01E00000U            /*!< Frame number */
+#define USB_OTG_FRMNUM_0                0x00200000U            /*!<Bit 0 */
+#define USB_OTG_FRMNUM_1                0x00400000U            /*!<Bit 1 */
+#define USB_OTG_FRMNUM_2                0x00800000U            /*!<Bit 2 */
+#define USB_OTG_FRMNUM_3                0x01000000U            /*!<Bit 3 */
+
+/********************  Bit definition for OTG register  ********************/
+
+#define USB_OTG_CHNUM                   0x0000000FU            /*!< Channel number */
+#define USB_OTG_CHNUM_0                 0x00000001U            /*!<Bit 0 */
+#define USB_OTG_CHNUM_1                 0x00000002U            /*!<Bit 1 */
+#define USB_OTG_CHNUM_2                 0x00000004U            /*!<Bit 2 */
+#define USB_OTG_CHNUM_3                 0x00000008U            /*!<Bit 3 */
+#define USB_OTG_BCNT                    0x00007FF0U            /*!< Byte count */
+
+#define USB_OTG_DPID                    0x00018000U            /*!< Data PID */
+#define USB_OTG_DPID_0                  0x00008000U            /*!<Bit 0 */
+#define USB_OTG_DPID_1                  0x00010000U            /*!<Bit 1 */
+
+#define USB_OTG_PKTSTS                  0x001E0000U            /*!< Packet status */
+#define USB_OTG_PKTSTS_0                0x00020000U            /*!<Bit 0 */
+#define USB_OTG_PKTSTS_1                0x00040000U            /*!<Bit 1 */
+#define USB_OTG_PKTSTS_2                0x00080000U            /*!<Bit 2 */
+#define USB_OTG_PKTSTS_3                0x00100000U            /*!<Bit 3 */
+
+#define USB_OTG_EPNUM                   0x0000000FU            /*!< Endpoint number */
+#define USB_OTG_EPNUM_0                 0x00000001U            /*!<Bit 0 */
+#define USB_OTG_EPNUM_1                 0x00000002U            /*!<Bit 1 */
+#define USB_OTG_EPNUM_2                 0x00000004U            /*!<Bit 2 */
+#define USB_OTG_EPNUM_3                 0x00000008U            /*!<Bit 3 */
+
+#define USB_OTG_FRMNUM                  0x01E00000U            /*!< Frame number */
+#define USB_OTG_FRMNUM_0                0x00200000U            /*!<Bit 0 */
+#define USB_OTG_FRMNUM_1                0x00400000U            /*!<Bit 1 */
+#define USB_OTG_FRMNUM_2                0x00800000U            /*!<Bit 2 */
+#define USB_OTG_FRMNUM_3                0x01000000U            /*!<Bit 3 */
+
+/********************  Bit definition forUSB_OTG_GRXFSIZ register  ********************/
+#define USB_OTG_GRXFSIZ_RXFD                    0x0000FFFFU            /*!< RxFIFO depth */
+
+/********************  Bit definition forUSB_OTG_DVBUSDIS register  ********************/
+#define USB_OTG_DVBUSDIS_VBUSDT                  0x0000FFFFU            /*!< Device VBUS discharge time */
+
+/********************  Bit definition for OTG register  ********************/
+#define USB_OTG_NPTXFSA                 0x0000FFFFU            /*!< Nonperiodic transmit RAM start address */
+#define USB_OTG_NPTXFD                  0xFFFF0000U            /*!< Nonperiodic TxFIFO depth */
+#define USB_OTG_TX0FSA                  0x0000FFFFU            /*!< Endpoint 0 transmit RAM start address */
+#define USB_OTG_TX0FD                   0xFFFF0000U            /*!< Endpoint 0 TxFIFO depth */
+
+/********************  Bit definition forUSB_OTG_DVBUSPULSE register  ********************/
+#define USB_OTG_DVBUSPULSE_DVBUSP                  0x00000FFFU            /*!< Device VBUS pulsing time */
+
+/********************  Bit definition forUSB_OTG_GNPTXSTS register  ********************/
+#define USB_OTG_GNPTXSTS_NPTXFSAV                0x0000FFFFU            /*!< Nonperiodic TxFIFO space available */
+
+#define USB_OTG_GNPTXSTS_NPTQXSAV                0x00FF0000U            /*!< Nonperiodic transmit request queue space available */
+#define USB_OTG_GNPTXSTS_NPTQXSAV_0              0x00010000U            /*!<Bit 0 */
+#define USB_OTG_GNPTXSTS_NPTQXSAV_1              0x00020000U            /*!<Bit 1 */
+#define USB_OTG_GNPTXSTS_NPTQXSAV_2              0x00040000U            /*!<Bit 2 */
+#define USB_OTG_GNPTXSTS_NPTQXSAV_3              0x00080000U            /*!<Bit 3 */
+#define USB_OTG_GNPTXSTS_NPTQXSAV_4              0x00100000U            /*!<Bit 4 */
+#define USB_OTG_GNPTXSTS_NPTQXSAV_5              0x00200000U            /*!<Bit 5 */
+#define USB_OTG_GNPTXSTS_NPTQXSAV_6              0x00400000U            /*!<Bit 6 */
+#define USB_OTG_GNPTXSTS_NPTQXSAV_7              0x00800000U            /*!<Bit 7 */
+
+#define USB_OTG_GNPTXSTS_NPTXQTOP                0x7F000000U            /*!< Top of the nonperiodic transmit request queue */
+#define USB_OTG_GNPTXSTS_NPTXQTOP_0              0x01000000U            /*!<Bit 0 */
+#define USB_OTG_GNPTXSTS_NPTXQTOP_1              0x02000000U            /*!<Bit 1 */
+#define USB_OTG_GNPTXSTS_NPTXQTOP_2              0x04000000U            /*!<Bit 2 */
+#define USB_OTG_GNPTXSTS_NPTXQTOP_3              0x08000000U            /*!<Bit 3 */
+#define USB_OTG_GNPTXSTS_NPTXQTOP_4              0x10000000U            /*!<Bit 4 */
+#define USB_OTG_GNPTXSTS_NPTXQTOP_5              0x20000000U            /*!<Bit 5 */
+#define USB_OTG_GNPTXSTS_NPTXQTOP_6              0x40000000U            /*!<Bit 6 */
+
+/********************  Bit definition forUSB_OTG_DTHRCTL register  ********************/
+#define USB_OTG_DTHRCTL_NONISOTHREN             0x00000001U            /*!< Nonisochronous IN endpoints threshold enable */
+#define USB_OTG_DTHRCTL_ISOTHREN                0x00000002U            /*!< ISO IN endpoint threshold enable */
+
+#define USB_OTG_DTHRCTL_TXTHRLEN                0x000007FCU            /*!< Transmit threshold length */
+#define USB_OTG_DTHRCTL_TXTHRLEN_0              0x00000004U            /*!<Bit 0 */
+#define USB_OTG_DTHRCTL_TXTHRLEN_1              0x00000008U            /*!<Bit 1 */
+#define USB_OTG_DTHRCTL_TXTHRLEN_2              0x00000010U            /*!<Bit 2 */
+#define USB_OTG_DTHRCTL_TXTHRLEN_3              0x00000020U            /*!<Bit 3 */
+#define USB_OTG_DTHRCTL_TXTHRLEN_4              0x00000040U            /*!<Bit 4 */
+#define USB_OTG_DTHRCTL_TXTHRLEN_5              0x00000080U            /*!<Bit 5 */
+#define USB_OTG_DTHRCTL_TXTHRLEN_6              0x00000100U            /*!<Bit 6 */
+#define USB_OTG_DTHRCTL_TXTHRLEN_7              0x00000200U            /*!<Bit 7 */
+#define USB_OTG_DTHRCTL_TXTHRLEN_8              0x00000400U            /*!<Bit 8 */
+#define USB_OTG_DTHRCTL_RXTHREN                 0x00010000U            /*!< Receive threshold enable */
+
+#define USB_OTG_DTHRCTL_RXTHRLEN                0x03FE0000U            /*!< Receive threshold length */
+#define USB_OTG_DTHRCTL_RXTHRLEN_0              0x00020000U            /*!<Bit 0 */
+#define USB_OTG_DTHRCTL_RXTHRLEN_1              0x00040000U            /*!<Bit 1 */
+#define USB_OTG_DTHRCTL_RXTHRLEN_2              0x00080000U            /*!<Bit 2 */
+#define USB_OTG_DTHRCTL_RXTHRLEN_3              0x00100000U            /*!<Bit 3 */
+#define USB_OTG_DTHRCTL_RXTHRLEN_4              0x00200000U            /*!<Bit 4 */
+#define USB_OTG_DTHRCTL_RXTHRLEN_5              0x00400000U            /*!<Bit 5 */
+#define USB_OTG_DTHRCTL_RXTHRLEN_6              0x00800000U            /*!<Bit 6 */
+#define USB_OTG_DTHRCTL_RXTHRLEN_7              0x01000000U            /*!<Bit 7 */
+#define USB_OTG_DTHRCTL_RXTHRLEN_8              0x02000000U            /*!<Bit 8 */
+#define USB_OTG_DTHRCTL_ARPEN                   0x08000000U            /*!< Arbiter parking enable */
+
+/********************  Bit definition forUSB_OTG_DIEPEMPMSK register  ********************/
+#define USB_OTG_DIEPEMPMSK_INEPTXFEM               0x0000FFFFU            /*!< IN EP Tx FIFO empty interrupt mask bits */
+
+/********************  Bit definition forUSB_OTG_DEACHINT register  ********************/
+#define USB_OTG_DEACHINT_IEP1INT                 0x00000002U            /*!< IN endpoint 1interrupt bit */
+#define USB_OTG_DEACHINT_OEP1INT                 0x00020000U            /*!< OUT endpoint 1 interrupt bit */
+
+/********************  Bit definition forUSB_OTG_GCCFG register  ********************/
+#define USB_OTG_GCCFG_PWRDWN                  0x00010000U            /*!< Power down */
+#define USB_OTG_GCCFG_I2CPADEN                0x00020000U            /*!< Enable I2C bus connection for the external I2C PHY interface */
+#define USB_OTG_GCCFG_VBUSASEN                0x00040000U            /*!< Enable the VBUS sensing device */
+#define USB_OTG_GCCFG_VBUSBSEN                0x00080000U            /*!< Enable the VBUS sensing device */
+#define USB_OTG_GCCFG_SOFOUTEN                0x00100000U            /*!< SOF output enable */
+#define USB_OTG_GCCFG_NOVBUSSENS              0x00200000U            /*!< VBUS sensing disable option */
+
+/********************  Bit definition forUSB_OTG_DEACHINTMSK register  ********************/
+#define USB_OTG_DEACHINTMSK_IEP1INTM                0x00000002U            /*!< IN Endpoint 1 interrupt mask bit */
+#define USB_OTG_DEACHINTMSK_OEP1INTM                0x00020000U            /*!< OUT Endpoint 1 interrupt mask bit */
+
+/********************  Bit definition forUSB_OTG_CID register  ********************/
+#define USB_OTG_CID_PRODUCT_ID              0xFFFFFFFFU            /*!< Product ID field */
+
+/********************  Bit definition forUSB_OTG_DIEPEACHMSK1 register  ********************/
+#define USB_OTG_DIEPEACHMSK1_XFRCM                   0x00000001U            /*!< Transfer completed interrupt mask */
+#define USB_OTG_DIEPEACHMSK1_EPDM                    0x00000002U            /*!< Endpoint disabled interrupt mask */
+#define USB_OTG_DIEPEACHMSK1_TOM                     0x00000008U            /*!< Timeout condition mask (nonisochronous endpoints) */
+#define USB_OTG_DIEPEACHMSK1_ITTXFEMSK               0x00000010U            /*!< IN token received when TxFIFO empty mask */
+#define USB_OTG_DIEPEACHMSK1_INEPNMM                 0x00000020U            /*!< IN token received with EP mismatch mask */
+#define USB_OTG_DIEPEACHMSK1_INEPNEM                 0x00000040U            /*!< IN endpoint NAK effective mask */
+#define USB_OTG_DIEPEACHMSK1_TXFURM                  0x00000100U            /*!< FIFO underrun mask */
+#define USB_OTG_DIEPEACHMSK1_BIM                     0x00000200U            /*!< BNA interrupt mask */
+#define USB_OTG_DIEPEACHMSK1_NAKM                    0x00002000U            /*!< NAK interrupt mask */
+
+/********************  Bit definition forUSB_OTG_HPRT register  ********************/
+#define USB_OTG_HPRT_PCSTS                   0x00000001U            /*!< Port connect status */
+#define USB_OTG_HPRT_PCDET                   0x00000002U            /*!< Port connect detected */
+#define USB_OTG_HPRT_PENA                    0x00000004U            /*!< Port enable */
+#define USB_OTG_HPRT_PENCHNG                 0x00000008U            /*!< Port enable/disable change */
+#define USB_OTG_HPRT_POCA                    0x00000010U            /*!< Port overcurrent active */
+#define USB_OTG_HPRT_POCCHNG                 0x00000020U            /*!< Port overcurrent change */
+#define USB_OTG_HPRT_PRES                    0x00000040U            /*!< Port resume */
+#define USB_OTG_HPRT_PSUSP                   0x00000080U            /*!< Port suspend */
+#define USB_OTG_HPRT_PRST                    0x00000100U            /*!< Port reset */
+
+#define USB_OTG_HPRT_PLSTS                   0x00000C00U            /*!< Port line status */
+#define USB_OTG_HPRT_PLSTS_0                 0x00000400U            /*!<Bit 0 */
+#define USB_OTG_HPRT_PLSTS_1                 0x00000800U            /*!<Bit 1 */
+#define USB_OTG_HPRT_PPWR                    0x00001000U            /*!< Port power */
+
+#define USB_OTG_HPRT_PTCTL                   0x0001E000U            /*!< Port test control */
+#define USB_OTG_HPRT_PTCTL_0                 0x00002000U            /*!<Bit 0 */
+#define USB_OTG_HPRT_PTCTL_1                 0x00004000U            /*!<Bit 1 */
+#define USB_OTG_HPRT_PTCTL_2                 0x00008000U            /*!<Bit 2 */
+#define USB_OTG_HPRT_PTCTL_3                 0x00010000U            /*!<Bit 3 */
+
+#define USB_OTG_HPRT_PSPD                    0x00060000U            /*!< Port speed */
+#define USB_OTG_HPRT_PSPD_0                  0x00020000U            /*!<Bit 0 */
+#define USB_OTG_HPRT_PSPD_1                  0x00040000U            /*!<Bit 1 */
+
+/********************  Bit definition forUSB_OTG_DOEPEACHMSK1 register  ********************/
+#define USB_OTG_DOEPEACHMSK1_XFRCM                   0x00000001U            /*!< Transfer completed interrupt mask */
+#define USB_OTG_DOEPEACHMSK1_EPDM                    0x00000002U            /*!< Endpoint disabled interrupt mask */
+#define USB_OTG_DOEPEACHMSK1_TOM                     0x00000008U            /*!< Timeout condition mask */
+#define USB_OTG_DOEPEACHMSK1_ITTXFEMSK               0x00000010U            /*!< IN token received when TxFIFO empty mask */
+#define USB_OTG_DOEPEACHMSK1_INEPNMM                 0x00000020U            /*!< IN token received with EP mismatch mask */
+#define USB_OTG_DOEPEACHMSK1_INEPNEM                 0x00000040U            /*!< IN endpoint NAK effective mask */
+#define USB_OTG_DOEPEACHMSK1_TXFURM                  0x00000100U            /*!< OUT packet error mask */
+#define USB_OTG_DOEPEACHMSK1_BIM                     0x00000200U            /*!< BNA interrupt mask */
+#define USB_OTG_DOEPEACHMSK1_BERRM                   0x00001000U            /*!< Bubble error interrupt mask */
+#define USB_OTG_DOEPEACHMSK1_NAKM                    0x00002000U            /*!< NAK interrupt mask */
+#define USB_OTG_DOEPEACHMSK1_NYETM                   0x00004000U            /*!< NYET interrupt mask */
+
+/********************  Bit definition forUSB_OTG_HPTXFSIZ register  ********************/
+#define USB_OTG_HPTXFSIZ_PTXSA                   0x0000FFFFU            /*!< Host periodic TxFIFO start address */
+#define USB_OTG_HPTXFSIZ_PTXFD                   0xFFFF0000U            /*!< Host periodic TxFIFO depth */
+
+/********************  Bit definition forUSB_OTG_DIEPCTL register  ********************/
+#define USB_OTG_DIEPCTL_MPSIZ                   0x000007FFU            /*!< Maximum packet size */
+#define USB_OTG_DIEPCTL_USBAEP                  0x00008000U            /*!< USB active endpoint */
+#define USB_OTG_DIEPCTL_EONUM_DPID              0x00010000U            /*!< Even/odd frame */
+#define USB_OTG_DIEPCTL_NAKSTS                  0x00020000U            /*!< NAK status */
+
+#define USB_OTG_DIEPCTL_EPTYP                   0x000C0000U            /*!< Endpoint type */
+#define USB_OTG_DIEPCTL_EPTYP_0                 0x00040000U            /*!<Bit 0 */
+#define USB_OTG_DIEPCTL_EPTYP_1                 0x00080000U            /*!<Bit 1 */
+#define USB_OTG_DIEPCTL_STALL                   0x00200000U            /*!< STALL handshake */
+
+#define USB_OTG_DIEPCTL_TXFNUM                  0x03C00000U            /*!< TxFIFO number */
+#define USB_OTG_DIEPCTL_TXFNUM_0                0x00400000U            /*!<Bit 0 */
+#define USB_OTG_DIEPCTL_TXFNUM_1                0x00800000U            /*!<Bit 1 */
+#define USB_OTG_DIEPCTL_TXFNUM_2                0x01000000U            /*!<Bit 2 */
+#define USB_OTG_DIEPCTL_TXFNUM_3                0x02000000U            /*!<Bit 3 */
+#define USB_OTG_DIEPCTL_CNAK                    0x04000000U            /*!< Clear NAK */
+#define USB_OTG_DIEPCTL_SNAK                    0x08000000U            /*!< Set NAK */
+#define USB_OTG_DIEPCTL_SD0PID_SEVNFRM          0x10000000U            /*!< Set DATA0 PID */
+#define USB_OTG_DIEPCTL_SODDFRM                 0x20000000U            /*!< Set odd frame */
+#define USB_OTG_DIEPCTL_EPDIS                   0x40000000U            /*!< Endpoint disable */
+#define USB_OTG_DIEPCTL_EPENA                   0x80000000U            /*!< Endpoint enable */
+
+/********************  Bit definition forUSB_OTG_HCCHAR register  ********************/
+#define USB_OTG_HCCHAR_MPSIZ                   0x000007FFU            /*!< Maximum packet size */
+
+#define USB_OTG_HCCHAR_EPNUM                   0x00007800U            /*!< Endpoint number */
+#define USB_OTG_HCCHAR_EPNUM_0                 0x00000800U            /*!<Bit 0 */
+#define USB_OTG_HCCHAR_EPNUM_1                 0x00001000U            /*!<Bit 1 */
+#define USB_OTG_HCCHAR_EPNUM_2                 0x00002000U            /*!<Bit 2 */
+#define USB_OTG_HCCHAR_EPNUM_3                 0x00004000U            /*!<Bit 3 */
+#define USB_OTG_HCCHAR_EPDIR                   0x00008000U            /*!< Endpoint direction */
+#define USB_OTG_HCCHAR_LSDEV                   0x00020000U            /*!< Low-speed device */
+
+#define USB_OTG_HCCHAR_EPTYP                   0x000C0000U            /*!< Endpoint type */
+#define USB_OTG_HCCHAR_EPTYP_0                 0x00040000U            /*!<Bit 0 */
+#define USB_OTG_HCCHAR_EPTYP_1                 0x00080000U            /*!<Bit 1 */
+
+#define USB_OTG_HCCHAR_MC                      0x00300000U            /*!< Multi Count (MC) / Error Count (EC) */
+#define USB_OTG_HCCHAR_MC_0                    0x00100000U            /*!<Bit 0 */
+#define USB_OTG_HCCHAR_MC_1                    0x00200000U            /*!<Bit 1 */
+
+#define USB_OTG_HCCHAR_DAD                     0x1FC00000U            /*!< Device address */
+#define USB_OTG_HCCHAR_DAD_0                   0x00400000U            /*!<Bit 0 */
+#define USB_OTG_HCCHAR_DAD_1                   0x00800000U            /*!<Bit 1 */
+#define USB_OTG_HCCHAR_DAD_2                   0x01000000U            /*!<Bit 2 */
+#define USB_OTG_HCCHAR_DAD_3                   0x02000000U            /*!<Bit 3 */
+#define USB_OTG_HCCHAR_DAD_4                   0x04000000U            /*!<Bit 4 */
+#define USB_OTG_HCCHAR_DAD_5                   0x08000000U            /*!<Bit 5 */
+#define USB_OTG_HCCHAR_DAD_6                   0x10000000U            /*!<Bit 6 */
+#define USB_OTG_HCCHAR_ODDFRM                  0x20000000U            /*!< Odd frame */
+#define USB_OTG_HCCHAR_CHDIS                   0x40000000U            /*!< Channel disable */
+#define USB_OTG_HCCHAR_CHENA                   0x80000000U            /*!< Channel enable */
+
+/********************  Bit definition forUSB_OTG_HCSPLT register  ********************/
+
+#define USB_OTG_HCSPLT_PRTADDR                 0x0000007FU            /*!< Port address */
+#define USB_OTG_HCSPLT_PRTADDR_0               0x00000001U            /*!<Bit 0 */
+#define USB_OTG_HCSPLT_PRTADDR_1               0x00000002U            /*!<Bit 1 */
+#define USB_OTG_HCSPLT_PRTADDR_2               0x00000004U            /*!<Bit 2 */
+#define USB_OTG_HCSPLT_PRTADDR_3               0x00000008U            /*!<Bit 3 */
+#define USB_OTG_HCSPLT_PRTADDR_4               0x00000010U            /*!<Bit 4 */
+#define USB_OTG_HCSPLT_PRTADDR_5               0x00000020U            /*!<Bit 5 */
+#define USB_OTG_HCSPLT_PRTADDR_6               0x00000040U            /*!<Bit 6 */
+
+#define USB_OTG_HCSPLT_HUBADDR                 0x00003F80U            /*!< Hub address */
+#define USB_OTG_HCSPLT_HUBADDR_0               0x00000080U            /*!<Bit 0 */
+#define USB_OTG_HCSPLT_HUBADDR_1               0x00000100U            /*!<Bit 1 */
+#define USB_OTG_HCSPLT_HUBADDR_2               0x00000200U            /*!<Bit 2 */
+#define USB_OTG_HCSPLT_HUBADDR_3               0x00000400U            /*!<Bit 3 */
+#define USB_OTG_HCSPLT_HUBADDR_4               0x00000800U            /*!<Bit 4 */
+#define USB_OTG_HCSPLT_HUBADDR_5               0x00001000U            /*!<Bit 5 */
+#define USB_OTG_HCSPLT_HUBADDR_6               0x00002000U            /*!<Bit 6 */
+
+#define USB_OTG_HCSPLT_XACTPOS                 0x0000C000U            /*!< XACTPOS */
+#define USB_OTG_HCSPLT_XACTPOS_0               0x00004000U            /*!<Bit 0 */
+#define USB_OTG_HCSPLT_XACTPOS_1               0x00008000U            /*!<Bit 1 */
+#define USB_OTG_HCSPLT_COMPLSPLT               0x00010000U            /*!< Do complete split */
+#define USB_OTG_HCSPLT_SPLITEN                 0x80000000U            /*!< Split enable */
+
+/********************  Bit definition forUSB_OTG_HCINT register  ********************/
+#define USB_OTG_HCINT_XFRC                    0x00000001U            /*!< Transfer completed */
+#define USB_OTG_HCINT_CHH                     0x00000002U            /*!< Channel halted */
+#define USB_OTG_HCINT_AHBERR                  0x00000004U            /*!< AHB error */
+#define USB_OTG_HCINT_STALL                   0x00000008U            /*!< STALL response received interrupt */
+#define USB_OTG_HCINT_NAK                     0x00000010U            /*!< NAK response received interrupt */
+#define USB_OTG_HCINT_ACK                     0x00000020U            /*!< ACK response received/transmitted interrupt */
+#define USB_OTG_HCINT_NYET                    0x00000040U            /*!< Response received interrupt */
+#define USB_OTG_HCINT_TXERR                   0x00000080U            /*!< Transaction error */
+#define USB_OTG_HCINT_BBERR                   0x00000100U            /*!< Babble error */
+#define USB_OTG_HCINT_FRMOR                   0x00000200U            /*!< Frame overrun */
+#define USB_OTG_HCINT_DTERR                   0x00000400U            /*!< Data toggle error */
+
+/********************  Bit definition forUSB_OTG_DIEPINT register  ********************/
+#define USB_OTG_DIEPINT_XFRC                    0x00000001U            /*!< Transfer completed interrupt */
+#define USB_OTG_DIEPINT_EPDISD                  0x00000002U            /*!< Endpoint disabled interrupt */
+#define USB_OTG_DIEPINT_TOC                     0x00000008U            /*!< Timeout condition */
+#define USB_OTG_DIEPINT_ITTXFE                  0x00000010U            /*!< IN token received when TxFIFO is empty */
+#define USB_OTG_DIEPINT_INEPNE                  0x00000040U            /*!< IN endpoint NAK effective */
+#define USB_OTG_DIEPINT_TXFE                    0x00000080U            /*!< Transmit FIFO empty */
+#define USB_OTG_DIEPINT_TXFIFOUDRN              0x00000100U            /*!< Transmit Fifo Underrun */
+#define USB_OTG_DIEPINT_BNA                     0x00000200U            /*!< Buffer not available interrupt */
+#define USB_OTG_DIEPINT_PKTDRPSTS               0x00000800U            /*!< Packet dropped status */
+#define USB_OTG_DIEPINT_BERR                    0x00001000U            /*!< Babble error interrupt */
+#define USB_OTG_DIEPINT_NAK                     0x00002000U            /*!< NAK interrupt */
+
+/********************  Bit definition forUSB_OTG_HCINTMSK register  ********************/
+#define USB_OTG_HCINTMSK_XFRCM                   0x00000001U            /*!< Transfer completed mask */
+#define USB_OTG_HCINTMSK_CHHM                    0x00000002U            /*!< Channel halted mask */
+#define USB_OTG_HCINTMSK_AHBERR                  0x00000004U            /*!< AHB error */
+#define USB_OTG_HCINTMSK_STALLM                  0x00000008U            /*!< STALL response received interrupt mask */
+#define USB_OTG_HCINTMSK_NAKM                    0x00000010U            /*!< NAK response received interrupt mask */
+#define USB_OTG_HCINTMSK_ACKM                    0x00000020U            /*!< ACK response received/transmitted interrupt mask */
+#define USB_OTG_HCINTMSK_NYET                    0x00000040U            /*!< response received interrupt mask */
+#define USB_OTG_HCINTMSK_TXERRM                  0x00000080U            /*!< Transaction error mask */
+#define USB_OTG_HCINTMSK_BBERRM                  0x00000100U            /*!< Babble error mask */
+#define USB_OTG_HCINTMSK_FRMORM                  0x00000200U            /*!< Frame overrun mask */
+#define USB_OTG_HCINTMSK_DTERRM                  0x00000400U            /*!< Data toggle error mask */
+
+/********************  Bit definition for USB_OTG_DIEPTSIZ register  ********************/
+
+#define USB_OTG_DIEPTSIZ_XFRSIZ                  0x0007FFFFU            /*!< Transfer size */
+#define USB_OTG_DIEPTSIZ_PKTCNT                  0x1FF80000U            /*!< Packet count */
+#define USB_OTG_DIEPTSIZ_MULCNT                  0x60000000U            /*!< Packet count */
+/********************  Bit definition forUSB_OTG_HCTSIZ register  ********************/
+#define USB_OTG_HCTSIZ_XFRSIZ                    0x0007FFFFU            /*!< Transfer size */
+#define USB_OTG_HCTSIZ_PKTCNT                    0x1FF80000U            /*!< Packet count */
+#define USB_OTG_HCTSIZ_DOPING                    0x80000000U            /*!< Do PING */
+#define USB_OTG_HCTSIZ_DPID                      0x60000000U            /*!< Data PID */
+#define USB_OTG_HCTSIZ_DPID_0                    0x20000000U            /*!<Bit 0 */
+#define USB_OTG_HCTSIZ_DPID_1                    0x40000000U            /*!<Bit 1 */
+
+/********************  Bit definition forUSB_OTG_DIEPDMA register  ********************/
+#define USB_OTG_DIEPDMA_DMAADDR                  0xFFFFFFFFU            /*!< DMA address */
+
+/********************  Bit definition forUSB_OTG_HCDMA register  ********************/
+#define USB_OTG_HCDMA_DMAADDR                    0xFFFFFFFFU            /*!< DMA address */
+
+/********************  Bit definition forUSB_OTG_DTXFSTS register  ********************/
+#define USB_OTG_DTXFSTS_INEPTFSAV                0x0000FFFFU            /*!< IN endpoint TxFIFO space avail */
+
+/********************  Bit definition forUSB_OTG_DIEPTXF register  ********************/
+#define USB_OTG_DIEPTXF_INEPTXSA                 0x0000FFFFU            /*!< IN endpoint FIFOx transmit RAM start address */
+#define USB_OTG_DIEPTXF_INEPTXFD                 0xFFFF0000U            /*!< IN endpoint TxFIFO depth */
+
+/********************  Bit definition forUSB_OTG_DOEPCTL register  ********************/
+
+#define USB_OTG_DOEPCTL_MPSIZ                     0x000007FFU            /*!< Maximum packet size */          /*!<Bit 1 */
+#define USB_OTG_DOEPCTL_USBAEP                    0x00008000U            /*!< USB active endpoint */
+#define USB_OTG_DOEPCTL_NAKSTS                    0x00020000U            /*!< NAK status */
+#define USB_OTG_DOEPCTL_SD0PID_SEVNFRM            0x10000000U            /*!< Set DATA0 PID */
+#define USB_OTG_DOEPCTL_SODDFRM                   0x20000000U            /*!< Set odd frame */
+#define USB_OTG_DOEPCTL_EPTYP                     0x000C0000U            /*!< Endpoint type */
+#define USB_OTG_DOEPCTL_EPTYP_0                   0x00040000U            /*!<Bit 0 */
+#define USB_OTG_DOEPCTL_EPTYP_1                   0x00080000U            /*!<Bit 1 */
+#define USB_OTG_DOEPCTL_SNPM                      0x00100000U            /*!< Snoop mode */
+#define USB_OTG_DOEPCTL_STALL                     0x00200000U            /*!< STALL handshake */
+#define USB_OTG_DOEPCTL_CNAK                      0x04000000U            /*!< Clear NAK */
+#define USB_OTG_DOEPCTL_SNAK                      0x08000000U            /*!< Set NAK */
+#define USB_OTG_DOEPCTL_EPDIS                     0x40000000U            /*!< Endpoint disable */
+#define USB_OTG_DOEPCTL_EPENA                     0x80000000U            /*!< Endpoint enable */
+
+/********************  Bit definition forUSB_OTG_DOEPINT register  ********************/
+#define USB_OTG_DOEPINT_XFRC                    0x00000001U            /*!< Transfer completed interrupt */
+#define USB_OTG_DOEPINT_EPDISD                  0x00000002U            /*!< Endpoint disabled interrupt */
+#define USB_OTG_DOEPINT_STUP                    0x00000008U            /*!< SETUP phase done */
+#define USB_OTG_DOEPINT_OTEPDIS                 0x00000010U            /*!< OUT token received when endpoint disabled */
+#define USB_OTG_DOEPINT_B2BSTUP                 0x00000040U            /*!< Back-to-back SETUP packets received */
+#define USB_OTG_DOEPINT_NYET                    0x00004000U            /*!< NYET interrupt */
+
+/********************  Bit definition forUSB_OTG_DOEPTSIZ register  ********************/
+
+#define USB_OTG_DOEPTSIZ_XFRSIZ                  0x0007FFFFU            /*!< Transfer size */
+#define USB_OTG_DOEPTSIZ_PKTCNT                  0x1FF80000U            /*!< Packet count */
+
+#define USB_OTG_DOEPTSIZ_STUPCNT                 0x60000000U            /*!< SETUP packet count */
+#define USB_OTG_DOEPTSIZ_STUPCNT_0               0x20000000U            /*!<Bit 0 */
+#define USB_OTG_DOEPTSIZ_STUPCNT_1               0x40000000U            /*!<Bit 1 */
+
+/********************  Bit definition for PCGCCTL register  ********************/
+#define USB_OTG_PCGCCTL_STOPCLK                 0x00000001U            /*!< SETUP packet count */
+#define USB_OTG_PCGCCTL_GATECLK                 0x00000002U            /*!<Bit 0 */
+#define USB_OTG_PCGCCTL_PHYSUSP                 0x00000010U            /*!<Bit 1 */
+
+/**
+  * @}
+  */ 
+
+/**
+  * @}
+  */
+
+/** @addtogroup Exported_macros
+  * @{
+  */
+ 
+/******************************* ADC Instances ********************************/
+#define IS_ADC_ALL_INSTANCE(INSTANCE) ((INSTANCE) == ADC1)
+ 
+/******************************* CRC Instances ********************************/
+#define IS_CRC_ALL_INSTANCE(INSTANCE) ((INSTANCE) == CRC)
+
+/******************************** DMA Instances *******************************/
+#define IS_DMA_STREAM_ALL_INSTANCE(INSTANCE) (((INSTANCE) == DMA1_Stream0) || \
+                                              ((INSTANCE) == DMA1_Stream1) || \
+                                              ((INSTANCE) == DMA1_Stream2) || \
+                                              ((INSTANCE) == DMA1_Stream3) || \
+                                              ((INSTANCE) == DMA1_Stream4) || \
+                                              ((INSTANCE) == DMA1_Stream5) || \
+                                              ((INSTANCE) == DMA1_Stream6) || \
+                                              ((INSTANCE) == DMA1_Stream7) || \
+                                              ((INSTANCE) == DMA2_Stream0) || \
+                                              ((INSTANCE) == DMA2_Stream1) || \
+                                              ((INSTANCE) == DMA2_Stream2) || \
+                                              ((INSTANCE) == DMA2_Stream3) || \
+                                              ((INSTANCE) == DMA2_Stream4) || \
+                                              ((INSTANCE) == DMA2_Stream5) || \
+                                              ((INSTANCE) == DMA2_Stream6) || \
+                                              ((INSTANCE) == DMA2_Stream7))
+
+/******************************* GPIO Instances *******************************/
+#define IS_GPIO_ALL_INSTANCE(INSTANCE) (((INSTANCE) == GPIOA) || \
+                                        ((INSTANCE) == GPIOB) || \
+                                        ((INSTANCE) == GPIOC) || \
+                                        ((INSTANCE) == GPIOD) || \
+                                        ((INSTANCE) == GPIOE) || \
+                                        ((INSTANCE) == GPIOH))
+
+/******************************** I2C Instances *******************************/
+#define IS_I2C_ALL_INSTANCE(INSTANCE) (((INSTANCE) == I2C1) || \
+                                       ((INSTANCE) == I2C2) || \
+                                       ((INSTANCE) == I2C3))
+
+/******************************** I2S Instances *******************************/
+#define IS_I2S_ALL_INSTANCE(INSTANCE)  (((INSTANCE) == SPI2) || \
+                                    ((INSTANCE) == SPI3))
+
+/*************************** I2S Extended Instances ***************************/
+#define IS_I2S_ALL_INSTANCE_EXT(PERIPH)  (((INSTANCE) == SPI2)    || \
+                                          ((INSTANCE) == SPI3)    || \
+                                          ((INSTANCE) == I2S2ext) || \
+                                          ((INSTANCE) == I2S3ext))
+
+/****************************** RTC Instances *********************************/
+#define IS_RTC_ALL_INSTANCE(INSTANCE)  ((INSTANCE) == RTC)
+
+/******************************** SPI Instances *******************************/
+#define IS_SPI_ALL_INSTANCE(INSTANCE) (((INSTANCE) == SPI1) || \
+                                       ((INSTANCE) == SPI2) || \
+                                       ((INSTANCE) == SPI3) || \
+                                       ((INSTANCE) == SPI4))
+
+/*************************** SPI Extended Instances ***************************/
+#define IS_SPI_ALL_INSTANCE_EXT(INSTANCE) (((INSTANCE) == SPI1)    || \
+                                           ((INSTANCE) == SPI2)    || \
+                                           ((INSTANCE) == SPI3)    || \
+                                           ((INSTANCE) == I2S2ext) || \
+                                           ((INSTANCE) == I2S3ext))
+
+/****************** TIM Instances : All supported instances *******************/
+#define IS_TIM_INSTANCE(INSTANCE) (((INSTANCE) == TIM1)   || \
+                                   ((INSTANCE) == TIM2)   || \
+                                   ((INSTANCE) == TIM3)   || \
+                                   ((INSTANCE) == TIM4)   || \
+                                   ((INSTANCE) == TIM5)   || \
+                                   ((INSTANCE) == TIM9)   || \
+                                   ((INSTANCE) == TIM10)  || \
+                                   ((INSTANCE) == TIM11))
+
+/************* TIM Instances : at least 1 capture/compare channel *************/
+#define IS_TIM_CC1_INSTANCE(INSTANCE)   (((INSTANCE) == TIM1)  || \
+                                         ((INSTANCE) == TIM2)  || \
+                                         ((INSTANCE) == TIM3)  || \
+                                         ((INSTANCE) == TIM4)  || \
+                                         ((INSTANCE) == TIM5)  || \
+                                         ((INSTANCE) == TIM9)  || \
+                                         ((INSTANCE) == TIM10) || \
+                                         ((INSTANCE) == TIM11))
+
+/************ TIM Instances : at least 2 capture/compare channels *************/
+#define IS_TIM_CC2_INSTANCE(INSTANCE) (((INSTANCE) == TIM1) || \
+                                       ((INSTANCE) == TIM2) || \
+                                       ((INSTANCE) == TIM3) || \
+                                       ((INSTANCE) == TIM4) || \
+                                       ((INSTANCE) == TIM5) || \
+                                       ((INSTANCE) == TIM9))
+
+/************ TIM Instances : at least 3 capture/compare channels *************/
+#define IS_TIM_CC3_INSTANCE(INSTANCE)   (((INSTANCE) == TIM1) || \
+                                         ((INSTANCE) == TIM2) || \
+                                         ((INSTANCE) == TIM3) || \
+                                         ((INSTANCE) == TIM4) || \
+                                         ((INSTANCE) == TIM5))
+
+/************ TIM Instances : at least 4 capture/compare channels *************/
+#define IS_TIM_CC4_INSTANCE(INSTANCE) (((INSTANCE) == TIM1) || \
+                                       ((INSTANCE) == TIM2) || \
+                                       ((INSTANCE) == TIM3) || \
+                                       ((INSTANCE) == TIM4) || \
+                                       ((INSTANCE) == TIM5))
+
+/******************** TIM Instances : Advanced-control timers *****************/
+#define IS_TIM_ADVANCED_INSTANCE(INSTANCE) ((INSTANCE) == TIM1)
+
+/******************* TIM Instances : Timer input XOR function *****************/
+#define IS_TIM_XOR_INSTANCE(INSTANCE)   (((INSTANCE) == TIM1) || \
+                                         ((INSTANCE) == TIM2) || \
+                                         ((INSTANCE) == TIM3) || \
+                                         ((INSTANCE) == TIM4) || \
+                                         ((INSTANCE) == TIM5))
+
+/****************** TIM Instances : DMA requests generation (UDE) *************/
+#define IS_TIM_DMA_INSTANCE(INSTANCE) (((INSTANCE) == TIM1) || \
+                                       ((INSTANCE) == TIM2) || \
+                                       ((INSTANCE) == TIM3) || \
+                                       ((INSTANCE) == TIM4) || \
+                                       ((INSTANCE) == TIM5))
+
+/************ TIM Instances : DMA requests generation (CCxDE) *****************/
+#define IS_TIM_DMA_CC_INSTANCE(INSTANCE) (((INSTANCE) == TIM1) || \
+                                          ((INSTANCE) == TIM2) || \
+                                          ((INSTANCE) == TIM3) || \
+                                          ((INSTANCE) == TIM4) || \
+                                          ((INSTANCE) == TIM5))
+
+/************ TIM Instances : DMA requests generation (COMDE) *****************/
+#define IS_TIM_CCDMA_INSTANCE(INSTANCE)  (((INSTANCE) == TIM1) || \
+                                          ((INSTANCE) == TIM2) || \
+                                          ((INSTANCE) == TIM3) || \
+                                          ((INSTANCE) == TIM4) || \
+                                          ((INSTANCE) == TIM5)) 
+
+/******************** TIM Instances : DMA burst feature ***********************/
+#define IS_TIM_DMABURST_INSTANCE(INSTANCE)  (((INSTANCE) == TIM1) || \
+                                             ((INSTANCE) == TIM2) || \
+                                             ((INSTANCE) == TIM3) || \
+                                             ((INSTANCE) == TIM4) || \
+                                             ((INSTANCE) == TIM5))
+
+/****** TIM Instances : master mode available (TIMx_CR2.MMS available )********/
+#define IS_TIM_MASTER_INSTANCE(INSTANCE) (((INSTANCE) == TIM1) || \
+                                          ((INSTANCE) == TIM2) || \
+                                          ((INSTANCE) == TIM3) || \
+                                          ((INSTANCE) == TIM4) || \
+                                          ((INSTANCE) == TIM5) || \
+                                          ((INSTANCE) == TIM9))
+
+/*********** TIM Instances : Slave mode available (TIMx_SMCR available )*******/
+#define IS_TIM_SLAVE_INSTANCE(INSTANCE) (((INSTANCE) == TIM1) || \
+                                         ((INSTANCE) == TIM2) || \
+                                         ((INSTANCE) == TIM3) || \
+                                         ((INSTANCE) == TIM4) || \
+                                         ((INSTANCE) == TIM5) || \
+                                         ((INSTANCE) == TIM9))
+
+/********************** TIM Instances : 32 bit Counter ************************/
+#define IS_TIM_32B_COUNTER_INSTANCE(INSTANCE)(((INSTANCE) == TIM2) || \
+                                              ((INSTANCE) == TIM5))
+
+/***************** TIM Instances : external trigger input availabe ************/
+#define IS_TIM_ETR_INSTANCE(INSTANCE)  (((INSTANCE) == TIM1) || \
+                                        ((INSTANCE) == TIM2) || \
+                                        ((INSTANCE) == TIM3) || \
+                                        ((INSTANCE) == TIM4) || \
+                                        ((INSTANCE) == TIM5))
+
+/****************** TIM Instances : remapping capability **********************/
+#define IS_TIM_REMAP_INSTANCE(INSTANCE) (((INSTANCE) == TIM2)  || \
+                                         ((INSTANCE) == TIM5)  || \
+                                         ((INSTANCE) == TIM11))
+
+/******************* TIM Instances : output(s) available **********************/
+#define IS_TIM_CCX_INSTANCE(INSTANCE, CHANNEL) \
+    ((((INSTANCE) == TIM1) &&                  \
+     (((CHANNEL) == TIM_CHANNEL_1) ||          \
+      ((CHANNEL) == TIM_CHANNEL_2) ||          \
+      ((CHANNEL) == TIM_CHANNEL_3) ||          \
+      ((CHANNEL) == TIM_CHANNEL_4)))           \
+    ||                                         \
+    (((INSTANCE) == TIM2) &&                   \
+     (((CHANNEL) == TIM_CHANNEL_1) ||          \
+      ((CHANNEL) == TIM_CHANNEL_2) ||          \
+      ((CHANNEL) == TIM_CHANNEL_3) ||          \
+      ((CHANNEL) == TIM_CHANNEL_4)))           \
+    ||                                         \
+    (((INSTANCE) == TIM3) &&                   \
+     (((CHANNEL) == TIM_CHANNEL_1) ||          \
+      ((CHANNEL) == TIM_CHANNEL_2) ||          \
+      ((CHANNEL) == TIM_CHANNEL_3) ||          \
+      ((CHANNEL) == TIM_CHANNEL_4)))           \
+    ||                                         \
+    (((INSTANCE) == TIM4) &&                   \
+     (((CHANNEL) == TIM_CHANNEL_1) ||          \
+      ((CHANNEL) == TIM_CHANNEL_2) ||          \
+      ((CHANNEL) == TIM_CHANNEL_3) ||          \
+      ((CHANNEL) == TIM_CHANNEL_4)))           \
+    ||                                         \
+    (((INSTANCE) == TIM5) &&                   \
+     (((CHANNEL) == TIM_CHANNEL_1) ||          \
+      ((CHANNEL) == TIM_CHANNEL_2) ||          \
+      ((CHANNEL) == TIM_CHANNEL_3) ||          \
+      ((CHANNEL) == TIM_CHANNEL_4)))           \
+    ||                                         \
+    (((INSTANCE) == TIM9) &&                   \
+     (((CHANNEL) == TIM_CHANNEL_1) ||          \
+      ((CHANNEL) == TIM_CHANNEL_2)))           \
+    ||                                         \
+    (((INSTANCE) == TIM10) &&                  \
+     (((CHANNEL) == TIM_CHANNEL_1)))           \
+    ||                                         \
+    (((INSTANCE) == TIM11) &&                  \
+     (((CHANNEL) == TIM_CHANNEL_1))))
+
+/************ TIM Instances : complementary output(s) available ***************/
+#define IS_TIM_CCXN_INSTANCE(INSTANCE, CHANNEL) \
+   ((((INSTANCE) == TIM1) &&                    \
+     (((CHANNEL) == TIM_CHANNEL_1) ||           \
+      ((CHANNEL) == TIM_CHANNEL_2) ||           \
+      ((CHANNEL) == TIM_CHANNEL_3))))
+
+/******************** USART Instances : Synchronous mode **********************/
+#define IS_USART_INSTANCE(INSTANCE) (((INSTANCE) == USART1) || \
+                                     ((INSTANCE) == USART2) || \
+                                     ((INSTANCE) == USART6))
+
+/******************** UART Instances : Asynchronous mode **********************/
+#define IS_UART_INSTANCE(INSTANCE) (((INSTANCE) == USART1) || \
+                                    ((INSTANCE) == USART2) || \
+                                    ((INSTANCE) == USART6))
+
+/****************** UART Instances : Hardware Flow control ********************/
+#define IS_UART_HWFLOW_INSTANCE(INSTANCE) (((INSTANCE) == USART1) || \
+                                           ((INSTANCE) == USART2) || \
+                                           ((INSTANCE) == USART6))
+
+/********************* UART Instances : Smard card mode ***********************/
+#define IS_SMARTCARD_INSTANCE(INSTANCE) (((INSTANCE) == USART1) || \
+                                         ((INSTANCE) == USART2) || \
+                                         ((INSTANCE) == USART6))
+
+/*********************** UART Instances : IRDA mode ***************************/
+#define IS_IRDA_INSTANCE(INSTANCE) (((INSTANCE) == USART1) || \
+                                    ((INSTANCE) == USART2) || \
+                                    ((INSTANCE) == USART6))     
+
+
+/*********************** PCD Instances ****************************************/
+#define IS_PCD_ALL_INSTANCE(INSTANCE) (((INSTANCE) == USB_OTG_FS))
+
+/*********************** HCD Instances ****************************************/
+#define IS_HCD_ALL_INSTANCE(INSTANCE) (((INSTANCE) == USB_OTG_FS))
+
+/****************************** IWDG Instances ********************************/
+#define IS_IWDG_ALL_INSTANCE(INSTANCE)  ((INSTANCE) == IWDG)
+
+/****************************** WWDG Instances ********************************/
+#define IS_WWDG_ALL_INSTANCE(INSTANCE)  ((INSTANCE) == WWDG)
+
+/****************************** SDIO Instances ********************************/
+#define IS_SDIO_ALL_INSTANCE(INSTANCE) ((INSTANCE) == SDIO)
+
+/****************************** USB Exported Constants ************************/
+#define USB_OTG_FS_HOST_MAX_CHANNEL_NBR                8U
+#define USB_OTG_FS_MAX_IN_ENDPOINTS                    4U    /* Including EP0 */
+#define USB_OTG_FS_MAX_OUT_ENDPOINTS                   4U    /* Including EP0 */
+#define USB_OTG_FS_TOTAL_FIFO_SIZE                     1280U /* in Bytes */
+
+/**
+  * @}
+  */ 
+
+/**
+  * @}
+  */
+
+/**
+  * @}
+  */
+
+#ifdef __cplusplus
+}
+#endif /* __cplusplus */
+
+#endif /* __STM32F401xE_H */
+
+
+
+/************************ (C) COPYRIGHT STMicroelectronics *****END OF FILE****/
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ELF          (            HI     4     (                    ú  •  !           %ôB                                      ÷   %   }   \   æ$   ◊   Æ   ÿ   Q      W   ´   w   é%   	      ú(   	   Ò!   j   O   ƒ   8      ¯   È   N   Ω   {   ‘   U   —"   2'   ä   .   4   ≠(   ^      >   ,        ≥   Ç   )   "      î"   %)      Å   .   q"   µ&   ƒ   ¬   3   ï   Í   l(   )	   Y   C   ∑   °%   }   ∑	   %   Â   ˛   â   6   `   O   ù   ◊!   I    ‰    û   v   L   ë   %"   â#      Œ   =   Ï   ##   ß       À(   ﬁ+   º   >   %    Œ      ]   h   “   :   Ù      ˆ   "   Î   K	   Õ   n   ˜   z	   ì+   ü*   ú&   #&   í!   i   !   O   à,   Ò   É       ˜   ª#   †   *   ≤   È    o      z
+   ,   /   #   _!   5!   –$   '   +   H   ﬁ   Û   (   \&   "   •   ≥
+   ;*   Ω'   z%   Ì   £   Ê&   3   J"   ó   €,   ◊   Ñ(   ¢
+      ∫   ∂   {   Ù   g)   -   X   J   ¡
+   Ô(   +   @(   K   ª   ˘      ∂"   Ó   —*   å*   ˝    Y   †   ˙%   S   r,   ∆   ±    Ü   Ã   ˜   "   e   4+         
+'   Ó   8#   ’	   °    ë   ¶   
+   b'   °   ∫    π   π   Z    y   /%   Ï	   ‹   ¨   †   L   u   ÷'   ö   —    È*   ú   $   ~)   Ò'   ≈   	   ‰)   L)   π   Õ%   Â%   2   R   ‡   ˚   ≈,   å   S   «+   ¢   %   ^       s   1    ‚   R*   é   ±   ,   `   ÿ   Ò   Ô#   !   â&   á      ç   |'   è   »      £$   v   è    Z   ’      n   =       `+   x   }   ©   é   Û"   o   π   E   ,   P
+   ˚   +   ˆ   2   À   Q,      ì   g#   ñ   Œ   Ä   ï   r&   b   X   z   A   £   c$   á   ·      c   3   $         e   G   “#   F   •   µ   ´   ?   ≥+   C   k      -   M'   ú   ì	   â   §,   ÷)      ß!   r       ï   Í   ÿ&   !   –      $   %!   g   E$   $   ¢   ç   Á   º   #   U$   í   A
+   Û
+   ⁄   C    «)   ﬁ   ˘   ‰   ˆ   ï   	      ≠'   ë   Ä   P   c   ü   
+   Ç   “   ;   ©)   …   Å$   J   é'   „   W   [%      ö#      º   @   k   •   ˚   W(   L+   ‹   5   Ã   f	      â   Í$   ¿!         ˛)   ±   O   ·(   •    Y	   Ã   –   R    Ê"   Ã   .   ≥*   k   ˜        =,   ^   ¨	   o   ®   Ä+   L&   
+      Ÿ   ø   æ   Ó   Ì         ∂!   +*   7"      æ   Ω   C    =   ˚      ../HAL_Driver/Src  stm32f4xx_ll_lptim.c    __ARM_FEATURE_FP16_VECTOR_ARITHMETIC __SIG_ATOMIC_MAX__ 0x7fffffff __TA_FBIT__ 63 __ARMEL__ 1 __DEC64_SUBNORMAL_MIN__ 0.000000000000001E-383DD __UFRACT_IBIT__ 0 __FLT32_HAS_INFINITY__ 1 __FLT64_MAX_EXP__ 1024 __FLT32X_MAX_EXP__ 1024 __INT_FAST16_WIDTH__ 32 __GCC_ATOMIC_TEST_AND_SET_TRUEVAL 1 __DEC64_EPSILON__ 1E-15DD __ULACCUM_EPSILON__ 0x1P-32ULK __UINTMAX_TYPE__ long long unsigned int __FLT32_MANT_DIG__ 24 GNU C11 7.3.1 20180622 (release) [ARM/embedded-7-branch revision 261907] -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g3 -O0 -fmessage-length=0 -ffunction-sections __UINT8_C(c) c __ARM_NEON__ __SIZEOF_WINT_T__ 4 __QQ_IBIT__ 0 __UDQ_IBIT__ 0 __FLT32X_DECIMAL_DIG__ 17 __DBL_MIN_EXP__ (-1021) __LONG_LONG_WIDTH__ 64 __has_include_next(STR) __has_include_next__(STR) __ARM_SIZEOF_WCHAR_T 4 __ARM_FP16_FORMAT_IEEE __LLFRACT_IBIT__ 0 __DBL_MAX__ ((double)1.7976931348623157e+308L) __USFRACT_MIN__ 0.0UHR __WINT_MIN__ 0U __GNUC_MINOR__ 3 __ARM_ASM_SYNTAX_UNIFIED__ 1 __ARM_FEATURE_CRYPTO __UINT16_C(c) c __SIZEOF_SIZE_T__ 4 __CHAR16_TYPE__ short unsigned int __SIZEOF_LONG_DOUBLE__ 8 __VERSION__ "7.3.1 20180622 (release) [ARM/embedded-7-branch revision 261907]" __INT_FAST8_MAX__ 0x7fffffff __ORDER_BIG_ENDIAN__ 4321 __GNUC__ 7 __DEC128_MIN__ 1E-6143DL __ARM_FEATURE_DSP 1 __UTA_FBIT__ 64 __DBL_MANT_DIG__ 53 __UINT_LEAST64_TYPE__ long long unsigned int __INT_MAX__ 0x7fffffff __ATOMIC_RELEASE 3 __PTRDIFF_TYPE__ int __CHAR_UNSIGNED__ 1 __INT16_TYPE__ short int __ARM_FEATURE_QRDMX __DEC32_EPSILON__ 1E-6DF __LDBL_DIG__ 15 __SIZEOF_LONG__ 4 __FLT32_MAX__ 3.4028234663852886e+38F32 __LLACCUM_IBIT__ 32 __ATOMIC_SEQ_CST 5 __SIZEOF_SHORT__ 2 __INTPTR_TYPE__ int __REGISTER_PREFIX__  __FLT64_MANT_DIG__ 53 __UINTMAX_C(c) c ## ULL __BYTE_ORDER__ __ORDER_LITTLE_ENDIAN__ __DEC32_SUBNORMAL_MIN__ 0.000001E-95DF __FLT32_MIN_10_EXP__ (-37) __LFRACT_IBIT__ 0 __ARM_ARCH 7 __STDC_UTF_32__ 1 __INT_LEAST16_MAX__ 0x7fff __SCHAR_MAX__ 0x7f __ULLACCUM_IBIT__ 32 __DEC128_SUBNORMAL_MIN__ 0.000000000000000000000000000000001E-6143DL __ULLFRACT_IBIT__ 0 __FLT64_DIG__ 15 __ATOMIC_RELAXED 0 __INT_LEAST32_TYPE__ long int __SIZE_MAX__ 0xffffffffU __LACCUM_MIN__ (-0X1P31LK-0X1P31LK) __ULLACCUM_MAX__ 0XFFFFFFFFFFFFFFFFP-32ULLK __ULACCUM_MIN__ 0.0ULK __ARM_FP 4 __FLT_HAS_INFINITY__ 1 __FLT32_EPSILON__ 1.1920928955078125e-7F32 __UDA_IBIT__ 32 __INT_FAST64_TYPE__ long long int __INT8_C(c) c __thumb2__ 1 __ARM_32BIT_STATE 1 __INT_LEAST16_WIDTH__ 16 __ULLACCUM_MIN__ 0.0ULLK __ARM_NEON __UINTPTR_TYPE__ unsigned int __FLT32_HAS_DENORM__ 1 __FLT64_DENORM_MIN__ 4.9406564584124654e-324F64 __GCC_HAVE_SYNC_COMPARE_AND_SWAP_1 1 __SA_IBIT__ 16 __LLFRACT_MAX__ 0X7FFFFFFFFFFFFFFFP-63LLR __INT_FAST64_MAX__ 0x7fffffffffffffffLL __FP_FAST_FMAF 1 __FLT_DIG__ 6 __DBL_EPSILON__ ((double)2.2204460492503131e-16L) __DA_FBIT__ 31 __ARM_SIZEOF_MINIMAL_ENUM 1 __USES_INITFINI__ 1 __DEC32_MIN__ 1E-95DF __GCC_IEC_559 0 __USACCUM_EPSILON__ 0x1P-8UHK __PTRDIFF_MAX__ 0x7fffffff __FLT32_HAS_QUIET_NAN__ 1 __ULACCUM_MAX__ 0XFFFFFFFFFFFFFFFFP-32ULK __UFRACT_MAX__ 0XFFFFP-16UR __SFRACT_MAX__ 0X7FP-7HR __ARM_EABI__ 1 STM32 1 __UINT_LEAST8_MAX__ 0xff __INT64_MAX__ 0x7fffffffffffffffLL __INT8_MAX__ 0x7f __ULFRACT_EPSILON__ 0x1P-32ULR __DEC128_EPSILON__ 1E-33DL __ULFRACT_IBIT__ 0 __UTQ_IBIT__ 0 __ULLFRACT_MAX__ 0XFFFFFFFFFFFFFFFFP-64ULLR __UINT_LEAST64_MAX__ 0xffffffffffffffffULL __FLT_RADIX__ 2 __ULLFRACT_MIN__ 0.0ULLR __DBL_HAS_QUIET_NAN__ 1 __UACCUM_MIN__ 0.0UK __LFRACT_EPSILON__ 0x1P-31LR __INT_FAST8_TYPE__ int __FLT64_HAS_INFINITY__ 1 __FLT32X_DENORM_MIN__ 4.9406564584124654e-324F32x __ARM_FEATURE_FP16_SCALAR_ARITHMETIC __SACCUM_FBIT__ 7 __WCHAR_TYPE__ unsigned int __DBL_MIN__ ((double)2.2250738585072014e-308L) __FLT64_MIN__ 2.2250738585072014e-308F64 __DEC64_MAX__ 9.999999999999999E384DD __FRACT_MIN__ (-0.5R-0.5R) __GCC_ATOMIC_INT_LOCK_FREE 2 __INTMAX_MAX__ 0x7fffffffffffffffLL __UACCUM_EPSILON__ 0x1P-16UK __ACCUM_IBIT__ 16 __LDBL_DENORM_MIN__ 4.9406564584124654e-324L __USACCUM_FBIT__ 8 __SACCUM_IBIT__ 8 __SIZEOF_PTRDIFF_T__ 4 __PRAGMA_REDEFINE_EXTNAME 1 __SFRACT_MIN__ (-0.5HR-0.5HR) __USA_IBIT__ 16 __DEC128_MANT_DIG__ 34 __ARM_ARCH_EXT_IDIV__ 1 __ARM_FEATURE_UNALIGNED 1 __SIZEOF_FLOAT__ 4 __USACCUM_MAX__ 0XFFFFP-8UHK __UINT32_C(c) c ## UL __UDA_FBIT__ 32 ../HAL_Driver/Src/stm32f4xx_ll_lptim.c __THUMBEL__ 1 __DA_IBIT__ 32 __BIGGEST_ALIGNMENT__ 8 __LACCUM_IBIT__ 32 __USFRACT_MAX__ 0XFFP-8UHR __UINT_FAST8_MAX__ 0xffffffffU __ORDER_LITTLE_ENDIAN__ 1234 __LLACCUM_MIN__ (-0X1P31LLK-0X1P31LLK) __SA_FBIT__ 15 __FLT64_MIN_10_EXP__ (-307) USE_HAL_DRIVER 1 __SACCUM_EPSILON__ 0x1P-7HK __INT_FAST16_TYPE__ int __FLT32_DECIMAL_DIG__ 9 __UINT16_TYPE__ short unsigned int __WCHAR_WIDTH__ 32 __GNUC_STDC_INLINE__ 1 __UHQ_IBIT__ 0 __UFRACT_FBIT__ 16 __ARM_FEATURE_CLZ 1 __LONG_LONG_MAX__ 0x7fffffffffffffffLL __UINT_LEAST16_TYPE__ short unsigned int __FLT_MAX_10_EXP__ 38 __LLACCUM_MAX__ 0X7FFFFFFFFFFFFFFFP-31LLK __LLACCUM_EPSILON__ 0x1P-31LLK __FLT32X_MANT_DIG__ 53 __NO_INLINE__ 1 __DEC128_MIN_EXP__ (-6142) __ULFRACT_MIN__ 0.0ULR __FLT_MANT_DIG__ 24 __FLT64_DECIMAL_DIG__ 17 __GCC_HAVE_SYNC_COMPARE_AND_SWAP_4 1 __FLT32_MIN_EXP__ (-125) __UACCUM_IBIT__ 16 __UINT_FAST16_MAX__ 0xffffffffU __UINT_FAST16_TYPE__ unsigned int __FLT32_MAX_EXP__ 128 __DBL_MIN_10_EXP__ (-307) __USACCUM_IBIT__ 8 __THUMB_INTERWORK__ 1 STM32F407xx 1 __FLT32_DIG__ 6 __FLT64_HAS_DENORM__ 1 __FLT_EVAL_METHOD__ 0 __FLT32X_HAS_DENORM__ 1 E:\projects\test_bench\OPen_stm32_Workspce\test_2\Debug __UINT_FAST8_TYPE__ unsigned int __ACCUM_FBIT__ 15 __DEC64_MIN_EXP__ (-382) __ULACCUM_IBIT__ 32 __LLFRACT_FBIT__ 63 __INT_LEAST8_WIDTH__ 8 __USA_FBIT__ 16 __UINT8_MAX__ 0xff __UINT16_MAX__ 0xffff DEBUG 1 __STDC_VERSION__ 201112L __INTMAX_WIDTH__ 64 __DEC32_MAX__ 9.999999E96DF __LFRACT_FBIT__ 31 __INT_LEAST16_TYPE__ short int __FLT64_HAS_QUIET_NAN__ 1 __DBL_DIG__ 15 __GCC_ATOMIC_CHAR16_T_LOCK_FREE 2 __INT_LEAST8_MAX__ 0x7f __LACCUM_FBIT__ 31 __UFRACT_EPSILON__ 0x1P-16UR __FLT_MIN__ 1.1754943508222875e-38F __GCC_ATOMIC_LONG_LOCK_FREE 2 __FLT32X_DIG__ 15 __ACCUM_EPSILON__ 0x1P-15K __UDQ_FBIT__ 64 __INT_FAST16_MAX__ 0x7fffffff __ARM_ARCH_ISA_THUMB 2 __UTQ_FBIT__ 128 __CHAR_BIT__ 8 __INT_LEAST8_TYPE__ signed char __INTPTR_WIDTH__ 32 __GCC_ATOMIC_BOOL_LOCK_FREE 2 __LDBL_MAX__ 1.7976931348623157e+308L __FINITE_MATH_ONLY__ 0 __SACCUM_MAX__ 0X7FFFP-7HK __arm__ 1 __LDBL_MANT_DIG__ 53 __TQ_IBIT__ 0 __UHA_FBIT__ 8 __ELF__ 1 __INT16_C(c) c __GCC_HAVE_DWARF2_CFI_ASM 1 __UINT64_MAX__ 0xffffffffffffffffULL __LACCUM_MAX__ 0X7FFFFFFFFFFFFFFFP-31LK __INT_FAST32_MAX__ 0x7fffffff __USFRACT_EPSILON__ 0x1P-8UHR __ATOMIC_ACQUIRE 2 __ARM_FEATURE_COPROC 15 __STDC__ 1 __UACCUM_FBIT__ 16 __DBL_MAX_EXP__ 1024 __ATOMIC_CONSUME 1 __INT_FAST32_WIDTH__ 32 __WINT_TYPE__ unsigned int __LONG_MAX__ 0x7fffffffL __INT16_MAX__ 0x7fff __ULFRACT_FBIT__ 32 __SCHAR_WIDTH__ 8 __ACCUM_MIN__ (-0X1P15K-0X1P15K) __SIZEOF_DOUBLE__ 8 __GNUC_PATCHLEVEL__ 1 __GXX_TYPEINFO_EQUALITY_INLINE 0 __FRACT_MAX__ 0X7FFFP-15R __INT64_TYPE__ long long int __ULACCUM_FBIT__ 32 __UFRACT_MIN__ 0.0UR __ARM_NEON_FP __STDC_UTF_16__ 1 __FRACT_IBIT__ 0 __LDBL_MIN__ 2.2250738585072014e-308L __LDBL_HAS_INFINITY__ 1 __GCC_IEC_559_COMPLEX 0 __UINT32_MAX__ 0xffffffffUL __LDBL_MIN_EXP__ (-1021) __ULLFRACT_FBIT__ 64 __SIZEOF_WCHAR_T__ 4 __FLOAT_WORD_ORDER__ __ORDER_LITTLE_ENDIAN__ __GCC_HAVE_SYNC_COMPARE_AND_SWAP_2 1 __SIZE_WIDTH__ 32 __DEC32_MANT_DIG__ 7 __SIG_ATOMIC_MIN__ (-__SIG_ATOMIC_MAX__ - 1) __LLFRACT_EPSILON__ 0x1P-63LLR __LONG_WIDTH__ 32 __SFRACT_FBIT__ 7 __CHAR32_TYPE__ long unsigned int __SFRACT_IBIT__ 0 __HQ_IBIT__ 0 __USER_LABEL_PREFIX__  __FLT_DENORM_MIN__ 1.4012984643248171e-45F __UINT_LEAST32_TYPE__ long unsigned int __DQ_FBIT__ 63 __UHA_IBIT__ 8 __ARM_FEATURE_LDREX 7 __SIG_ATOMIC_WIDTH__ 32 __SHRT_MAX__ 0x7fff __GCC_ATOMIC_WCHAR_T_LOCK_FREE 2 __ARM_FP16_ARGS __ORDER_PDP_ENDIAN__ 3412 __SQ_IBIT__ 0 __FLT_DECIMAL_DIG__ 9 __FLT64_MAX_10_EXP__ 308 __INT32_MAX__ 0x7fffffffL __WINT_WIDTH__ 32 __GXX_ABI_VERSION 1011 __UQQ_FBIT__ 8 __USQ_IBIT__ 0 __UACCUM_MAX__ 0XFFFFFFFFP-16UK __DEC64_MAX_EXP__ 385 __INT_LEAST64_WIDTH__ 64 __INT32_TYPE__ long int __FLT32X_MIN_10_EXP__ (-307) __UINT_FAST32_TYPE__ unsigned int __ARM_FEATURE_IDIV 1 __LDBL_MAX_EXP__ 1024 __SQ_FBIT__ 31 __LFRACT_MIN__ (-0.5LR-0.5LR) __DEC128_MAX_EXP__ 6145 __WCHAR_MIN__ 0U __FLT64_MAX__ 1.7976931348623157e+308F64 __UINT_LEAST32_MAX__ 0xffffffffUL __thumb__ 1 __LDBL_HAS_QUIET_NAN__ 1 __INT8_TYPE__ signed char __WINT_MAX__ 0xffffffffU __LDBL_DECIMAL_DIG__ 17 __TQ_FBIT__ 127 __UHQ_FBIT__ 16 __UINT_FAST64_MAX__ 0xffffffffffffffffULL __UINT_FAST32_MAX__ 0xffffffffU __USFRACT_FBIT__ 8 __INT64_C(c) c ## LL __HQ_FBIT__ 15 STM32F4 1 __ARM_FEATURE_SIMD32 1 __WCHAR_MAX__ 0xffffffffU __SIZEOF_LONG_LONG__ 8 __UINT8_TYPE__ unsigned char __SHRT_WIDTH__ 16 STM32F407G_DISC1 1 __FLT_EPSILON__ 1.1920928955078125e-7F __INT_LEAST64_TYPE__ long long int __UINT32_TYPE__ long unsigned int __LDBL_MIN_10_EXP__ (-307) __SIZEOF_POINTER__ 4 __VFP_FP__ 1 __ULFRACT_MAX__ 0XFFFFFFFFP-32ULR __HA_FBIT__ 7 __PTRDIFF_WIDTH__ 32 __FLT32_DENORM_MIN__ 1.4012984643248171e-45F32 __SACCUM_MIN__ (-0X1P7HK-0X1P7HK) __INT_WIDTH__ 32 __GCC_ATOMIC_POINTER_LOCK_FREE 2 __UINT64_C(c) c ## ULL __LACCUM_EPSILON__ 0x1P-31LK __SFRACT_EPSILON__ 0x1P-7HR __UQQ_IBIT__ 0 __FLT32X_MAX__ 1.7976931348623157e+308F32x __USQ_FBIT__ 32 __HA_IBIT__ 8 __ACCUM_MAX__ 0X7FFFFFFFP-15K __GCC_ATOMIC_CHAR32_T_LOCK_FREE 2 __FRACT_EPSILON__ 0x1P-15R __STDC_HOSTED__ 1 __INTPTR_MAX__ 0x7fffffff __ARM_FEATURE_NUMERIC_MAXMIN __has_include(STR) __has_include__(STR) __FLT64_EPSILON__ 2.2204460492503131e-16F64 __GCC_ATOMIC_LLONG_LOCK_FREE 1 __FLT_MAX_EXP__ 128 __ATOMIC_ACQ_REL 4 __UINT_FAST64_TYPE__ long long unsigned int __DEC32_MIN_EXP__ (-94) __DEC32_MAX_EXP__ 97 __LDBL_EPSILON__ 2.2204460492503131e-16L __INT_LEAST64_MAX__ 0x7fffffffffffffffLL __ARM_PCS_VFP 1 __DEC_EVAL_METHOD__ 2 __USACCUM_MIN__ 0.0UHK __USFRACT_IBIT__ 0 __INT_LEAST32_WIDTH__ 32 __UINT_LEAST8_TYPE__ unsigned char __DQ_IBIT__ 0 __FLT_MAX__ 3.4028234663852886e+38F __FLT32_MIN__ 1.1754943508222875e-38F32 __SIZE_TYPE__ unsigned int __ULLACCUM_FBIT__ 32 __FLT64_MIN_EXP__ (-1021) __FRACT_FBIT__ 15 __GCC_ATOMIC_SHORT_LOCK_FREE 2 __UTA_IBIT__ 64 __FLT_MIN_10_EXP__ (-37) __FLT32X_MIN_EXP__ (-1021) __FLT32X_EPSILON__ 2.2204460492503131e-16F32x __FLT_EVAL_METHOD_TS_18661_3__ 0 __DBL_HAS_INFINITY__ 1 __ARM_FEATURE_QBIT 1 __INT_FAST32_TYPE__ int __FLT_HAS_QUIET_NAN__ 1 __SIZEOF_INT__ 4 __INTMAX_TYPE__ long long int __INTMAX_C(c) c ## LL __APCS_32__ 1 __DBL_DENORM_MIN__ ((double)4.9406564584124654e-324L) __UINT64_TYPE__ long long unsigned int __FLT32X_HAS_QUIET_NAN__ 1 __DBL_MAX_10_EXP__ 308 __FLT32X_MIN__ 2.2250738585072014e-308F32x __GCC_ATOMIC_CHAR_LOCK_FREE 2 __TA_IBIT__ 64 __QQ_FBIT__ 7 __FLT32X_HAS_INFINITY__ 1 __ARM_ARCH_PROFILE 77 __INT_FAST8_WIDTH__ 32 STM32F407VGTx 1 __FLT_MIN_EXP__ (-125) __DEC128_MAX__ 9.999999999999999999999999999999999E6144DL __DECIMAL_DIG__ 17 __INT32_C(c) c ## L __ARM_FP16_FORMAT_ALTERNATIVE __LDBL_MAX_10_EXP__ 308 __FLT32X_MAX_10_EXP__ 308 __UINTPTR_MAX__ 0xffffffffU __DBL_HAS_DENORM__ 1 __FLT32_MAX_10_EXP__ 38 __ARM_FEATURE_SAT 1 __LFRACT_MAX__ 0X7FFFFFFFP-31LR __ARM_ARCH_7EM__ 1 __INT_LEAST32_MAX__ 0x7fffffffL __LLACCUM_FBIT__ 31 __DEC64_MIN__ 1E-383DD __UINTMAX_MAX__ 0xffffffffffffffffULL __SIG_ATOMIC_TYPE__ int __LLFRACT_MIN__ (-0.5LLR-0.5LLR) __ARM_FEATURE_FMA 1 __ULLFRACT_EPSILON__ 0x1P-64ULLR __LDBL_HAS_DENORM__ 1 __UINT_LEAST16_MAX__ 0xffff __ULLACCUM_EPSILON__ 0x1P-32ULLK __DEC64_MANT_DIG__ 16 __FLT_HAS_DENORM__ 1 __INT_FAST64_WIDTH__ 64 __DBL_DECIMAL_DIG__ 17  GCC: (GNU Tools for Arm Embedded Processors 7-2018-q2-update) 7.3.1 20180622 (release) [ARM/embedded-7-branch revision 261907] A8   aeabi .   Cortex-M4 M	
+"                              Òˇ                                                                                                 
+                                                                                                    stm32f4xx_ll_lptim.c wm4.0.39064f45ef48dbe1118628924002e9ba            
+     
+     
+     	               	          
+     
+     
+     
+     
+  #   
+  )   
+  /   
+  5   
+  ;   
+  A   
+  G   
+  M   
+  S   
+  Y   
+  _   
+  e   
+  k   
+  q   
+  w   
+  }   
+  É   
+  â   
+  è   
+  ï   
+  õ   
+  °   
+  ß   
+  ≠   
+  ≥   
+  π   
+  ø   
+  ≈   
+  À   
+  —   
+  ◊   
+  ›   
+  „   
+  È   
+  Ô   
+  ı   
+  ˚   
+    
+    
+    
+    
+    
+    
+  %  
+  +  
+  1  
+  7  
+  =  
+  C  
+  I  
+  O  
+  U  
+  [  
+  a  
+  g  
+  m  
+  s  
+  y  
+    
+  Ö  
+  ã  
+  ë  
+  ó  
+  ù  
+  £  
+  ©  
+  Ø  
+  µ  
+  ª  
+  ¡  
+  «  
+  Õ  
+  ”  
+  Ÿ  
+  ﬂ  
+  Â  
+  Î  
+  Ò  
+  ˜  
+  ˝  
+    
+  	  
+    
+    
+    
+  !  
+  '  
+  -  
+  3  
+  9  
+  ?  
+  E  
+  K  
+  Q  
+  W  
+  ]  
+  c  
+  i  
+  o  
+  u  
+  {  
+  Å  
+  á  
+  ç  
+  ì  
+  ô  
+  ü  
+  •  
+  ´  
+  ±  
+  ∑  
+  Ω  
+  √  
+  …  
+  œ  
+  ’  
+  €  
+  ·  
+  Á  
+  Ì  
+  Û  
+  ˘  
+  ˇ  
+    
+    
+    
+    
+    
+  #  
+  )  
+  /  
+  5  
+  ;  
+  A  
+  G  
+  M  
+  S  
+  Y  
+  _  
+  e  
+  k  
+  q  
+  w  
+  }  
+  É  
+  â  
+  è  
+  ï  
+  õ  
+  °  
+  ß  
+  ≠  
+  ≥  
+  π  
+  ø  
+  ≈  
+  À  
+  —  
+  ◊  
+  ›  
+  „  
+  È  
+  Ô  
+  ı  
+  ˚  
+    
+    
+    
+    
+    
+    
+  %  
+  +  
+  1  
+  7  
+  =  
+  C  
+  I  
+  O  
+  U  
+  [  
+  a  
+  g  
+  m  
+  s  
+  y  
+    
+  Ö  
+  ã  
+  ë  
+  ó  
+  ù  
+  £  
+  ©  
+  Ø  
+  µ  
+  ª  
+  ¡  
+  «  
+  Õ  
+  ”  
+  Ÿ  
+  ﬂ  
+  Â  
+  Î  
+  Ò  
+  ˜  
+  ˝  
+    
+  	  
+    
+    
+    
+  !  
+  '  
+  -  
+  3  
+  9  
+  ?  
+  E  
+  K  
+  Q  
+  W  
+  ]  
+  c  
+  i  
+  o  
+  u  
+  {  
+  Å  
+  á  
+  ç  
+  ì  
+  ô  
+  ü  
+  •  
+  ´  
+  ±  
+  ∑  
+  Ω  
+  √  
+  …  
+  œ  
+  ’  
+  €  
+  ·  
+  Á  
+  Ì  
+  Û  
+  ˘  
+  ˇ  
+    
+    
+    
+    
+    
+  #  
+  )  
+  /  
+  5  
+  ;  
+  A  
+  G  
+  M  
+  S  
+  Y  
+  _  
+  e  
+  k  
+  q  
+  w  
+  }  
+  É  
+  â  
+  è  
+  ï  
+  õ  
+  °  
+  ß  
+  ≠  
+  ≥  
+  π  
+  ø  
+  ≈  
+  À  
+  —  
+  ◊  
+  ›  
+  „  
+  È  
+  Ô  
+  ı  
+  ˚  
+    
+    
+    
+    
+    
+    
+  %  
+  +  
+  1  
+  7  
+  =  
+  C  
+  I  
+  O  
+  U  
+  [  
+  a  
+  g  
+  m  
+  s  
+  y  
+    
+  Ö  
+  ã  
+  ë  
+  ó  
+  ù  
+  £  
+  ©  
+  Ø  
+  µ  
+  ª  
+  ¡  
+  «  
+  Õ  
+  ”  
+  Ÿ  
+  ﬂ  
+  Â  
+  Î  
+  Ò  
+  ˜  
+  ˝  
+    
+  	  
+    
+    
+    
+  !  
+  '  
+  -  
+  3  
+  9  
+  ?  
+  E  
+  K  
+  Q  
+  W  
+  ]  
+  c  
+  i  
+  o  
+  u  
+  {  
+  Å  
+  á  
+  ç  
+  ì  
+  ô  
+  ü  
+  •  
+  ´  
+  ±  
+  ∑  
+  Ω  
+  √  
+  …  
+  œ  
+  ’  
+  €  
+  ·  
+  Á  
+  Ì  
+  Û  
+  ˘  
+  ˇ  
+  	  
+  	  
+  	  
+  	  
+  	  
+  #	  
+  )	  
+  /	  
+  5	  
+  ;	  
+  A	  
+  G	  
+  M	  
+  S	  
+  Y	  
+  _	  
+  e	  
+  k	  
+  q	  
+  w	  
+  }	  
+  É	  
+  â	  
+  è	  
+  ï	  
+  õ	  
+  °	  
+  ß	  
+  ≠	  
+  ≥	  
+  π	  
+  ø	  
+  ≈	  
+  À	  
+  —	  
+  ◊	  
+  ›	  
+  „	  
+  È	  
+  Ô	  
+  ı	  
+  ˚	  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  %
+  
+  +
+  
+  1
+  
+  7
+  
+  =
+  
+  C
+  
+  I
+  
+  O
+  
+  U
+  
+  [
+  
+  a
+  
+  g
+  
+  m
+  
+   .symtab .strtab .shstrtab .text .data .bss .rel.debug_info .debug_abbrev .rel.debug_aranges .rel.debug_macro .debug_line .debug_str .comment .ARM.attributes .group                                            û              4                               @                      !             @                      '             @                      0              @   !                  ,   	   @       p:  0               <              a                     N              t                     J   	   @       †:                 a              å                     ]   	   @       ®:        
+         a             ù   r
+                 ]   	   @      ∏:  Ë              n                G                  z      0       V  -                Ö      0       u8  Ä                 é     p        ı8  9                                09                 	              0:  =                                †H  •                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  0Çl	*ÜHÜ˜†Ç]0ÇY10	`ÜHe 0	*ÜHÜ˜†Ç00Ç∑0Çü†Á‡ÂÿF˛èÂ`¸090	*ÜHÜ˜ 0e10	UUS10U
+DigiCert Inc10Uwww.digicert.com1$0"UDigiCert Assured ID Root CA0061110000000Z311110000000Z0e10	UUS10U
+DigiCert Inc10Uwww.digicert.com1$0"UDigiCert Assured ID Root CA0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ≠Œ‰CÄ\±áÛ∑`˘q•Æ‹&îà™ÙŒı 9(X`¯Ä⁄©ï2a<µ±(Ñää‹ü
+Ézèê¨äÁyS\1Ñ*ˆò26vÃﬁ›<®¢Ôj˚!ÚRaﬂü ◊‚±Ÿ˛d“[_˘X5ºGÕ°6˘k‘∞8>¡√å3Ÿÿ/˛(≥ßÉ÷√nD¿a5ñ˛Yúãvm◊Ò¢K+ˇr⁄û`–éê5∆xUá °œÂm
+»I|1ò3l"Èá–2Z¢∫ÇÌ9ùô:r°Ê˙§Ÿ’1uÆÖ}"Æ?FÜˆ(y»±⁄‰Wƒ~∞¥í¶V≥Ω≤óÌ™ß∑≈®?ï–ˇ°ñÎ_wO £c0a0UˇÜ0Uˇ0ˇ0UEÎ¢ØÙíÀÇ1-Qãßß!ùÛm»0U#0ÄEÎ¢ØÙíÀÇ1-Qãßß!ùÛm»0	*ÜHÜ˜ Ç ¢ºﬂ‚Ì„rszdîø˜rfÿ2‰BubÆáÎÚ’ŸﬁV≥üÃŒ(πó`\LX‰”=ÉIEXó5i®GÍV∆y´ÿgÅÑﬂ	<îÊ∏&, Ω=≥(â˜_ˇ"‚óÑÈeÔá‡ﬂ¡gI≥]Î≤	*Î&Ìxæ}?+Û∑&5m_â∂I[üõ´=%¡Ã∂¬ÒoÜ∆˙dhÎÅ-îÎB∑˙å›bÒæPg∑lΩÛÒk67|©[mzÒF`É◊'æKŒóæ√g*hﬂÄÁ3fønÛc˙ç%mlè•∑a±“£&°qù≠‚√˘√ôQ∑+Œ.ÊP≤ß˙
+E/¢Ú0Ç00Ç†	_’ªfuSCµoïP0	*ÜHÜ˜ 0e10	UUS10U
+DigiCert Inc10Uwww.digicert.com1$0"UDigiCert Assured ID Root CA0131022120000Z281022120000Z0r10	UUS10U
+DigiCert Inc10Uwww.digicert.com110/U(DigiCert SHA2 Assured ID Code Signing CA0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ¯”≥Øgw”1Iœ–˚Eô±:€DıÂ®ù€2◊qÍvù.∑è˙íC¿•˘â‘7◊∂™úÜ•ÿ%¨y(:~È—g”∆˚)'«”{#î‰ë#ñêwÇ˘°Ñ#fT3Pt±(&ª$i¬¬RÚgäâE‘-°£Èà, ïÆJáﬂı‚M`æ™ƒ≤Æp1f3q>¨p¢´ŒÈ|Àí°Â;1œÍÚ
+‰WªJµÈtÊ+˛lÀ~t96êÔ‰µN§©Íj
+´ÑÛ¨gNµƒ˜å— %#Îd>Rñ¡ÚÙ≈é¡¢Ë,Q˜sºΩÖ±bÉsAÇ‰8ãjs –ds<ûü¶3©˝ﬂ%ì— £ÇÕ0Ç…0Uˇ0ˇ 0UˇÜ0U%0
++0y+m0k0$+0Ühttp://ocsp.digicert.com0C+0Ü7http://cacerts.digicert.com/DigiCertAssuredIDRootCA.crt0ÅÅUz0x0:†8†6Ü4http://crl4.digicert.com/DigiCertAssuredIDRootCA.crl0:†8†6Ü4http://crl3.digicert.com/DigiCertAssuredIDRootCA.crl0OU H0F08
+`ÜHÜ˝l 0*0(+https://www.digicert.com/CPS0
+`ÜHÜ˝l0UZƒπ{*
+£•Íq¿`˘-ˆeuX0U#0ÄEÎ¢ØÙíÀÇ1-Qãßß!ùÛm»0	*ÜHÜ˜ Ç >ÏZ$≥Û"—»,|%)v®]-:ƒÔ0a◊~`˝√=ƒØã˝Ô*ﬂ U7∞·ˆ—íuQ¥n•éZ‚^$ÅN§Ó?qécK≠◊_DyÛ6ä˜úFN\ˇê±ë˚∫ØµQ¬ç$Æ$∆«'*°)(:q(<.ë£¿%‚úG°zhhØõß\ \Ÿq±èª®¯≈hüœ@À@D•Êd%B2≤6ä$˛/r~◊IEñËYÈ˙tdk≤ÎfC⁄≥∞å’È›ˆ Œô1c=≥ÅõO∆ì¸Å˙ã⁄˘ÇI˜bn°S˙îÖ.íëÍhlD2≤f°Á§ödQÔ0Ç=0Ç%†.”)∑N_ó¯˙!A∑?0	*ÜHÜ˜ 0r10	UUS10U
+DigiCert Inc10Uwww.digicert.com110/U(DigiCert SHA2 Assured ID Code Signing CA0150304000000Z180308120000Z0ÅÉ10	UCA10UOntario10UOttawa1!0U
+Eclipse Foundation, Inc.10	UIT1!0UEclipse Foundation, Inc.0Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ÇI‘-o¥ô;–ç#hÆ≥·íÓêﬂÑ»ê:Q˜ÑÍøõŸ_+™ÀƒÍ‘%sÎvåIWeÈ¶—îÅ9rå0¶:”æ˘∏W∆âﬂ!¡,g$_Q¿Áõ<|Ëúy˝∆OˇÑ{Í¡=π…ÈÈŒÙ[î4n'¶© ç’F^∫¶k¡s$3–WN˝≠≈Â0ŒÃ˚ÇØ-H¥…@BÒ{ç‚KnãòØ\éhÁî÷å §:$!GÕu¬¸«I…?KïKIŒªŒäÖ•"ê=£!
+¥7æ∏"•3¯©Jä¢HyVm@}ﬁ£SQ≈:13ôNX˜c¥è
+Høúr)Ø{#aÂ‡ól∞–Ô £Çª0Ç∑0U#0ÄZƒπ{*
+£•Íq¿`˘-ˆeuX0Ue€∫7gïÌmπØG%$çmãPõ@Å0UˇÄ0U%0
++0wUp0n05†3†1Ü/http://crl3.digicert.com/sha2-assured-cs-g1.crl05†3†1Ü/http://crl4.digicert.com/sha2-assured-cs-g1.crl0BU ;0907	`ÜHÜ˝l0*0(+https://www.digicert.com/CPS0ÅÑ+x0v0$+0Ühttp://ocsp.digicert.com0N+0ÜBhttp://cacerts.digicert.com/DigiCertSHA2AssuredIDCodeSigningCA.crt0Uˇ0 0	*ÜHÜ˜ Ç ^*¸)¿(}f ÔK0	¢X"äU¿ÔBŸã∫≥ñ!ú:o;gf∆îeŸ8]ëû\≤˚∞.Óñ”|Ωv†Uˇ-sëœ‘¡Ê‹~åuﬁ‰ lkhÕgÕ ﬁ_BPTÛzO>¬û0Ñ.Ó:@sáAÒ˛Ω—»∏Â{¯A0Jün˙ß%Ì$«cú)^∂:Ë˝C¢ŒÊûï∫¥o´ã≥πI:w¢egç“%ÊOlh¿˙ıD’¶U#`"Î≈QΩëú£ÙtΩ1sPgÉÊ£mÃÖÚÌepÒzN≠∆3Ô∂—œC*G@ˆﬂ2gDa?ÂÓüdñ'8πyAﬁì{?R™‹K≈˜¡±¬êz;1Ç 0Ç¸0ÅÜ0r10	UUS10U
+DigiCert Inc10Uwww.digicert.com110/U(DigiCert SHA2 Assured ID Code Signing CA.”)∑N_ó¯˙!A∑?0	`ÜHe 0	*ÜHÜ˜ Ç k© §•<0∑˝º ÜñÇ|ûµ.˚>éhò=ÅÃÑ⁄˙’eGD‰|∆ÿ˙ÖÛ¥√”_Ç¡V_ˇ¬áÚcQë™Á°¨ £ÂΩ}∫älÚ%<jˆa[Ñ±!´:°qúq_é ¬óœÄ˘°’?A£7“}⁄‚¢UêπÄnÂÍm‚∂?Üúç:Æ·ãHb^>ë«9≤éß‚Bî(Zz&FÚöìÄ0<ˇf"Øm M‰ÔÇﬂ∫{,Æ$o4´	¨Û¯Åî!îÊ≠úö≤TáÒJMdá‹â4∂Pı]£›,µ3î„è‰ÿ§7!Ï›ï+É¶≥©‰4¡j@2ÎãouPBﬂ>åÅ
+vJ^‘ï6uï°ÇJ0ÇF*ÜHÜ˜	1Ç50Ç1	*ÜHÜ˜†Ç"0Ç10	+ 0Å”*ÜHÜ˜	†Å√Å¿0ÅΩ)010	`ÜHe  xNÂÑ‘ãÿàñ¿PıÊt<√Ÿ}_ÕàT0‚zú%°D~ÜÇ20170306221347Z0<	 ﬂµF,VÉ†Z§X0V10	UUS10U
+GeoTrust Inc100.U'GeoTrust 2048-bit Timestamping Signer 4†Ç0Çm0ÇU†p†ÙÍÔô˝FlÌ0¡∞0	*ÜHÜ˜ 0^10	UUS10U
+Symantec Corporation100.U'Symantec Time Stamping Services CA - G20150611000000Z201229235959Z0V10	UUS10U
+GeoTrust Inc100.U'GeoTrust 2048-bit Timestamping Signer 40Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç æ¨“Öõz“ï)Ïù6=Î b˚CΩ≥…ò|äÚñõLÅÖjV]ˇ≤záÍ≠¢ïÜõ:i@jò≤È—Xà¨!s¥k|áRe‹Ók°&}èntÕã≈Õña•ﬂå!%aÌ «"zJX	◊'"Ü;“·QÔÔ¥qÉ≈>ñFÂÁê	E≈∏	D´ó◊Û#ŒìÙZ”ﬂ¡ÓºØÜÿåÅÜÙµ}j1Lı33wΩ_‰¢«=Ã€RHB/7Í$ÉÊ88f¯ÓÅbıMx„çB€¶KBÇ r+Àè“«G$Ê∫ëV¥hˆÀ1åÉB3˘àÏÖ û{}ÊvñåîΩ˜O{∞WEü≠UVm £Ç-0Ç)0s+g0e0*+0Ühttp://ts-ocsp.ws.symantec.com07+0Ü+http://ts-aia.ws.symantec.com/tss-ca-g2.cer0Uˇ0 0<U50301†/†-Ü+http://ts-crl.ws.symantec.com/tss-ca-g2.crl0U%ˇ0
++0UˇÄ0UôäC∫?”√ºƒî=Ë≤·N0U#0Ä_öın\ÃÃtö‘›}Ô?€ÏLÄ.›0	*ÜHÜ˜ Ç ~?ÆD1 (Q Y†vˆUã,›ﬁï_(|}}⁄ÅÑ◊+è…oô≥‚◊ƒÂYª'hâ›9æπlGúË∞@Ÿ	ÿ√0w,c∏qB2.k‘¡Y4RA≠J∏	%®≠Nû∫}0’™‰Û… ˆﬂ˝K…Ÿw.c„9ØË„—í˘d¶w‰·Ì\:ÈãA©”≈ >∆∫Æ¢ƒ¶úÎÿ¬zõ•ˇIa≤¢Û%ûV◊=åPÕL˚Y¿
+áˇÈ∫{=]◊y¥Å«Ï+A+⁄Œ[rN‰û.t|ÀÕ‹±cÊt3¨O‡h@¶I*Tkµ∂Áßúõ ÛΩ"¨?‰I“÷,P0Ç°0Ç
+† 0	*ÜHÜ˜ 0Åã10	UZA10UWestern Cape10UDurbanville10U
+Thawte10UThawte Certification10UThawte Timestamping CA0970101000000Z201231235959Z0Åã10	UZA10UWestern Cape10UDurbanville10U
+Thawte10UThawte Certification10UThawte Timestamping CA0Åü0	*ÜHÜ˜ Åç 0ÅâÅÅ ÷+XxaEÜSÍ4{QúÌ∞Ê.˛‡_®'”¥…‡|YNsT`¡ˆü.È:Ö$<€Gc√ûƒîZﬂLzÛŸC<zy%€ê˛QÁ0÷A ˝ü(ﬂyæîªù∂„#Ö◊©A‡L§y∞+ãÚ¯;ä>E¨qí ¥êAò˚_Ì˙∑.ä¯à7 £00Uˇ0ˇ0	*ÜHÜ˜ ÅÅ g€‚¬Êá=@ÉÜ75}Œö√f ®∫™âÜ¬ıøÀ¢ä–M6>Ù◊Ôi∆^‰∞îoJπÁﬁ[à∂{€„'Âv√5¡Àµ'õ3y‹ê¶ ûw˙¸Õ'îBú”hÏø\›Â©{
+2tT1ãÖÑë∑X08Ø( ¸±P	¨âI”0ÇÓ0ÇW†~ìÎ˚|∆NYÍKöw‘¸;0	*ÜHÜ˜ 0Åã10	UZA10UWestern Cape10UDurbanville10U
+Thawte10UThawte Certification10UThawte Timestamping CA0121221000000Z201230235959Z0^10	UUS10U
+Symantec Corporation100.U'Symantec Time Stamping Services CA - G20Ç"0	*ÜHÜ˜ Ç 0Ç
+Ç ±¨≥ITKó
+ÿ%yë"W*o‹∏&ƒCsk¬ø.PZ˚¬véC%C¥°‚EÙË∑{√tÃ"◊¥î ˜MÌø¥∑D$kÕ_E;—DŒCsÇãi¥+Àô¨r&Mq±1›˚QaS¶™ıI,xE•/âŒÁôÁ˛å‚W?=∆í‹J¯{3‰y
+˚uàAúˇ≈Qô™◊lüìiáe)ÉÖ¬`ƒ»…;⁄¿Åtﬁí"´ ˜˚t|'Ê˜Jß√û-ÆäÍ¶Ê™'}a˜òqº‚P°KÂ]˙Âß,ü™e ”ÿñË»|•NHDˇ‚Dí◊hÑÄ]jxdEÕ`F~T¡|≈yÒ…¡q £Å˙0Å˜0U_öın\ÃÃtö‘›}Ô?€ÏLÄ.›02+&0$0"+0Ühttp://ocsp.thawte.com0Uˇ0ˇ 0?U80604†2†0Ü.http://crl.thawte.com/ThawteTimestampingCA.crl0U%0
++0Uˇ0(U!0§010UTimeStamp-2048-10	*ÜHÜ˜ ÅÅ 	õèyÔY0™Ôhµ˙„	ªOÇ]7_¶RüçÍí	DnımÎX|0Ë˘iç#soG©Æ9¯*±õ∞√éÎYñ ≠ŒM≤–1¶\*z¸‚zWL®eÈy@b%ñn««7jÉ!éAÍ›ŸW?wIá*^¶8j"£QÉ~∂1Ç(0Ç$0r0^10	UUS10U
+Symantec Corporation100.U'Symantec Time Stamping Services CA - G2p†ÙÍÔô˝FlÌ0¡∞0	+ †Åå0	*ÜHÜ˜	1*ÜHÜ˜	0	*ÜHÜ˜	1170306221347Z0#	*ÜHÜ˜	1{\:(Ø˘ÀY\sÚ‡ì€Vﬂπ0+*ÜHÜ˜	1000“

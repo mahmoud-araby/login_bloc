@@ -1,0 +1,518 @@
+80
+Now what a stateless widget comes with is this method called Build and this method gets called whenever
+
+40
+00:03:05,370 --> 00:03:08,700
+we create a new version of this widget.
+
+41
+00:03:08,880 --> 00:03:16,860
+That means that if I go ahead and change this color from what was it teal to red and I click on the
+
+42
+00:03:16,860 --> 00:03:24,420
+hot reload button then it will go and check to see what was the code that was changed most recently
+
+43
+00:03:24,870 --> 00:03:27,160
+namely teal became red.
+
+44
+00:03:27,260 --> 00:03:36,040
+It will look to see where the closest build function is and it will re run it now that we've done this.
+
+45
+00:03:36,060 --> 00:03:40,770
+Let's go ahead and stop are up and run it again.
+
+46
+00:03:40,770 --> 00:03:43,130
+So we're restarting it from fresh.
+
+47
+00:03:43,350 --> 00:03:51,360
+And this means that our app is going to be created again using this stateless widget instead of simply
+
+48
+00:03:51,390 --> 00:03:57,190
+just returning a material app you can see right now our background has been changed to red.
+
+49
+00:03:57,220 --> 00:03:58,660
+But this is not very interesting.
+
+50
+00:03:58,660 --> 00:04:04,640
+We always knew that we could stop our app and run our app and wait a million seconds for that to happen.
+
+51
+00:04:04,690 --> 00:04:11,530
+But here's the cool thing now that we've got our material app inside a stateless widget which has a
+
+52
+00:04:11,530 --> 00:04:17,920
+build method which can be called every time we make a change to one of the widgets inside this build
+
+53
+00:04:17,920 --> 00:04:18,800
+method.
+
+54
+00:04:18,850 --> 00:04:22,340
+So let's change that color from red to blue.
+
+55
+00:04:22,360 --> 00:04:28,440
+This is the part of the code that will get marked as changed and as soon as I click on this button for
+
+56
+00:04:28,450 --> 00:04:36,040
+flutter hot reload you'll see that the changes move over almost instantaneously and it's because that
+
+57
+00:04:36,220 --> 00:04:43,000
+all the app is doing is instead of compiling all of the code linking everything together figuring out
+
+58
+00:04:43,000 --> 00:04:50,980
+where the app icons are which platform it's being run on instead of all of that it just calls this method
+
+59
+00:04:50,980 --> 00:04:58,570
+again and it rebuilds our material app with the scaffold with the changes.
+
+60
+00:04:58,570 --> 00:05:06,840
+This is why it can be so fast and remember that you don't actually have to click on this button by default
+
+61
+00:05:06,930 --> 00:05:12,240
+flutters hot reload is hard wired to happen when you save your project.
+
+62
+00:05:12,270 --> 00:05:13,890
+So let's change the color again.
+
+63
+00:05:13,890 --> 00:05:21,060
+Let's change it to white and as soon as I hit command s on mac or control us on windows and I save my
+
+64
+00:05:21,060 --> 00:05:29,100
+project it automatically runs hot reload and we get all the content refreshed almost immediately which
+
+65
+00:05:29,370 --> 00:05:36,060
+for anybody who's done any sort of mobile development with us android Zamir and whatever it may be this
+
+66
+00:05:36,060 --> 00:05:38,250
+is almost magical.
+
+67
+00:05:38,520 --> 00:05:45,230
+And the idea really is that hot reload is meant to happen so fast and it really is like a reload.
+
+68
+00:05:45,330 --> 00:05:48,150
+Like when you refresh your website as you're creating it.
+
+69
+00:05:48,900 --> 00:05:55,620
+And what this will allow developers to do is to almost paint their user interface into life.
+
+70
+00:05:55,620 --> 00:05:55,900
+Right.
+
+71
+00:05:55,900 --> 00:06:02,370
+Say if you were creating a drawing or creating a painting you see the changes immediately as soon as
+
+72
+00:06:02,370 --> 00:06:03,520
+your pen hits paper.
+
+73
+00:06:03,930 --> 00:06:10,560
+And even though hot reload is not instantaneous like when you put a brush on paper but it reduces that
+
+74
+00:06:10,560 --> 00:06:17,520
+lag to fractions of a second which means that developers are more inclined to use hot reload to see
+
+75
+00:06:17,520 --> 00:06:21,300
+the changes that happen after every change they make.
+
+76
+00:06:21,300 --> 00:06:26,430
+And this means that you get less errors because you haven't waited for a whole day before you rerun
+
+77
+00:06:26,430 --> 00:06:29,790
+your app and you realize that there's 10 things that have broken.
+
+78
+00:06:29,880 --> 00:06:35,670
+So we're going to be using the power hot reload to massively reduce the amount of time for each development
+
+79
+00:06:35,670 --> 00:06:36,350
+cycle.
+
+80
+00:06:36,360 --> 00:06:43,770
+So let's imagine a development cycle being we write code and then we test code we run it we see what
+
+81
+00:06:43,770 --> 00:06:49,680
+happens and then we look at the difference between what we expected to happen and what actually happens
+
+82
+00:06:49,830 --> 00:06:54,170
+on screen and then we go back and we change our code we write more code.
+
+83
+00:06:54,420 --> 00:07:02,220
+And this goes on until infinity or until your app is done and what flutter allows us to do is to massively
+
+84
+00:07:02,220 --> 00:07:08,310
+shorten the time that's taken to create that cycle for each of those cycles.
+
+85
+00:07:09,000 --> 00:07:14,670
+And previously when you saw me creating this floating action button I created the button I hit save
+
+86
+00:07:14,730 --> 00:07:21,750
+it updates I changed the background color I hit save it update I add an icon to the button and I hit
+
+87
+00:07:21,750 --> 00:07:23,750
+save any updates as well.
+
+88
+00:07:23,760 --> 00:07:30,510
+So for every single line of code when I'm creating the user interface I'm just painting it on to my
+
+89
+00:07:30,510 --> 00:07:35,180
+app and seeing the result in fractions of seconds at almost live.
+
+90
+00:07:35,190 --> 00:07:39,690
+This means that you can really experiment with how you want the screen to look.
+
+91
+00:07:39,780 --> 00:07:46,680
+Let's see if you know for example let's move this thing to the left a bit see how that looks or change
+
+92
+00:07:46,710 --> 00:07:53,010
+the color of that thing through you know all the rainbows of colors and see how that looks and see whether
+
+93
+00:07:53,010 --> 00:07:59,430
+if you like it if not change it and then it updates in a fraction of second when we're developing apps
+
+94
+00:07:59,520 --> 00:08:01,980
+natively for Iowa or Android.
+
+95
+00:08:01,980 --> 00:08:07,500
+The only real option that we have is running the app from cold.
+
+96
+00:08:07,500 --> 00:08:15,270
+Now I want to show you even on a fast ISIS simulator running on one of the latest MacBook Pros.
+
+97
+00:08:15,270 --> 00:08:17,350
+So it has a lot of processing power.
+
+98
+00:08:17,360 --> 00:08:19,180
+I want to show you just how long this takes right.
+
+99
+00:08:19,350 --> 00:08:26,190
+So I'm stopping I'm starting and we're just watching that time ago and you can see in the console that
+
+100
+00:08:26,190 --> 00:08:27,740
+things are happening.
+
+101
+00:08:27,750 --> 00:08:29,740
+It's launching the code.
+
+102
+00:08:29,850 --> 00:08:31,620
+It's starting the build.
+
+103
+00:08:31,620 --> 00:08:38,220
+It's compiling our code turning the human readable code that we've written into ones and zeros that
+
+104
+00:08:38,310 --> 00:08:44,230
+the machine can actually understand and then launching our app onto the simulator.
+
+105
+00:08:44,220 --> 00:08:52,070
+And in total I counted that that took about 30 seconds to actually show up on the screen.
+
+106
+00:08:52,110 --> 00:08:54,400
+It really took a long time.
+
+107
+00:08:54,630 --> 00:09:01,290
+And imagine that if you had changed just the color of the floating action button on the bottom right
+
+108
+00:09:01,710 --> 00:09:06,730
+you probably are not inclined to spend 30 seconds waiting to see how it's changed.
+
+109
+00:09:06,780 --> 00:09:14,730
+Right now let's consider if instead we were creating a flutter app and we now have access to our hot
+
+110
+00:09:14,730 --> 00:09:15,870
+reload.
+
+111
+00:09:15,870 --> 00:09:17,070
+Now the same thing.
+
+112
+00:09:17,070 --> 00:09:20,590
+Changing a color instead of hitting run.
+
+113
+00:09:20,610 --> 00:09:25,990
+I'm going to hit hot reload and it's a matter of seconds.
+
+114
+00:09:26,010 --> 00:09:32,830
+It took five seconds for that app bar background to change and the beauty of this is that it doesn't
+
+115
+00:09:32,920 --> 00:09:34,740
+even lose the state of the app.
+
+116
+00:09:34,750 --> 00:09:40,840
+So all of the things that you've done for testing say if I've changed the number of donuts eaten in
+
+117
+00:09:40,840 --> 00:09:47,140
+the app it's reading as ten but I decide to change the background color of the app bar to read and I
+
+118
+00:09:47,140 --> 00:09:50,170
+hit hot reload almost instantaneously.
+
+119
+00:09:50,230 --> 00:09:57,250
+My background color changes but the rest of the data that I input it hasn't reset itself which means
+
+120
+00:09:57,250 --> 00:10:02,200
+that if you're testing something like a form or you're testing something where you don't want to lose
+
+121
+00:10:02,200 --> 00:10:08,380
+the data that you've used to test the app but you wanted to make some sort of UI change then hot reload
+
+122
+00:10:08,710 --> 00:10:10,950
+won't lose that data for you.
+
+123
+00:10:11,380 --> 00:10:17,020
+And we're gonna see this come into action little bit later on as we get to develop more and more complex
+
+124
+00:10:17,080 --> 00:10:19,000
+apps.
+
+125
+00:10:19,000 --> 00:10:23,460
+Now what is this button that's next to the hot reload button.
+
+126
+00:10:23,500 --> 00:10:25,030
+This little green one.
+
+127
+00:10:25,070 --> 00:10:27,540
+Well this is something that comes with flutter as well.
+
+128
+00:10:27,610 --> 00:10:30,700
+And it's called a hot restart.
+
+129
+00:10:30,700 --> 00:10:37,120
+What this does is that it does in fact reset the state of your app.
+
+130
+00:10:37,120 --> 00:10:40,630
+So if you needed to test your app from the start.
+
+131
+00:10:40,630 --> 00:10:47,490
+So when number of donuts gets reset back down to zero then this is the button that you would use instead.
+
+132
+00:10:47,500 --> 00:10:53,020
+So I'm changing the background colour and then I'm pressing hot restart instead a hot reload.
+
+133
+00:10:53,020 --> 00:10:56,590
+And you can see that in the console it's doing exactly that.
+
+134
+00:10:56,590 --> 00:11:02,920
+Now it still doesn't take as long as actually starting the app from cold when you stop it and run it
+
+135
+00:11:02,920 --> 00:11:03,650
+again.
+
+136
+00:11:03,820 --> 00:11:09,340
+But it does in fact reset the state of our app and you can see that not only is this background gets
+
+137
+00:11:09,340 --> 00:11:15,100
+changed to blue but also the number of doughnuts eaten get reset back down to zero.
+
+138
+00:11:15,100 --> 00:11:18,500
+And it only took eight seconds for this to happen.
+
+139
+00:11:18,760 --> 00:11:24,430
+So you might be wondering well OK that's fair enough on a very simple app right.
+
+140
+00:11:24,430 --> 00:11:27,550
+Like you know something that just counts the number of doughnuts that you've eaten.
+
+141
+00:11:27,760 --> 00:11:33,340
+But what if I had a big app with thousands of lines of code then surely you know hot reload and hot
+
+142
+00:11:33,340 --> 00:11:35,590
+restart won't really be very useful for me.
+
+143
+00:11:36,250 --> 00:11:43,510
+Well actually it still is because of the way that hot reload and hot restart work what they do is they
+
+144
+00:11:43,510 --> 00:11:51,550
+will only look at the changes that were made and they will push those changes onto your testing device
+
+145
+00:11:51,580 --> 00:11:53,710
+your simulator or your iPhone.
+
+146
+00:11:53,710 --> 00:11:58,550
+It's almost kind of like if you're somebody like me who travels a lot.
+
+147
+00:11:58,630 --> 00:12:03,850
+I actually have a suitcase that's pre packed with pretty much all the things I always need when I go
+
+148
+00:12:03,850 --> 00:12:09,940
+travelling like toothbrush toothpaste my you know a couple of pair of socks and those kind of things
+
+149
+00:12:10,480 --> 00:12:16,150
+and depending on where I go I might add a few things or move a few things say if I'm going somewhere
+
+150
+00:12:16,150 --> 00:12:19,420
+that's quite warm I might add a pair of sunglasses.
+
+151
+00:12:19,510 --> 00:12:26,650
+So it's only the changes that I'm making to my suitcase that gets put into the suitcase and this means
+
+152
+00:12:26,680 --> 00:12:31,490
+I save myself a lot of time instead of packing my suitcase from scratch.
+
+153
+00:12:31,630 --> 00:12:36,970
+I'm only adding the changes that I need for a particular destination.
+
+154
+00:12:37,150 --> 00:12:39,610
+And this is how hot reload and hot restart works.
+
+155
+00:12:40,600 --> 00:12:49,420
+So in this case size doesn't actually matter it doesn't matter if you are packing for a small suitcase
+
+156
+00:12:49,510 --> 00:12:56,470
+or a giant suitcase as long as you're ready have the suitcase packed and you're only adding to it one
+
+157
+00:12:56,470 --> 00:13:02,980
+thing or two things depending on which destination you're going to then it doesn't actually take any
+
+158
+00:13:02,980 --> 00:13:07,270
+longer to pack a larger suitcase or a smaller suitcase.
+
+159
+00:13:07,270 --> 00:13:14,440
+And this is the same for our flutter code even if we're hot reloading for changes that we've made to
+
+160
+00:13:14,470 --> 00:13:18,430
+a really complex large project.
+
+161
+00:13:18,430 --> 00:13:26,590
+It will still be just as fast as doing it for a tiny project like this one here and in the coming lessons
+
+162
+00:13:26,710 --> 00:13:33,520
+we're gonna be using hot reload and hot restart to almost instantly see the changes that we're making
+
+163
+00:13:33,640 --> 00:13:37,720
+with our code in our simulator in the next lesson.
+
+164
+00:13:37,720 --> 00:13:42,760
+That's exactly what we're going to be building we're gonna be building out our container and seeing
+
+165
+00:13:42,970 --> 00:13:48,460
+all of the cool things that you can use it to do so for all of that and more I'll see you on the next
+
+166
+00:13:48,460 --> 00:13:48,820
+lesson.
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    AAPT         ∏      ‘   –      
+%drawable/abc_btn_radio_to_on_mtrl_000ê¿"°C:\Users\Embedded_PC\.gradle\caches\transforms-2\files-2.1\e98bbbdf6a23e70c7d5ba31e435328ac\appcompat-1.0.1\res\drawable-hdpi-v4\abc_btn_radio_to_on_mtrl_000.pngâPNG
+
+   IHDR   0   0   ˝1  óIDATxÏ“øJcQ≈·oüsAmˇ<BﬁE¨“™‡ÀÏc/X¯‚K®†Ç∞Hëjtˆ4∑êiŒ®al¸ÌÍ¿bØª÷›~¯·øÔf…Ñ™ Bß.À¶® V¨®ä/R∆¶Æ‹õõªwejlÄPøV[&f“o©ü˛53±≈gÀ
+ûﬁ-±∞ÚŒ‰…ä¯Ã≈Tß“´7È∆ë#õ6çÏ8r#ΩyïNU!>æ˛BzñÓÏYA ¨ÿs◊+.>jQ0ï~IÁ÷Qt™"Ñ¢Í¨;ÔUSˇH≈aˇm'˝Ú7—õúÙ CT⁄∂Õ§t÷∏ı¢‚LJ3€M*&R∫5l/∫ï“ÑvÜ¿–£îˆ—i—a_JèÜÌc)][kÀXs-•q;Cá©îéQ—¶‚XJ”vÊ¿•îv?d∞+•KD;ÓÉÙlÑÇ6#œ“C´÷¿¿\Zÿ@†M`√Bö|ø¡Ú+Z˛O˛ﬁ3˝”~  ¿PÌﬂZäwÛ;„á∆Q¡aÁq≠Ñî	§è≥áNGø8ﬂı‚_(ø˜E—ˇy*ö_|    IENDÆB`Ç                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        dex
+035 B¶™Dﬁ
+æQwnöõ˜!w6}q[É‰¨  p   xV4        Ë     p      ¥      –      ‹      ¸        Ä  ,  H  P  S  t  è  ≥  ”  Á  Ô  Ú  ˇ      .  J  a  à                                                                                       ÿ  û  ∞       D     p      <init> I Landroidx/drawerlayout/R$color; Landroidx/drawerlayout/R; "Ldalvik/annotation/EnclosingClass; Ldalvik/annotation/InnerClass; Ljava/lang/Object; R.java V accessFlags color name  notification_action_color_filter notification_icon_bg_color ripple_material_light %secondary_text_default_material_light value 	
+    ÇÄ¨dG dH dR dT           è  ï  Ã                                  p         ¥         –         ‹         ¸                 ,        D        H        è         û        ∞       »        ÿ        Ë                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
